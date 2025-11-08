@@ -28,11 +28,22 @@ export const useGameState = () => {
   }, []);
 
   function getRandomSong(): Song {
-    return jayChouSongs[Math.floor(Math.random() * jayChouSongs.length)];
+    // Only select songs that have YouTube IDs
+    const songsWithYoutube = jayChouSongs.filter(song => song.youtubeId);
+    if (songsWithYoutube.length === 0) {
+      // Fallback to any song if none have YouTube
+      return jayChouSongs[Math.floor(Math.random() * jayChouSongs.length)];
+    }
+    return songsWithYoutube[Math.floor(Math.random() * songsWithYoutube.length)];
   }
 
   function generateChoices(correctSong: Song): Song[] {
-    const otherSongs = jayChouSongs.filter((s) => s.id !== correctSong.id);
+    // Prefer songs with YouTube IDs for choices
+    const songsWithYoutube = jayChouSongs.filter(s => s.youtubeId);
+    const otherSongs = songsWithYoutube.length >= 4 
+      ? songsWithYoutube.filter((s) => s.id !== correctSong.id)
+      : jayChouSongs.filter((s) => s.id !== correctSong.id);
+    
     const shuffled = otherSongs.sort(() => Math.random() - 0.5);
     const choices = [correctSong, ...shuffled.slice(0, 3)];
     return choices.sort(() => Math.random() - 0.5);
