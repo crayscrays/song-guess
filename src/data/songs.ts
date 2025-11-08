@@ -74,7 +74,7 @@ export const jayChouSongs: Song[] = [
   { 
     id: '10', 
     title: 'Ge Qian', 
-    titleChinese: '擱淺',
+    titleChinese: '擁淺',
     youtubeId: 'YJfHuATJYsQ',
     startTime: 44
   },
@@ -99,16 +99,53 @@ export const jayChouSongs: Song[] = [
     youtubeId: 'v489sYYjtHI',
     startTime: 36
   },
-  { id: '14', title: 'An Jing', titleChinese: '安静' },
-  { id: '15', title: 'Dong Feng Po', titleChinese: '东风破' },
-  { id: '16', title: 'Cai Hong', titleChinese: '彩虹' },
-  { id: '17', title: 'Jian Dan Ai', titleChinese: '简单爱' },
-  { id: '18', title: 'Xing Qing', titleChinese: '星晴' },
-  { id: '19', title: 'Tui Hou', titleChinese: '退后' },
-  { id: '20', title: 'Bu Neng Shuo De Mi Mi', titleChinese: '不能说的秘密' },
-  { id: '21', title: 'Long Juan Feng', titleChinese: '龙卷风' },
-  { id: '22', title: 'Xia Tian', titleChinese: '夏天' },
-  { id: '23', title: 'Yi Lu Xiang Bei', titleChinese: '一路向北' },
-  { id: '24', title: 'Chuan Shuo', titleChinese: '传说' },
-  { id: '25', title: 'Ju Hua Tai', titleChinese: '菊花台' },
+  { 
+    id: '14', 
+    title: 'Long Juan Feng', 
+    titleChinese: '龍捲風',
+    youtubeId: 'RPWDeLqsN0g',
+    startTime: 46
+  },
+  { 
+    id: '15', 
+    title: 'Jian Dan Ai', 
+    titleChinese: '簡單愛',
+    youtubeId: 'Y4xCVlyCvX4',
+    startTime: 34
+  },
+  { 
+    id: '16', 
+    title: 'Dong Feng Po', 
+    titleChinese: '東風破',
+    youtubeId: 'qct0JLjaHDc',
+    startTime: 50
+  },
+  { 
+    id: '17', 
+    title: 'Ju Hua Tai', 
+    titleChinese: '菊花台',
+    youtubeId: 'PdjbRvvJAzg',
+    startTime: 44
+  },
+  { 
+    id: '18', 
+    title: 'Yan Hua Yi Leng', 
+    titleChinese: '煙花易冷',
+    youtubeId: 'P0l3I0d59mU',
+    startTime: 48
+  },
+  { 
+    id: '19', 
+    title: 'Deng Ni Xia Ke', 
+    titleChinese: '等你下課',
+    youtubeId: 'kfXdP7nZIiE',
+    startTime: 42
+  },
+  { 
+    id: '20', 
+    title: 'Zui Wei Da De Zuo Pin', 
+    titleChinese: '最偉大的作品',
+    youtubeId: '1emA1EFsPMM',
+    startTime: 38
+  },
 ];
