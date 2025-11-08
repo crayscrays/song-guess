@@ -13,6 +13,7 @@ export const useGameState = () => {
   const [choices, setChoices] = useState<Song[]>(generateChoices(currentSong));
   const [selectedSong, setSelectedSong] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [guessedSongIds, setGuessedSongIds] = useState<Set<string>>(new Set());
   const audioPlayerRef = useRef<AudioPlayer | null>(null);
   const youtubePlayerRef = useRef<YouTubePlayer | null>(null);
 
@@ -27,13 +28,21 @@ export const useGameState = () => {
     };
   }, []);
 
-  function getRandomSong(): Song {
-    // Only select songs that have YouTube IDs
-    const songsWithYoutube = jayChouSongs.filter(song => song.youtubeId);
+  function getRandomSong(excludeIds: Set<string> = new Set()): Song {
+    // Only select songs that have YouTube IDs and haven't been guessed
+    const songsWithYoutube = jayChouSongs.filter(
+      song => song.youtubeId && !excludeIds.has(song.id)
+    );
+    
     if (songsWithYoutube.length === 0) {
-      // Fallback to any song if none have YouTube
-      return jayChouSongs[Math.floor(Math.random() * jayChouSongs.length)];
+      // If all songs with YouTube have been guessed, fallback to any song
+      const anyAvailable = jayChouSongs.filter(song => song.youtubeId);
+      if (anyAvailable.length === 0) {
+        return jayChouSongs[Math.floor(Math.random() * jayChouSongs.length)];
+      }
+      return anyAvailable[Math.floor(Math.random() * anyAvailable.length)];
     }
+    
     return songsWithYoutube[Math.floor(Math.random() * songsWithYoutube.length)];
   }
 
@@ -56,6 +65,8 @@ export const useGameState = () => {
       if (songId === currentSong.id) {
         setGameState("correct");
         setScore((prev) => prev + (4 - attempt) * 10);
+        // Add the correctly guessed song to the list
+        setGuessedSongIds((prev) => new Set(prev).add(currentSong.id));
       } else if (attempt >= 3) {
         setGameState("failed");
       } else {
@@ -106,16 +117,20 @@ export const useGameState = () => {
   }, [attempt, isPlaying, currentSong]);
 
   const nextRound = useCallback(() => {
-    const newSong = getRandomSong();
+    console.log('nextRound: Guessed songs so far:', Array.from(guessedSongIds));
+    const newSong = getRandomSong(guessedSongIds);
+    console.log('nextRound: New song selected:', newSong);
     setCurrentSong(newSong);
     setChoices(generateChoices(newSong));
     setAttempt(1);
     setGameState("playing");
     setSelectedSong(null);
-  }, []);
+  }, [guessedSongIds]);
 
   const restart = useCallback(() => {
-    const newSong = getRandomSong();
+    console.log('restart: Resetting game and clearing guessed songs');
+    setGuessedSongIds(new Set()); // Clear all guessed songs
+    const newSong = getRandomSong(new Set());
     setCurrentSong(newSong);
     setChoices(generateChoices(newSong));
     setAttempt(1);
