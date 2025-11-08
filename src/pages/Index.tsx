@@ -39,6 +39,11 @@ const Index = () => {
     }
   }, [gameState, currentSong, attempt, toast]);
 
+  // Don't render until we have a current song
+  if (!currentSong) {
+    return null;
+  }
+
   return (
     <>
       {/* Hidden YouTube player container */}

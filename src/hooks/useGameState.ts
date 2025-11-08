@@ -9,18 +9,23 @@ export const useGameState = () => {
   const [score, setScore] = useState(0);
   const [attempt, setAttempt] = useState(1);
   const [gameState, setGameState] = useState<GameState>("playing");
-  const [currentSong, setCurrentSong] = useState<Song>(getRandomSong());
-  const [choices, setChoices] = useState<Song[]>(generateChoices(currentSong));
+  const [currentSong, setCurrentSong] = useState<Song | null>(null);
+  const [choices, setChoices] = useState<Song[]>([]);
   const [selectedSong, setSelectedSong] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [guessedSongIds, setGuessedSongIds] = useState<Set<string>>(new Set());
   const audioPlayerRef = useRef<AudioPlayer | null>(null);
   const youtubePlayerRef = useRef<YouTubePlayer | null>(null);
 
-  // Initialize audio player
+  // Initialize audio player and first song
   useEffect(() => {
     audioPlayerRef.current = new AudioPlayer();
     youtubePlayerRef.current = new YouTubePlayer('youtube-player');
+    
+    // Set initial song after component mounts
+    const initialSong = getRandomSong(new Set());
+    setCurrentSong(initialSong);
+    setChoices(generateChoices(initialSong));
     
     return () => {
       audioPlayerRef.current?.dispose();
@@ -60,6 +65,8 @@ export const useGameState = () => {
 
   const handleGuess = useCallback(
     (songId: string) => {
+      if (!currentSong) return;
+      
       setSelectedSong(songId);
 
       if (songId === currentSong.id) {
@@ -73,10 +80,12 @@ export const useGameState = () => {
         setAttempt((prev) => prev + 1);
       }
     },
-    [currentSong.id, attempt]
+    [currentSong, attempt]
   );
 
   const handlePlayAudio = useCallback(async () => {
+    if (!currentSong) return;
+    
     console.log('handlePlayAudio: Called, isPlaying:', isPlaying);
     console.log('handlePlayAudio: Current song:', currentSong);
     console.log('handlePlayAudio: Attempt:', attempt);
