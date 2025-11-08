@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect, useRef } from "react";
 import { Song, jayChouSongs } from "@/data/songs";
 import { AudioPlayer } from "@/utils/audioPlayer";
+import { YouTubePlayer } from "@/utils/youtubePlayer";
 
 export type GameState = "playing" | "correct" | "failed";
 
@@ -13,12 +14,16 @@ export const useGameState = () => {
   const [selectedSong, setSelectedSong] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioPlayerRef = useRef<AudioPlayer | null>(null);
+  const youtubePlayerRef = useRef<YouTubePlayer | null>(null);
 
   // Initialize audio player
   useEffect(() => {
     audioPlayerRef.current = new AudioPlayer();
+    youtubePlayerRef.current = new YouTubePlayer('youtube-player');
+    
     return () => {
       audioPlayerRef.current?.dispose();
+      youtubePlayerRef.current?.destroy();
     };
   }, []);
 
@@ -50,20 +55,28 @@ export const useGameState = () => {
   );
 
   const handlePlayAudio = useCallback(async () => {
-    if (!audioPlayerRef.current || isPlaying) return;
+    if (isPlaying) return;
     
     setIsPlaying(true);
     try {
-      // Play a tone for the specified duration
-      // In production, replace this with: 
-      // await audioPlayerRef.current.playAudioFile(songUrl, attempt);
-      await audioPlayerRef.current.playTone(attempt);
+      // If song has YouTube ID, play from YouTube
+      if (currentSong.youtubeId && youtubePlayerRef.current) {
+        // Load video if not already loaded
+        await youtubePlayerRef.current.loadVideo(currentSong.youtubeId);
+        
+        // Play segment starting from specified time (or random time if not specified)
+        const startTime = currentSong.startTime || Math.floor(Math.random() * 60) + 30;
+        await youtubePlayerRef.current.playSegment(startTime, attempt);
+      } else if (audioPlayerRef.current) {
+        // Fallback to tone if no YouTube ID
+        await audioPlayerRef.current.playTone(attempt);
+      }
     } catch (error) {
       console.error('Error playing audio:', error);
     } finally {
       setIsPlaying(false);
     }
-  }, [attempt, isPlaying]);
+  }, [attempt, isPlaying, currentSong]);
 
   const nextRound = useCallback(() => {
     const newSong = getRandomSong();

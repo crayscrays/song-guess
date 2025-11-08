@@ -2,6 +2,8 @@ export interface Song {
   id: string;
   title: string;
   titleChinese: string;
+  youtubeId?: string; // YouTube video ID
+  startTime?: number; // Starting point in seconds for the clip
 }
 
 // Popular Jay Chou songs for the game
