@@ -55,25 +55,41 @@ export const useGameState = () => {
   );
 
   const handlePlayAudio = useCallback(async () => {
-    if (isPlaying) return;
+    console.log('handlePlayAudio: Called, isPlaying:', isPlaying);
+    console.log('handlePlayAudio: Current song:', currentSong);
+    console.log('handlePlayAudio: Attempt:', attempt);
+    
+    if (isPlaying) {
+      console.log('handlePlayAudio: Already playing, skipping');
+      return;
+    }
     
     setIsPlaying(true);
     try {
       // If song has YouTube ID, play from YouTube
       if (currentSong.youtubeId && youtubePlayerRef.current) {
+        console.log('handlePlayAudio: Playing from YouTube:', currentSong.youtubeId);
+        
         // Load video if not already loaded
         await youtubePlayerRef.current.loadVideo(currentSong.youtubeId);
         
         // Play segment starting from specified time (or random time if not specified)
         const startTime = currentSong.startTime || Math.floor(Math.random() * 60) + 30;
+        console.log('handlePlayAudio: Starting playback at:', startTime, 'for', attempt, 'seconds');
+        
         await youtubePlayerRef.current.playSegment(startTime, attempt);
+        console.log('handlePlayAudio: Playback completed');
       } else if (audioPlayerRef.current) {
+        console.log('handlePlayAudio: No YouTube ID, playing tone');
         // Fallback to tone if no YouTube ID
         await audioPlayerRef.current.playTone(attempt);
+      } else {
+        console.error('handlePlayAudio: No player available');
       }
     } catch (error) {
-      console.error('Error playing audio:', error);
+      console.error('handlePlayAudio: Error playing audio:', error);
     } finally {
+      console.log('handlePlayAudio: Setting isPlaying to false');
       setIsPlaying(false);
     }
   }, [attempt, isPlaying, currentSong]);
