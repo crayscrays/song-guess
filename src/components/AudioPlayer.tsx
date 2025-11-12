@@ -266,9 +266,9 @@ export const AudioPlayer = ({
   }, [onPlay]);
 
   return (
-    <div className="w-full max-w-2xl mx-auto mb-8">
+    <div className="w-full max-w-2xl mx-auto mb-2 md:mb-4">
       <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
-        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-4 py-4 text-foreground">
+        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-3 py-2 md:px-4 md:py-4 text-foreground">
           <div className="text-center">
             <p className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Today&apos;s Theme
@@ -279,7 +279,7 @@ export const AudioPlayer = ({
           </div>
         </div>
         <div
-          className={`flex flex-col items-center gap-6 px-6 py-6 min-h-[280px] ${
+          className={`flex flex-col items-center gap-3 md:gap-6 px-4 py-4 md:px-6 md:py-6 min-h-[200px] md:min-h-[280px] ${
             resultSummary?.variant === "fail"
               ? "bg-rose-950/20"
               : resultSummary?.variant === "mythic"
@@ -292,7 +292,7 @@ export const AudioPlayer = ({
           <div className="flex w-full flex-1 flex-col items-center gap-3 justify-center">
             {gameState === "playing" ? (
               <>
-                <div className="relative w-28 h-28 flex items-center justify-center">
+                <div className="relative w-20 h-20 md:w-28 md:h-28 flex items-center justify-center">
                   {showVisualizer ? (
                     <div
                       className="audio-visualizer"
@@ -315,15 +315,15 @@ export const AudioPlayer = ({
                       onClick={handlePlayClick}
                       disabled={playDisabled}
                       size="lg"
-                      className="relative w-24 h-24 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
+                      className="relative w-16 h-16 md:w-24 md:h-24 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
                     >
                       <span className="absolute -inset-4 rounded-full bg-gradient-to-br from-fuchsia-300/25 via-purple-300/18 to-indigo-300/18 blur-[34px] opacity-40 animate-[pulse_4s_ease-in-out_infinite]" aria-hidden="true" />
                       <span className="absolute inset-0 rounded-full bg-gradient-radial from-white/12 via-transparent to-transparent opacity-45" aria-hidden="true" />
-                      <Play className="w-24 h-24 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
+                      <Play className="w-16 h-16 md:w-24 md:h-24 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
                     </Button>
                   )}
                 </div>
-                <p className="mt-5 text-sm font-semibold text-foreground text-center">
+                <p className="mt-2 md:mt-5 text-xs md:text-sm font-semibold text-foreground text-center">
                   Attempt {Math.min(attempt, maxAttempts)} of {maxAttempts}
                 </p>
                 <div className="text-center text-xs text-muted-foreground/80 flex items-center gap-2 justify-center min-h-[1.25rem] mt-0">
@@ -427,12 +427,12 @@ export const AudioPlayer = ({
             </div>
           )}
         </div>
-        <div className="border-t border-border bg-muted/30 px-6 py-4">
-          <div className="flex flex-col items-center gap-2 text-sm text-foreground">
+        <div className="border-t border-border bg-muted/30 px-4 py-2 md:px-6 md:py-4">
+          <div className="flex flex-col items-center gap-1 md:gap-2 text-xs md:text-sm text-foreground">
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Song {Math.min(songNumber, totalSongs)} of {totalSongs}
             </span>
-            <div className="flex gap-1 justify-center">
+            <div className="flex gap-0.5 md:gap-1 justify-center">
               {songStatuses.map((entry) => {
                 const clickable =
                   entry.status !== "pending" || entry.isCurrent;
@@ -444,7 +444,7 @@ export const AudioPlayer = ({
                     onClick={() =>
                       clickable ? onNavigateToSong?.(entry.position) : undefined
                     }
-                    className={`relative inline-flex flex-col items-center justify-center text-2xl transition p-1 min-w-[44px] min-h-[44px] ${
+                    className={`relative inline-flex flex-col items-center justify-center text-xl md:text-2xl transition p-0.5 md:p-1 min-w-[36px] min-h-[36px] md:min-w-[44px] md:min-h-[44px] ${
                       clickable ? "cursor-pointer hover:scale-105" : "cursor-default"
                     }`}
                     title={statusToLabel(entry.status, entry.isCurrent)}

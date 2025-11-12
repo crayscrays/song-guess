@@ -351,7 +351,7 @@ const Index = () => {
         aria-hidden="true"
       />
       
-      <div className="h-screen overflow-hidden bg-gradient-bg p-2 md:p-8 flex flex-col">
+      <div className="h-screen max-h-screen overflow-hidden bg-gradient-bg p-2 md:p-8 flex flex-col">
         {activeFeedback !== null && (
           <div className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center px-4">
             <div className="w-full max-w-xs rounded-3xl bg-destructive/90 px-5 py-5 text-center text-destructive-foreground shadow-[0_16px_48px_rgba(255,0,0,0.3)] backdrop-blur-sm motion-safe:animate-wrong-feedback motion-reduce:animate-none motion-reduce:transition-none">
@@ -366,13 +366,13 @@ const Index = () => {
             </div>
           </div>
         )}
-        <div className="max-w-4xl mx-auto flex-1 flex flex-col min-h-0 space-y-2 md:space-y-6 px-2 md:px-4">
+        <div className="max-w-4xl mx-auto flex-1 flex flex-col min-h-0 max-h-full space-y-1 md:space-y-4 px-2 md:px-4 overflow-hidden">
           <GameHeader
             currentSongNumber={songNumber}
             totalSongs={totalSongs}
             isDailyComplete={isDailyComplete}
           />
-          <div className="flex-1 min-h-0 flex flex-col">
+          <div className="flex-1 min-h-0 flex flex-col overflow-hidden">
             <AudioPlayer
               attempt={attempt}
               maxAttempts={maxAttempts}
