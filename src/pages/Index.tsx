@@ -54,6 +54,7 @@ const Index = () => {
     lastFeedback,
     results,
     loadError,
+    isVideoReady,
   } = useGameState();
 
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -94,7 +95,7 @@ const Index = () => {
   };
 
   const songNumber = totalSongs > 0 ? currentSongIndex + 1 : 0;
-  const canPlayAudio = gameState === "playing" && clipDuration !== null;
+  const canPlayAudio = gameState === "playing" && clipDuration !== null && isVideoReady;
   const clipDurationLabel = useMemo(() => {
     if (clipDuration === null) return null;
     const formatted = Number.isInteger(clipDuration)
@@ -398,6 +399,7 @@ const Index = () => {
               onNavigateToSong={viewSong}
               resultTitle={gameState !== "playing" ? currentSong?.titleChinese ?? currentSong?.title ?? null : null}
               resultArtist={gameState !== "playing" ? currentSong?.subtitle ?? null : null}
+              isVideoReady={isVideoReady}
             />
 
             <GameControls

@@ -257,6 +257,7 @@ export const useGameState = () => {
   );
   const [lastFeedback, setLastFeedback] = useState<GameFeedback>(null);
   const [loadError, setLoadError] = useState<string | null>(null);
+  const [isVideoReady, setIsVideoReady] = useState(false);
   const [results, setResults] = useState<GameResult[]>(() => {
     if (typeof window === "undefined") {
       return [];
@@ -967,10 +968,21 @@ export const useGameState = () => {
     loadDailySongs();
   }, [loadDailySongs]);
 
+  // Load video when current song changes and mark as ready when loaded
   useEffect(() => {
     const youtubePlayer = youtubePlayerRef.current;
     const youtubeId = currentSong?.youtubeId;
-    if (!youtubePlayer || !youtubeId) {
+    
+    // Reset ready state when song changes
+    setIsVideoReady(false);
+    
+    // If no YouTube video, mark as ready immediately (will use fallback audio player)
+    if (!youtubeId) {
+      setIsVideoReady(true);
+      return;
+    }
+    
+    if (!youtubePlayer) {
       return;
     }
 
@@ -978,9 +990,19 @@ export const useGameState = () => {
 
     youtubePlayer
       .loadVideo(youtubeId)
-      .catch((error) => {
+      .then(() => {
         if (!isCancelled) {
-          console.error("useGameState: Failed to preload video:", error);
+          console.log("Video loaded and ready:", youtubeId);
+          setIsVideoReady(true);
+        }
+      })
+      .catch((error: any) => {
+        if (!isCancelled) {
+          console.error("useGameState: Failed to load video:", error);
+          // If it's an embedding error, mark as "ready" (will open YouTube instead)
+          if (error.code === 150 || error.code === 101) {
+            setIsVideoReady(true);
+          }
         }
       });
 
@@ -1013,5 +1035,6 @@ export const useGameState = () => {
     disabledChoiceIds,
     lastFeedback,
     loadError,
+    isVideoReady,
   };
 };

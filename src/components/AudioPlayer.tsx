@@ -1,4 +1,4 @@
-import { Play, Volume2 } from "lucide-react";
+import { Play, Volume2, Loader2 } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import type { ThemeGradient } from "@/hooks/useGameState";
 import { Button } from "@/components/ui/button";
@@ -27,6 +27,7 @@ interface AudioPlayerProps {
   onNavigateToSong?: (position: number) => void;
   resultTitle?: string | null;
   resultArtist?: string | null;
+  isVideoReady?: boolean;
 }
 
 const getThemeTitleTone = (title: string) => {
@@ -144,6 +145,7 @@ export const AudioPlayer = ({
   onNavigateToSong,
   resultTitle,
   resultArtist,
+  isVideoReady = true,
 }: AudioPlayerProps) => {
   const playDisabled = !canPlay || isPlaying || clipDuration === null;
   const playLabel =
@@ -310,6 +312,10 @@ export const AudioPlayer = ({
                         />
                       ))}
                     </div>
+                  ) : !isVideoReady ? (
+                    <div className="relative w-20 h-20 flex items-center justify-center">
+                      <Loader2 className="w-10 h-10 text-fuchsia-300 animate-spin" />
+                    </div>
                   ) : (
                     <Button
                       onClick={handlePlayClick}
@@ -327,14 +333,16 @@ export const AudioPlayer = ({
                   Attempt {Math.min(attempt, maxAttempts)} of {maxAttempts}
                 </p>
                 <div className="text-center text-xs text-muted-foreground/80 flex items-center gap-2 justify-center min-h-[1.25rem] mt-0">
-                  {clipDuration !== null && (
+                  {!isVideoReady ? (
+                    <span>Loading song...</span>
+                  ) : clipDuration !== null ? (
                     <>
                       <Volume2 className="w-4 h-4" />
                       <span>
                         {isPlaying ? "Listening..." : `Play ${playLabel}`}
                       </span>
                     </>
-                  )}
+                  ) : null}
                 </div>
               </>
             ) : (
