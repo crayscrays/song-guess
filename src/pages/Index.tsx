@@ -366,7 +366,7 @@ const Index = () => {
             </div>
           </div>
         )}
-        <div className="max-w-4xl mx-auto space-y-1 md:space-y-6 px-2 md:px-4">
+        <div className="max-w-4xl mx-auto space-y-2 md:space-y-6 px-2 md:px-4">
           <GameHeader
             currentSongNumber={songNumber}
             totalSongs={totalSongs}
