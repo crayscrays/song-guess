@@ -4,6 +4,7 @@ import { GameHeader } from "@/components/GameHeader";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { GameControls } from "@/components/GameControls";
 import { DebugPanel } from "@/components/DebugPanel";
+import { ResetButton } from "@/components/ResetButton";
 import { useGameState } from "@/hooks/useGameState";
 import {
   Sheet,
@@ -509,6 +510,7 @@ const Index = () => {
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
+        <ResetButton />
         <DebugPanel />
       </div>
     </>
