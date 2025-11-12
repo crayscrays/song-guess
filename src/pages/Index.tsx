@@ -90,7 +90,8 @@ const Index = () => {
   }, [clipDuration]);
 
   const songLink = useMemo(() => {
-    if (!currentSong?.youtubeUrl) return null;
+    // Only reveal YouTube link after game state changes (correct guess or failed)
+    if (gameState === "playing" || !currentSong?.youtubeUrl) return null;
     try {
       const url = new URL(currentSong.youtubeUrl);
       const start = Math.floor(currentSong.startTimeSeconds ?? 0);
@@ -105,7 +106,7 @@ const Index = () => {
       }
       return currentSong.youtubeUrl;
     }
-  }, [currentSong]);
+  }, [currentSong, gameState]);
 
   const songStatuses = useMemo(() => {
     const firstPendingOrder = Array.from({ length: totalSongs }).reduce<
@@ -372,68 +373,73 @@ const Index = () => {
           />
 
         </div>
-        <div className="fixed bottom-6 inset-x-0 flex justify-center z-40 px-4">
-          {isDailyComplete ? (
-            <div className="relative w-full max-w-2xl">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#d946ef]/45 via-[#a855f7]/40 to-[#6366f1]/45 blur-3xl opacity-85 pointer-events-none" aria-hidden="true" />
-              <Button
-                size="lg"
-                className="w-full px-10 py-6 text-lg font-semibold uppercase tracking-[0.18em] font-['Roboto',sans-serif] bg-gradient-to-r from-[#d946ef] via-[#a855f7] to-[#6366f1] text-white border border-white/20 shadow-[0_18px_45px_rgba(168,85,247,0.35)] hover:from-[#e879f9] hover:via-[#c084fc] hover:to-[#818cf8] focus-visible:ring-[#e879f9]/70"
-                onClick={handleShareResults}
-                disabled={isSharing}
-              >
-                {isSharing ? "Preparing..." : "Share My Result"}
-              </Button>
-              <div
-                className={`pointer-events-none absolute -top-14 left-1/2 -translate-x-1/2 rounded-full bg-foreground text-background px-4 py-2 text-xs font-semibold shadow-lg ring-1 ring-background/40 transition-opacity duration-300 ${shareCopied ? "opacity-100" : "opacity-0"}`}
-              >
-                Result Copied
-              </div>
-            </div>
-          ) : currentSongStatus?.status === "pending" ? (
-            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-              <SheetTrigger asChild>
+        <div className="fixed bottom-6 inset-x-0 z-40">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="w-full max-w-2xl mx-auto box-border px-4">
+              {isDailyComplete ? (
+                <div className="relative">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#d946ef]/45 via-[#a855f7]/40 to-[#6366f1]/45 blur-3xl opacity-85 pointer-events-none" aria-hidden="true" />
+                  <Button
+                    size="lg"
+                    className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] font-['Roboto',sans-serif] bg-gradient-to-r from-[#d946ef] via-[#a855f7] to-[#6366f1] text-white border border-white/20 shadow-[0_18px_45px_rgba(168,85,247,0.35)] hover:from-[#e879f9] hover:via-[#c084fc] hover:to-[#818cf8] focus-visible:ring-[#e879f9]/70"
+                    onClick={handleShareResults}
+                    disabled={isSharing}
+                  >
+                    {isSharing ? "Preparing..." : "Share My Result"}
+                  </Button>
+                  <div
+                    className={`pointer-events-none absolute -top-14 left-1/2 -translate-x-1/2 rounded-full bg-foreground text-background px-4 py-2 text-xs font-semibold shadow-lg ring-1 ring-background/40 transition-opacity duration-300 ${shareCopied ? "opacity-100" : "opacity-0"}`}
+                  >
+                    Result Copied
+                  </div>
+                </div>
+              ) : currentSongStatus?.status === "pending" ? (
+                <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+                  <SheetTrigger asChild>
+                    <Button
+                      size="lg"
+                      className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
+                      disabled={gameState !== "playing"}
+                    >
+                      Guess Now
+                    </Button>
+                  </SheetTrigger>
+                  <SheetContent
+                    side="bottom"
+                    className="max-h-[80vh] overflow-y-auto rounded-t-3xl"
+                  >
+                    <SheetHeader>
+                      <SheetTitle className="text-lg font-semibold uppercase tracking-[0.3em] text-foreground">
+                        i guess it&apos;s...
+                      </SheetTitle>
+                    </SheetHeader>
+                    <div className="mt-6">
+                      <SongChoices
+                        choices={choices}
+                        selectedSong={selectedSong}
+                        correctSong={
+                          gameState !== "playing" && currentSong ? currentSong.id : null
+                        }
+                        onSelect={requestGuess}
+                        disabled={isPlaying || gameState !== "playing"}
+                        disabledChoiceIds={disabledChoiceIds}
+                        isPlaying={gameState === "playing"}
+                      />
+                    </div>
+                  </SheetContent>
+                </Sheet>
+              ) : (
                 <Button
                   size="lg"
-                  className="w-full max-w-2xl px-10 py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
-                  disabled={gameState !== "playing"}
+                  className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
+                  onClick={nextRound}
+                  disabled={!hasNextSong}
                 >
-                  Guess Now
+                  {hasNextSong ? "Next Song" : "All Songs Complete"}
                 </Button>
-              </SheetTrigger>
-              <SheetContent
-                side="bottom"
-                className="max-h-[80vh] overflow-y-auto rounded-t-3xl"
-              >
-                <SheetHeader>
-                  <SheetTitle className="text-lg font-semibold uppercase tracking-[0.3em] text-foreground">
-                    i guess it&apos;s...
-                  </SheetTitle>
-                </SheetHeader>
-                <div className="mt-6">
-                  <SongChoices
-                    choices={choices}
-                    selectedSong={selectedSong}
-                    correctSong={
-                      gameState !== "playing" && currentSong ? currentSong.id : null
-                    }
-                    onSelect={requestGuess}
-                    disabled={isPlaying || gameState !== "playing"}
-                    disabledChoiceIds={disabledChoiceIds}
-                  />
-                </div>
-              </SheetContent>
-            </Sheet>
-          ) : (
-            <Button
-              size="lg"
-              className="w-full max-w-2xl px-10 py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
-              onClick={nextRound}
-              disabled={!hasNextSong}
-            >
-              {hasNextSong ? "Next Song" : "All Songs Complete"}
-            </Button>
-          )}
+              )}
+            </div>
+          </div>
         </div>
         <AlertDialog
           open={isConfirmOpen}
@@ -450,7 +456,7 @@ const Index = () => {
               <AlertDialogTitle>Confirm your guess</AlertDialogTitle>
               <AlertDialogDescription>
                 {pendingChoice
-                  ? `Lock in "${pendingChoice.titleChinese ?? pendingChoice.title}" as your answer?`
+                  ? `Lock in "Song Option ${choices.findIndex(c => c.id === pendingChoice.id) + 1}" as your answer?`
                   : "Lock in this selection?"}
               </AlertDialogDescription>
             </AlertDialogHeader>
