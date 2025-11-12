@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-12",
+  "generatedAt": "2025-11-12T03:56:50.377Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Power Ballads That Rocked the Charts",
+  "songs": [
+    {
+      "title": "November Rain",
+      "artist": "Guns N' Roses",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+      "sectionLabel": "Iconic guitar solo and chorus build-up",
+      "startTime": "6:00",
+      "wrongChoices": [
+        {
+          "title": "Every Rose Has Its Thorn",
+          "artist": "Poison"
+        },
+        {
+          "title": "I Don't Want to Miss a Thing",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Alone",
+          "artist": "Heart"
+        },
+        {
+          "title": "Nothing Else Matters",
+          "artist": "Metallica"
+        },
+        {
+          "title": "More Than a Feeling",
+          "artist": "Boston"
+        },
+        {
+          "title": "Love Bites",
+          "artist": "Def Leppard"
+        },
+        {
+          "title": "Heaven",
+          "artist": "Warrant"
+        }
+      ]
+    },
+    {
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+      "sectionLabel": "Build-up to powerful chorus",
+      "startTime": "2:15",
+      "wrongChoices": [
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Name",
+          "artist": "Goo Goo Dolls"
+        },
+        {
+          "title": "Drive",
+          "artist": "Incubus"
+        },
+        {
+          "title": "Black",
+          "artist": "Pearl Jam"
+        },
+        {
+          "title": "Crash Into Me",
+          "artist": "Dave Matthews Band"
+        },
+        {
+          "title": "Wonderwall",
+          "artist": "Oasis"
+        },
+        {
+          "title": "Creep",
+          "artist": "Radiohead"
+        }
+      ]
+    },
+    {
+      "title": "Total Eclipse of the Heart",
+      "artist": "Bonnie Tyler",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lcOxhH8N3Bo",
+      "sectionLabel": "Dramatic chorus climax",
+      "startTime": "1:30",
+      "wrongChoices": [
+        {
+          "title": "Alone",
+          "artist": "Heart"
+        },
+        {
+          "title": "Holding Out for a Hero",
+          "artist": "Bonnie Tyler"
+        },
+        {
+          "title": "I Want to Know What Love Is",
+          "artist": "Foreigner"
+        },
+        {
+          "title": "The Power of Love",
+          "artist": "Jennifer Rush"
+        },
+        {
+          "title": "Time After Time",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Love Is a Battlefield",
+          "artist": "Pat Benatar"
+        },
+        {
+          "title": "Heaven",
+          "artist": "Bryan Adams"
+        }
+      ]
+    },
+    {
+      "title": "With or Without You",
+      "artist": "U2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=XmSdTa9kaiQ",
+      "sectionLabel": "Emotional vocal build-up before chorus",
+      "startTime": "1:25",
+      "wrongChoices": [
+        {
+          "title": "One",
+          "artist": "U2"
+        },
+        {
+          "title": "Where the Streets Have No Name",
+          "artist": "U2"
+        },
+        {
+          "title": "I Still Haven't Found What I'm Looking For",
+          "artist": "U2"
+        },
+        {
+          "title": "In the Air Tonight",
+          "artist": "Phil Collins"
+        },
+        {
+          "title": "Drive",
+          "artist": "Incubus"
+        },
+        {
+          "title": "Don't Cry",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "November Rain",
+          "artist": "Guns N' Roses"
+        }
+      ]
+    },
+    {
+      "title": "Always",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7BmQjZ3kLYg",
+      "sectionLabel": "Powerful chorus hook",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Wanted Dead or Alive",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Bed of Roses",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "I'll Be There for You",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Is This Love",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Open Arms",
+          "artist": "Journey"
+        },
+        {
+          "title": "Faithfully",
+          "artist": "Journey"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#7F0000",
+    "via": "#FF4500",
+    "to": "#FFD700",
+    "angle": "135deg"
+  }
+}
