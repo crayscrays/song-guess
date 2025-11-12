@@ -351,7 +351,7 @@ const Index = () => {
         aria-hidden="true"
       />
       
-      <div className="min-h-screen bg-gradient-bg p-4 md:p-8">
+      <div className="h-screen overflow-hidden bg-gradient-bg p-2 md:p-8 flex flex-col">
         {activeFeedback !== null && (
           <div className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center px-4">
             <div className="w-full max-w-xs rounded-3xl bg-destructive/90 px-5 py-5 text-center text-destructive-foreground shadow-[0_16px_48px_rgba(255,0,0,0.3)] backdrop-blur-sm motion-safe:animate-wrong-feedback motion-reduce:animate-none motion-reduce:transition-none">
@@ -366,34 +366,35 @@ const Index = () => {
             </div>
           </div>
         )}
-        <div className="max-w-4xl mx-auto space-y-6 px-4">
+        <div className="max-w-4xl mx-auto flex-1 flex flex-col min-h-0 space-y-2 md:space-y-6 px-2 md:px-4">
           <GameHeader
             currentSongNumber={songNumber}
             totalSongs={totalSongs}
             isDailyComplete={isDailyComplete}
           />
-          <AudioPlayer
-            attempt={attempt}
-            maxAttempts={maxAttempts}
-            clipDuration={clipDuration}
-            onPlay={handlePlayAudio}
-            isPlaying={isPlaying}
-            canPlay={canPlayAudio}
-            theme={theme}
-            themeGradient={themeGradient}
-            songNumber={songNumber}
-            totalSongs={totalSongs}
-            songStatuses={songStatuses}
-            gameState={gameState}
-            onNextSong={nextRound}
-            hasNextSong={hasNextSong}
-            songLink={songLink}
-            onNavigateToSong={viewSong}
-            resultTitle={gameState !== "playing" ? currentSong?.titleChinese ?? currentSong?.title ?? null : null}
-            resultArtist={gameState !== "playing" ? currentSong?.subtitle ?? null : null}
-          />
+          <div className="flex-1 min-h-0 flex flex-col">
+            <AudioPlayer
+              attempt={attempt}
+              maxAttempts={maxAttempts}
+              clipDuration={clipDuration}
+              onPlay={handlePlayAudio}
+              isPlaying={isPlaying}
+              canPlay={canPlayAudio}
+              theme={theme}
+              themeGradient={themeGradient}
+              songNumber={songNumber}
+              totalSongs={totalSongs}
+              songStatuses={songStatuses}
+              gameState={gameState}
+              onNextSong={nextRound}
+              hasNextSong={hasNextSong}
+              songLink={songLink}
+              onNavigateToSong={viewSong}
+              resultTitle={gameState !== "playing" ? currentSong?.titleChinese ?? currentSong?.title ?? null : null}
+              resultArtist={gameState !== "playing" ? currentSong?.subtitle ?? null : null}
+            />
 
-          <GameControls
+            <GameControls
             onNextRound={nextRound}
             onRestart={restart}
             showNextRound={
@@ -403,17 +404,18 @@ const Index = () => {
             nextLabel="Next Song"
             restartLabel={isDailyComplete ? "Play Again" : "Try Again"}
           />
+          </div>
 
         </div>
-        <div className="fixed bottom-6 inset-x-0 z-40">
-          <div className="max-w-4xl mx-auto px-4">
-            <div className="w-full max-w-2xl mx-auto box-border px-4">
+        <div className="mt-auto pb-2 md:pb-6 z-40">
+          <div className="max-w-4xl mx-auto px-2 md:px-4">
+            <div className="w-full max-w-2xl mx-auto box-border px-2 md:px-4">
               {isDailyComplete ? (
                 <div className="relative">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#d946ef]/45 via-[#a855f7]/40 to-[#6366f1]/45 blur-3xl opacity-85 pointer-events-none" aria-hidden="true" />
                   <Button
                     size="lg"
-                    className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] font-['Roboto',sans-serif] bg-gradient-to-r from-[#d946ef] via-[#a855f7] to-[#6366f1] text-white border border-white/20 shadow-[0_18px_45px_rgba(168,85,247,0.35)] hover:from-[#e879f9] hover:via-[#c084fc] hover:to-[#818cf8] focus-visible:ring-[#e879f9]/70"
+                    className="w-full py-4 md:py-6 text-base md:text-lg font-semibold uppercase tracking-[0.18em] font-['Roboto',sans-serif] bg-gradient-to-r from-[#d946ef] via-[#a855f7] to-[#6366f1] text-white border border-white/20 shadow-[0_18px_45px_rgba(168,85,247,0.35)] hover:from-[#e879f9] hover:via-[#c084fc] hover:to-[#818cf8] focus-visible:ring-[#e879f9]/70"
                     onClick={handleShareResults}
                     disabled={isSharing}
                   >
@@ -430,7 +432,7 @@ const Index = () => {
                   <SheetTrigger asChild>
                     <Button
                       size="lg"
-                      className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
+                      className="w-full py-4 md:py-6 text-base md:text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
                       disabled={gameState !== "playing"}
                     >
                       Guess Now
@@ -463,7 +465,7 @@ const Index = () => {
               ) : (
                 <Button
                   size="lg"
-                  className="w-full py-6 text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
+                  className="w-full py-4 md:py-6 text-base md:text-lg font-semibold uppercase tracking-[0.18em] bg-gradient-to-r from-[#5a3cc6] via-[#7c4ce0] to-[#c056f0] text-white border border-white/20 hover:from-[#6a43d0] hover:via-[#8a57ea] hover:to-[#d264f5] focus-visible:ring-[#d8b4fe]/60"
                   onClick={nextRound}
                   disabled={!hasNextSong}
                 >
