@@ -429,7 +429,7 @@ export const AudioPlayer = ({
         </div>
         <div className="border-t border-border bg-muted/30 px-6 py-4">
           <div className="flex flex-col items-center gap-2 text-sm text-foreground">
-            <span className="font-semibold uppercase tracking-[0.2em] text-xs">
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Song {Math.min(songNumber, totalSongs)} of {totalSongs}
             </span>
             <div className="flex gap-1 justify-center">

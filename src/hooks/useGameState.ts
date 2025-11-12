@@ -1,8 +1,7 @@
 import { useState, useCallback, useEffect, useRef, useMemo } from "react";
-import { Song, jayChouSongs } from "@/data/songs";
 import { AudioPlayer } from "@/utils/audioPlayer";
 import { YouTubePlayer } from "@/utils/youtubePlayer";
-import { hashSongId, createHashToSongIdMap } from "@/lib/utils";
+import { hashSongId } from "@/lib/utils";
 
 export type GameState = "playing" | "correct" | "failed";
 
@@ -96,29 +95,6 @@ const getClipDurationForAttempt = (attempt: number): number | null => {
   if (attempt <= 0) return null;
   if (attempt > ATTEMPT_DURATIONS.length) return null;
   return ATTEMPT_DURATIONS[attempt - 1];
-};
-
-const hashFromSeed = (seed: string) =>
-  seed.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-
-const shuffleWithSeed = <T,>(array: T[], seed: number): T[] => {
-  const result = [...array];
-  let currentSeed = seed;
-
-  for (let i = result.length - 1; i > 0; i--) {
-    currentSeed = (currentSeed * 9301 + 49297) % 233280;
-    const j = currentSeed % (i + 1);
-    [result[i], result[j]] = [result[j], result[i]];
-  }
-
-  return result;
-};
-
-const getFallbackSongsForToday = (dateKey: string): GameSongWithOriginalId[] => {
-  const seed = hashFromSeed(dateKey);
-  const fallbackSongs = createFallbackGameSongs(dateKey);
-  const shuffled = shuffleWithSeed(fallbackSongs, seed);
-  return shuffled.slice(0, DAILY_SONG_COUNT);
 };
 
 const formatThemeLabel = (date: Date) => {
@@ -228,28 +204,6 @@ const convertPlaylistSongToGameSong = (
   };
 };
 
-const createFallbackGameSongs = (dateKey: string): GameSongWithOriginalId[] => {
-  return jayChouSongs.map((song) => {
-    const originalId = `jay-${song.id}`;
-    const hashedId = hashSongId(originalId, dateKey);
-    return {
-      id: hashedId,
-      originalId,
-      title: song.title,
-      titleChinese: song.titleChinese,
-      subtitle: song.titleChinese,
-      youtubeId: song.youtubeId ?? null,
-      youtubeUrl: song.youtubeId
-        ? `https://www.youtube.com/watch?v=${song.youtubeId}`
-        : null,
-      startTimeSeconds:
-        typeof song.startTime === "number" && !Number.isNaN(song.startTime)
-          ? song.startTime
-          : null,
-      sectionLabel: undefined,
-    };
-  });
-};
 
 const buildChoicesForSong = (
   song: GameSongWithOriginalId,
@@ -304,6 +258,7 @@ export const useGameState = () => {
     new Set()
   );
   const [lastFeedback, setLastFeedback] = useState<GameFeedback>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [results, setResults] = useState<GameResult[]>(() => {
     if (typeof window === "undefined") {
       return [];
@@ -591,8 +546,14 @@ export const useGameState = () => {
     }
 
     if (songsWithOriginalId.length === 0) {
-      songsWithOriginalId = getFallbackSongsForToday(dateKey);
+      setLoadError("No songs available for today. Please check the playlist configuration.");
+      setDailySongs([]);
+      setCurrentSong(null);
+      setChoices([]);
+      return;
     }
+
+    setLoadError(null);
 
     // Build reverse map for converting hashed IDs back to original IDs
     hashToOriginalIdRef.current.clear();
@@ -906,5 +867,6 @@ export const useGameState = () => {
     themeGradient,
     disabledChoiceIds,
     lastFeedback,
+    loadError,
   };
 };

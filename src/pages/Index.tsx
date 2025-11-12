@@ -51,6 +51,7 @@ const Index = () => {
     disabledChoiceIds,
     lastFeedback,
     results,
+    loadError,
   } = useGameState();
 
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -298,6 +299,26 @@ const Index = () => {
     setIsSheetOpen(false);
   };
 
+  // Show error screen if there's a load error
+  if (loadError) {
+    return (
+      <div className="min-h-screen bg-gradient-bg p-4 md:p-8 flex items-center justify-center">
+        <div className="max-w-md w-full mx-auto text-center space-y-6 px-4">
+          <div className="rounded-3xl bg-destructive/10 border border-destructive/20 p-8 backdrop-blur-sm">
+            <h1 className="text-2xl font-bold text-destructive mb-4">⚠️ Error Loading Songs</h1>
+            <p className="text-foreground/80 mb-6">{loadError}</p>
+            <Button
+              onClick={restart}
+              className="rounded-full px-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 border-0"
+            >
+              Try Again
+            </Button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Don't render until we have a current song
   if (!currentSong) {
     return null;
@@ -456,7 +477,7 @@ const Index = () => {
               <AlertDialogTitle>Confirm your guess</AlertDialogTitle>
               <AlertDialogDescription>
                 {pendingChoice
-                  ? `Lock in "Song Option ${choices.findIndex(c => c.id === pendingChoice.id) + 1}" as your answer?`
+                  ? `Lock in "${pendingChoice.titleChinese ?? pendingChoice.title}${pendingChoice.subtitle ? ` by ${pendingChoice.subtitle}` : ''}" as your answer?`
                   : "Lock in this selection?"}
               </AlertDialogDescription>
             </AlertDialogHeader>
@@ -464,7 +485,7 @@ const Index = () => {
               <AlertDialogCancel onClick={closeConfirm} className="rounded-full px-6">
                 Cancel
               </AlertDialogCancel>
-              <AlertDialogAction onClick={confirmGuess} className="rounded-full px-6">
+              <AlertDialogAction onClick={confirmGuess} className="rounded-full px-6 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-white hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 border-0">
                 Confirm
               </AlertDialogAction>
             </AlertDialogFooter>
