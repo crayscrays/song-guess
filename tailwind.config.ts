@@ -79,10 +79,32 @@ export default {
             height: "0",
           },
         },
+        "wrong-feedback-shake": {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translateX(-12px)",
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "translateX(12px)",
+          },
+        },
+        "wrong-feedback-fade": {
+          "0%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translateY(-10px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "wrong-feedback": "wrong-feedback-shake 0.45s cubic-bezier(0.36,0.07,0.19,0.97) both, wrong-feedback-fade 0.35s ease-in forwards 1.8s",
       },
     },
   },

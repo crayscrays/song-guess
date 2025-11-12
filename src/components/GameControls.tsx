@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { RotateCcw, Play } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 
 interface GameControlsProps {
   onNextRound: () => void;
   onRestart: () => void;
   showNextRound: boolean;
   showRestart: boolean;
+  nextLabel?: string;
+  restartLabel?: string;
 }
 
 export const GameControls = ({
@@ -13,30 +15,23 @@ export const GameControls = ({
   onRestart,
   showNextRound,
   showRestart,
+  nextLabel,
+  restartLabel,
 }: GameControlsProps) => {
-  if (!showNextRound && !showRestart) return null;
+  if (!showRestart) return null;
+
+  const restartText = restartLabel ?? "Try Again";
 
   return (
-    <div className="w-full max-w-2xl mx-auto flex gap-4">
-      {showNextRound && (
-        <Button
-          onClick={onNextRound}
-          className="flex-1 h-12 bg-gradient-primary hover:opacity-90 gap-2"
-        >
-          <Play className="w-4 h-4" />
-          Next Round
-        </Button>
-      )}
-      {showRestart && (
-        <Button
-          onClick={onRestart}
-          variant="outline"
-          className="flex-1 h-12 gap-2"
-        >
-          <RotateCcw className="w-4 h-4" />
-          Try Again
-        </Button>
-      )}
+    <div className="w-full max-w-2xl mx-auto flex justify-center">
+      <Button
+        onClick={onRestart}
+        variant="outline"
+        className="flex-1 h-12 gap-2 max-w-xs"
+      >
+        <RotateCcw className="w-4 h-4" />
+        {restartText}
+      </Button>
     </div>
   );
 };

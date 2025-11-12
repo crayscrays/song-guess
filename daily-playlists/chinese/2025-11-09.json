@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-11",
+  "generatedAt": "2025-11-11T14:38:37.303Z",
+  "model": "gpt-4.1-mini",
+  "variant": "chinese",
+  "theme": "Golden Mandarin Pop Hits",
+  "songs": [
+    {
+      "title": "小幸运",
+      "artist": "田馥甄",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6SmGh7G9Wn0",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "至少还有你",
+          "artist": "S.H.E"
+        },
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "童话镇",
+          "artist": "陈一发儿"
+        },
+        {
+          "title": "爱情转移",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "倒带",
+          "artist": "蔡依林"
+        },
+        {
+          "title": "我怀念的",
+          "artist": "孙燕姿"
+        }
+      ]
+    },
+    {
+      "title": "浮夸",
+      "artist": "陈奕迅",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9lbWZb3gD5M",
+      "sectionLabel": "Powerful Verse",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "红玫瑰",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "好久不见",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "阴天快乐",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "K歌之王",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "爱情呼叫转移",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "兄妹",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "最佳损友",
+          "artist": "陈奕迅"
+        }
+      ]
+    },
+    {
+      "title": "那些花儿",
+      "artist": "朴树",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JQf2RTw4w7k",
+      "sectionLabel": "Nostalgic Chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "平凡之路",
+          "artist": "朴树"
+        },
+        {
+          "title": "生如夏花",
+          "artist": "朴树"
+        },
+        {
+          "title": "白桦林",
+          "artist": "朴树"
+        },
+        {
+          "title": "New Boy",
+          "artist": "朴树"
+        },
+        {
+          "title": "旅途",
+          "artist": "朴树"
+        },
+        {
+          "title": "Colorful Days",
+          "artist": "朴树"
+        },
+        {
+          "title": "下个路口见",
+          "artist": "朴树"
+        }
+      ]
+    },
+    {
+      "title": "月亮代表我的心",
+      "artist": "邓丽君",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0du1Vsd6XtM",
+      "sectionLabel": "Classic Chorus",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "甜蜜蜜",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "小城故事",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "我只在乎你",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "何日君再来",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "夜来香",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "但愿人长久",
+          "artist": "邓丽君"
+        },
+        {
+          "title": "爱人",
+          "artist": "邓丽君"
+        }
+      ]
+    },
+    {
+      "title": "青花瓷",
+      "artist": "周杰伦",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9v5v6jTu2X8",
+      "sectionLabel": "Instrumental Bridge",
+      "startTime": "1:45",
+      "wrongChoices": [
+        {
+          "title": "稻香",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "东风破",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "听妈妈的话",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "菊花台",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "简单爱",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "双截棍",
+          "artist": "周杰伦"
+        },
+        {
+          "title": "夜曲",
+          "artist": "周杰伦"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6B6B",
+    "via": "#FFD93D",
+    "to": "#6BCB77",
+    "angle": "135deg"
+  }
+}

@@ -12,6 +12,10 @@ export class YouTubePlayer {
   private readyPromise: Promise<void>;
   private containerId: string;
   private currentVideoId: string | null = null;
+  private playerReadyPromise: Promise<void> | null = null;
+  private resolvePlayerReady: (() => void) | null = null;
+  private pendingCueResolve: (() => void) | null = null;
+  private pendingCueReject: ((error: unknown) => void) | null = null;
 
   constructor(containerId: string) {
     this.containerId = containerId;
@@ -51,56 +55,107 @@ export class YouTubePlayer {
     });
   }
 
+  private async ensurePlayer(videoId: string): Promise<void> {
+    await this.readyPromise;
+
+    if (this.player) {
+      return;
+    }
+
+    this.playerReadyPromise = new Promise<void>((resolve) => {
+      this.resolvePlayerReady = resolve;
+    });
+
+    this.player = new window.YT.Player(this.containerId, {
+      height: '0',
+      width: '0',
+      videoId,
+      playerVars: {
+        autoplay: 0,
+        controls: 0,
+        disablekb: 1,
+        modestbranding: 1,
+        playsinline: 1,
+      },
+      events: {
+        onReady: () => {
+          console.log('YouTubePlayer: Player ready event fired');
+          this.currentVideoId = videoId;
+          this.resolvePlayerReady?.();
+          this.resolvePlayerReady = null;
+        },
+        onError: (event: any) => {
+          console.error('YouTubePlayer: Player error:', event.data);
+          if (this.pendingCueReject) {
+            this.pendingCueReject(new Error(`YouTube player error: ${event.data}`));
+            this.resetPendingCue();
+          }
+        },
+        onStateChange: (event: any) => {
+          console.log('YouTubePlayer: State changed to:', event.data);
+          if (
+            this.pendingCueResolve &&
+            window.YT &&
+            typeof window.YT.PlayerState !== 'undefined' &&
+            event.data === window.YT.PlayerState.CUED
+          ) {
+            this.pendingCueResolve();
+            this.resetPendingCue();
+          }
+        },
+      },
+    });
+
+    if (this.playerReadyPromise) {
+      await this.playerReadyPromise;
+      this.playerReadyPromise = null;
+    }
+  }
+
+  private resetPendingCue() {
+    this.pendingCueResolve = null;
+    this.pendingCueReject = null;
+  }
+
   async loadVideo(videoId: string): Promise<void> {
     console.log('YouTubePlayer: loadVideo called with:', videoId);
-    
+
+    if (!videoId) {
+      return;
+    }
+
+    await this.ensurePlayer(videoId);
+
     // If we already have this video loaded, skip reloading
-    if (this.currentVideoId === videoId && this.player) {
+    if (this.currentVideoId === videoId) {
       console.log('YouTubePlayer: Video already loaded, skipping');
       return;
     }
 
-    await this.readyPromise;
-    console.log('YouTubePlayer: API ready, creating player');
+    await new Promise<void>((resolve, reject) => {
+      this.pendingCueResolve = () => {
+        this.currentVideoId = videoId;
+        resolve();
+      };
+      this.pendingCueReject = reject;
 
-    return new Promise((resolve, reject) => {
       try {
-        // Destroy existing player if any
-        if (this.player) {
-          console.log('YouTubePlayer: Destroying existing player');
-          this.player.destroy();
-        }
-
-        this.player = new window.YT.Player(this.containerId, {
-          height: '0',
-          width: '0',
-          videoId: videoId,
-          playerVars: {
-            autoplay: 0,
-            controls: 0,
-            disablekb: 1,
-            modestbranding: 1,
-            playsinline: 1,
-          },
-          events: {
-            onReady: (event: any) => {
-              console.log('YouTubePlayer: Player ready event fired');
-              this.currentVideoId = videoId;
-              resolve();
-            },
-            onError: (event: any) => {
-              console.error('YouTubePlayer: Player error:', event.data);
-              reject(new Error(`YouTube player error: ${event.data}`));
-            },
-            onStateChange: (event: any) => {
-              console.log('YouTubePlayer: State changed to:', event.data);
-            }
-          },
-        });
+        console.log('YouTubePlayer: Cueing video', videoId);
+        this.player.cueVideoById(videoId, 0);
       } catch (error) {
-        console.error('YouTubePlayer: Error creating player:', error);
+        console.error('YouTubePlayer: Error cueing video:', error);
+        this.resetPendingCue();
         reject(error);
+        return;
       }
+
+      setTimeout(() => {
+        if (this.pendingCueResolve) {
+          console.log('YouTubePlayer: Cue fallback resolve after timeout');
+          this.pendingCueResolve();
+          this.resetPendingCue();
+        }
+      }, 1500);
     });
   }
 
@@ -139,6 +194,9 @@ export class YouTubePlayer {
       this.player.destroy();
       this.player = null;
       this.currentVideoId = null;
+      this.playerReadyPromise = null;
+      this.resolvePlayerReady = null;
+      this.resetPendingCue();
     }
   }
 }

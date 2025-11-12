@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-11",
+  "generatedAt": "2025-11-11T16:38:40.232Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic Chorus",
+      "startTime": "1:08",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        }
+      ]
+    },
+    {
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xFrGuyw1V8s",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Mamma Mia",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Stayin' Alive",
+          "artist": "Bee Gees"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "I Will Survive",
+          "artist": "Gloria Gaynor"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "I Wanna Dance with Somebody",
+          "artist": "Whitney Houston"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4cH3k9bV1XI",
+      "sectionLabel": "Chorus Sing-Along",
+      "startTime": "1:04",
+      "wrongChoices": [
+        {
+          "title": "Brown Eyed Girl",
+          "artist": "Van Morrison"
+        },
+        {
+          "title": "American Pie",
+          "artist": "Don McLean"
+        },
+        {
+          "title": "Piano Man",
+          "artist": "Billy Joel"
+        },
+        {
+          "title": "Take Me Home, Country Roads",
+          "artist": "John Denver"
+        },
+        {
+          "title": "Build Me Up Buttercup",
+          "artist": "The Foundations"
+        },
+        {
+          "title": "Come On Eileen",
+          "artist": "Dexys Midnight Runners"
+        },
+        {
+          "title": "Under the Boardwalk",
+          "artist": "The Drifters"
+        }
+      ]
+    },
+    {
+      "title": "I Want It That Way",
+      "artist": "Backstreet Boys",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4fndeDfaWCg",
+      "sectionLabel": "Chorus",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Bye Bye Bye",
+          "artist": "N*SYNC"
+        },
+        {
+          "title": "Tearin' Up My Heart",
+          "artist": "N*SYNC"
+        },
+        {
+          "title": "Everybody (Backstreet's Back)",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Genie in a Bottle",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Baby One More Time",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "No Scrubs",
+          "artist": "TLC"
+        },
+        {
+          "title": "Say My Name",
+          "artist": "Destiny's Child"
+        }
+      ]
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic Section",
+      "startTime": "2:20",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Another One Bites the Dust",
+          "artist": "Queen"
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles"
+        },
+        {
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin"
+        },
+        {
+          "title": "Imagine",
+          "artist": "John Lennon"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF4E50",
+    "via": "#F9D423",
+    "to": "#FF4E50",
+    "angle": "135deg"
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-11",
+  "generatedAt": "2025-11-11T16:19:34.827Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Epic Movie Soundtracks That Defined a Generation",
+  "songs": [
+    {
+      "title": "My Heart Will Go On",
+      "artist": "Celine Dion",
+      "youtubeUrl": "https://www.youtube.com/watch?v=WNIPqafd4As",
+      "sectionLabel": "Chorus climax",
+      "startTime": "1:12",
+      "wrongChoices": [
+        {
+          "title": "I Don't Want to Miss a Thing",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Hero",
+          "artist": "Mariah Carey"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Unchained Melody",
+          "artist": "The Righteous Brothers"
+        },
+        {
+          "title": "Everything I Do (I Do It for You)",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "I Will Always Love You",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "Kiss from a Rose",
+          "artist": "Seal"
+        }
+      ]
+    },
+    {
+      "title": "I Don't Want to Miss a Thing",
+      "artist": "Aerosmith",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JkK8g6FMEXE",
+      "sectionLabel": "Powerful chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "My Heart Will Go On",
+          "artist": "Celine Dion"
+        },
+        {
+          "title": "Hero",
+          "artist": "Enrique Iglesias"
+        },
+        {
+          "title": "The Power of Love",
+          "artist": "Jennifer Rush"
+        },
+        {
+          "title": "Nothing's Gonna Stop Us Now",
+          "artist": "Starship"
+        },
+        {
+          "title": "Take My Breath Away",
+          "artist": "Berlin"
+        },
+        {
+          "title": "Wind Beneath My Wings",
+          "artist": "Bette Midler"
+        },
+        {
+          "title": "I Will Always Love You",
+          "artist": "Whitney Houston"
+        }
+      ]
+    },
+    {
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_Yhyp-_hX2s",
+      "sectionLabel": "Opening rap verse hook",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Stronger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "In Da Club",
+          "artist": "50 Cent"
+        },
+        {
+          "title": "Numb/Encore",
+          "artist": "Jay-Z & Linkin Park"
+        },
+        {
+          "title": "Hotline Bling",
+          "artist": "Drake"
+        },
+        {
+          "title": "Empire State of Mind",
+          "artist": "Jay-Z & Alicia Keys"
+        },
+        {
+          "title": "Gold Digger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        }
+      ]
+    },
+    {
+      "title": "Eye of the Tiger",
+      "artist": "Survivor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=btPJPFnesV4",
+      "sectionLabel": "Iconic guitar riff and chorus",
+      "startTime": "0:27",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Living on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        }
+      ]
+    },
+    {
+      "title": "Take My Breath Away",
+      "artist": "Berlin",
+      "youtubeUrl": "https://www.youtube.com/watch?v=x7QYoX4P-6g",
+      "sectionLabel": "Emotional chorus",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Waiting for a Star to Fall",
+          "artist": "Boy Meets Girl"
+        },
+        {
+          "title": "Time After Time",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Nothing's Gonna Stop Us Now",
+          "artist": "Starship"
+        },
+        {
+          "title": "True",
+          "artist": "Spandau Ballet"
+        },
+        {
+          "title": "If You Leave",
+          "artist": "Orchestral Manoeuvres in the Dark"
+        },
+        {
+          "title": "I Want to Know What Love Is",
+          "artist": "Foreigner"
+        },
+        {
+          "title": "I Just Died in Your Arms Tonight",
+          "artist": "Cutting Crew"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#0B3D91",
+    "via": "#5A8DEE",
+    "to": "#A3C1FF",
+    "angle": "to right"
+  }
+}

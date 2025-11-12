@@ -1,13 +1,19 @@
-import { Song } from "@/data/songs";
-import { Button } from "@/components/ui/button";
 import { CheckCircle2, XCircle } from "lucide-react";
 
+interface GameSongOption {
+  id: string;
+  title: string;
+  titleChinese?: string;
+  subtitle?: string;
+}
+
 interface SongChoicesProps {
-  choices: Song[];
+  choices: GameSongOption[];
   selectedSong: string | null;
   correctSong: string | null;
   onSelect: (songId: string) => void;
   disabled: boolean;
+  disabledChoiceIds: Set<string>;
 }
 
 export const SongChoices = ({
@@ -16,14 +22,8 @@ export const SongChoices = ({
   correctSong,
   onSelect,
   disabled,
+  disabledChoiceIds,
 }: SongChoicesProps) => {
-  const getButtonVariant = (songId: string) => {
-    if (correctSong === null) return "outline";
-    if (songId === correctSong) return "default";
-    if (songId === selectedSong && songId !== correctSong) return "destructive";
-    return "outline";
-  };
-
   const getButtonIcon = (songId: string) => {
     if (correctSong === null) return null;
     if (songId === correctSong) return <CheckCircle2 className="w-5 h-5" />;
@@ -37,26 +37,58 @@ export const SongChoices = ({
   }
 
   return (
-    <div className="w-full max-w-2xl mx-auto mb-8">
-      <h2 className="text-lg font-semibold text-foreground mb-4">
-        Which song is playing?
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {choices.map((song) => (
-          <Button
-            key={song.id}
-            variant={getButtonVariant(song.id)}
-            onClick={() => onSelect(song.id)}
-            disabled={disabled || correctSong !== null}
-            className="h-auto py-4 px-6 justify-start gap-3 text-left transition-all hover:scale-[1.02]"
-          >
-            <div className="flex-1">
-              <p className="font-semibold">{song.titleChinese}</p>
-              <p className="text-xs opacity-80">{song.title}</p>
-            </div>
-            {getButtonIcon(song.id)}
-          </Button>
-        ))}
+    <div className="w-full">
+      <div className="divide-y divide-border rounded-xl border border-border bg-card/60">
+        {choices.map((song) => {
+          const isPersistedWrong =
+            disabledChoiceIds.has(song.id) && song.id !== correctSong;
+          const isDisabled =
+            disabled ||
+            correctSong !== null ||
+            disabledChoiceIds.has(song.id);
+          const isIncorrectSelection =
+            (correctSong !== null && selectedSong === song.id && song.id !== correctSong) ||
+            isPersistedWrong;
+
+          return (
+            <button
+              key={song.id}
+              onClick={() => onSelect(song.id)}
+              disabled={isDisabled}
+              className={`w-full px-4 py-3 flex items-center gap-3 text-left transition ${
+                isIncorrectSelection
+                  ? "bg-red-500/10 hover:bg-red-500/10 cursor-not-allowed"
+                  : "hover:bg-muted/70"
+              } ${isDisabled ? "opacity-70 cursor-not-allowed" : ""}`}
+            >
+              <div
+                className={`flex-1 ${
+                  isIncorrectSelection ? "text-red-500" : "text-foreground"
+                }`}
+              >
+                <p className="font-semibold">
+                  {song.titleChinese ?? song.title}
+                </p>
+                {(song.subtitle || song.titleChinese) && (
+                  <p
+                    className={`text-xs ${
+                      isIncorrectSelection ? "text-red-400" : "text-muted-foreground"
+                    }`}
+                  >
+                    {song.subtitle ?? song.title}
+                  </p>
+                )}
+              </div>
+              {isIncorrectSelection ? (
+                <span className="text-lg" role="img" aria-label="Wrong answer">
+                  ❌
+                </span>
+              ) : (
+                getButtonIcon(song.id)
+              )}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

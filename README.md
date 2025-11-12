@@ -71,3 +71,11 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Daily playlist generation
+
+- Set `OPENAI_API_KEY` in your environment before running any playlist scripts.
+- Run `npm install` to pull in the `openai` SDK dependency.
+- Use `npm run generate:daily-playlist` to create language-specific JSON files at `daily-playlists/english/YYYY-MM-DD.json` and `daily-playlists/chinese/YYYY-MM-DD.json`.
+- Each JSON includes the playlist `theme`, a `themeGradient` for UI presentation, five globally recognizable `songs` (with `title`, `artist`, timestamps, YouTube URLs) and a `wrongChoices` array of seven theme-aligned distractors for every song.
+- Add a cron entry like `0 7 * * * cd /Users/craysloh/DEV/jay-chou-tune-trek && OPENAI_API_KEY=... npm run generate:daily-playlist` to refresh the playlist every morning.

@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-11",
+  "generatedAt": "2025-11-11T16:39:50.586Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Pop Hits of the 2010s",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:43",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Opening Verse Vocal",
+      "startTime": "0:32",
+      "wrongChoices": [
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Set Fire to the Rain",
+          "artist": "Adele"
+        },
+        {
+          "title": "Halo",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Love on Top",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Fix You",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "Chasing Cars",
+          "artist": "Snow Patrol"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Pre-Chorus Groove",
+      "startTime": "0:46",
+      "wrongChoices": [
+        {
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Photograph",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Love Yourself",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia"
+        },
+        {
+          "title": "Lean On",
+          "artist": "Major Lazer & DJ Snake ft. MØ"
+        },
+        {
+          "title": "Can't Feel My Face",
+          "artist": "The Weeknd"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Royals",
+          "artist": "Lorde"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:37",
+      "wrongChoices": [
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Love Story",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FFAA33",
+    "angle": "135deg"
+  }
+}

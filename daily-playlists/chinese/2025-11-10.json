@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-11",
+  "generatedAt": "2025-11-11T14:37:14.072Z",
+  "model": "gpt-4.1-mini",
+  "variant": "chinese",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "朋友",
+      "artist": "周华健",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5mY3w1hDq4k",
+      "sectionLabel": "Chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "童话",
+          "artist": "光良"
+        },
+        {
+          "title": "海阔天空",
+          "artist": "Beyond"
+        },
+        {
+          "title": "红日",
+          "artist": "李克勤"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        },
+        {
+          "title": "江南",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "千千阙歌",
+          "artist": "陈慧娴"
+        }
+      ]
+    },
+    {
+      "title": "光辉岁月",
+      "artist": "Beyond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=8iQ1f9o8QWQ",
+      "sectionLabel": "Verse 2",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "喜欢你",
+          "artist": "Beyond"
+        },
+        {
+          "title": "真的爱你",
+          "artist": "Beyond"
+        },
+        {
+          "title": "海阔天空",
+          "artist": "Beyond"
+        },
+        {
+          "title": "爱我别走",
+          "artist": "张震岳"
+        },
+        {
+          "title": "凡人歌",
+          "artist": "李宗盛"
+        },
+        {
+          "title": "朋友",
+          "artist": "周华健"
+        },
+        {
+          "title": "童话",
+          "artist": "光良"
+        }
+      ]
+    },
+    {
+      "title": "童话",
+      "artist": "光良",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Qy1HSrVf2EQ",
+      "sectionLabel": "Chorus",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "江南",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "红日",
+          "artist": "李克勤"
+        },
+        {
+          "title": "光辉岁月",
+          "artist": "Beyond"
+        },
+        {
+          "title": "朋友",
+          "artist": "周华健"
+        },
+        {
+          "title": "千千阙歌",
+          "artist": "陈慧娴"
+        }
+      ]
+    },
+    {
+      "title": "小幸运",
+      "artist": "田馥甄",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Y1d5CjN7S4w",
+      "sectionLabel": "Pre-Chorus",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "江南",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "童话",
+          "artist": "光良"
+        },
+        {
+          "title": "红日",
+          "artist": "李克勤"
+        },
+        {
+          "title": "朋友",
+          "artist": "周华健"
+        },
+        {
+          "title": "光辉岁月",
+          "artist": "Beyond"
+        },
+        {
+          "title": "千千阙歌",
+          "artist": "陈慧娴"
+        }
+      ]
+    },
+    {
+      "title": "千千阙歌",
+      "artist": "陈慧娴",
+      "youtubeUrl": "https://www.youtube.com/watch?v=9NP3b2RrTRo",
+      "sectionLabel": "Chorus",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "喜欢你",
+          "artist": "Beyond"
+        },
+        {
+          "title": "红日",
+          "artist": "李克勤"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "朋友",
+          "artist": "周华健"
+        },
+        {
+          "title": "童话",
+          "artist": "光良"
+        },
+        {
+          "title": "江南",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6B6B",
+    "via": "#FFD93D",
+    "to": "#6BCB77",
+    "angle": "135deg"
+  }
+}

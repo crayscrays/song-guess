@@ -79,3 +79,40 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes audio-visualizer-bounce {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+    opacity: 0.45;
+  }
+  40% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  60% {
+    transform: scaleY(0.75);
+    opacity: 0.7;
+  }
+}
+
+@layer components {
+  .audio-visualizer {
+    @apply flex items-center gap-1 h-12;
+  }
+
+  .audio-visualizer__bar {
+    @apply w-1 rounded-full transition-all;
+    background-image: linear-gradient(
+      180deg,
+      rgba(168, 85, 247, 0.95),
+      rgba(99, 102, 241, 0.95)
+    );
+    opacity: 0.85;
+    height: 100%;
+    transform-origin: center bottom;
+    animation-name: audio-visualizer-bounce;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
