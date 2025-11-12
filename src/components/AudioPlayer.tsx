@@ -266,20 +266,20 @@ export const AudioPlayer = ({
   }, [onPlay]);
 
   return (
-    <div className="w-full max-w-2xl mx-auto mb-1 md:mb-4">
-      <div className="bg-card border border-border rounded-xl md:rounded-2xl overflow-hidden shadow-lg">
-        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-2 py-1 md:px-4 md:py-4 text-foreground">
+    <div className="w-full max-w-2xl mx-auto mb-8">
+      <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
+        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-4 py-4 text-foreground">
           <div className="text-center">
-            <p className="text-[9px] md:text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
+            <p className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Today&apos;s Theme
             </p>
-            <p className={`${themeTitleClass} text-sm md:text-lg`} style={themeGradientStyle}>
+            <p className={themeTitleClass} style={themeGradientStyle}>
               {theme}
             </p>
           </div>
         </div>
         <div
-          className={`flex flex-col items-center gap-2 md:gap-6 px-3 py-3 md:px-6 md:py-6 min-h-[160px] md:min-h-[280px] ${
+          className={`flex flex-col items-center gap-6 px-6 py-6 min-h-[280px] ${
             resultSummary?.variant === "fail"
               ? "bg-rose-950/20"
               : resultSummary?.variant === "mythic"
@@ -292,7 +292,7 @@ export const AudioPlayer = ({
           <div className="flex w-full flex-1 flex-col items-center gap-3 justify-center">
             {gameState === "playing" ? (
               <>
-                <div className="relative w-16 h-16 md:w-28 md:h-28 flex items-center justify-center">
+                <div className="relative w-28 h-28 flex items-center justify-center">
                   {showVisualizer ? (
                     <div
                       className="audio-visualizer"
@@ -315,18 +315,18 @@ export const AudioPlayer = ({
                       onClick={handlePlayClick}
                       disabled={playDisabled}
                       size="lg"
-                      className="relative w-14 h-14 md:w-24 md:h-24 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
+                      className="relative w-24 h-24 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
                     >
                       <span className="absolute -inset-4 rounded-full bg-gradient-to-br from-fuchsia-300/25 via-purple-300/18 to-indigo-300/18 blur-[34px] opacity-40 animate-[pulse_4s_ease-in-out_infinite]" aria-hidden="true" />
                       <span className="absolute inset-0 rounded-full bg-gradient-radial from-white/12 via-transparent to-transparent opacity-45" aria-hidden="true" />
-                      <Play className="w-14 h-14 md:w-24 md:h-24 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
+                      <Play className="w-24 h-24 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
                     </Button>
                   )}
                 </div>
-                <p className="mt-1 md:mt-5 text-[10px] md:text-sm font-semibold text-foreground text-center">
+                <p className="mt-5 text-sm font-semibold text-foreground text-center">
                   Attempt {Math.min(attempt, maxAttempts)} of {maxAttempts}
                 </p>
-                <div className="text-center text-[10px] md:text-xs text-muted-foreground/80 flex items-center gap-1 md:gap-2 justify-center min-h-[1rem] md:min-h-[1.25rem] mt-0">
+                <div className="text-center text-xs text-muted-foreground/80 flex items-center gap-2 justify-center min-h-[1.25rem] mt-0">
                   {clipDuration !== null && (
                     <>
                       <Volume2 className="w-4 h-4" />
@@ -341,10 +341,10 @@ export const AudioPlayer = ({
               <>
                 {resultSummary && (
                   <>
-                    <p className="text-2xl md:text-4xl font-extrabold text-center leading-snug">
-                      <span className="inline-flex items-center gap-2 md:gap-4">
+                    <p className="text-4xl font-extrabold text-center leading-snug">
+                      <span className="inline-flex items-center gap-4">
                         {resultSummary.titleEmoji && (
-                          <span className="text-3xl md:text-5xl drop-shadow-[0_0_10px_rgba(217,70,239,0.35)]">
+                          <span className="text-5xl drop-shadow-[0_0_10px_rgba(217,70,239,0.35)]">
                             {resultSummary.titleEmoji}
                           </span>
                         )}
@@ -366,13 +366,13 @@ export const AudioPlayer = ({
                           {resultSummary.variant === "fail"
                             ? (
                               <>
-                                <span className="text-rose-500 text-xl md:text-2xl leading-none">
+                                <span className="text-rose-500 text-2xl leading-none">
                                   ❌
                                 </span>
-                                <span className="text-2xl md:text-4xl font-extrabold leading-none text-rose-400">
+                                <span className="text-4xl font-extrabold leading-none text-rose-400">
                                   {resultSummary.titleText}
                                 </span>
-                                <span className="text-rose-500 text-xl md:text-2xl leading-none">
+                                <span className="text-rose-500 text-2xl leading-none">
                                   ❌
                                 </span>
                               </>
@@ -382,7 +382,7 @@ export const AudioPlayer = ({
                       </span>
                     </p>
                     <div
-                      className={`inline-flex items-center gap-1 md:gap-2 rounded-full px-2 py-1 md:px-4 md:py-2 text-[10px] md:text-xs font-semibold tracking-[0.2em] ${
+                      className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold tracking-[0.2em] ${
                         resultSummary.variant === "mythic"
                           ? "bg-gradient-to-r from-fuchsia-500/20 via-pink-500/20 to-purple-500/20 text-fuchsia-100 border border-fuchsia-500/30 shadow-[0_0_18px_rgba(217,70,239,0.25)]"
                           : resultSummary.variant === "lightning"
@@ -405,21 +405,21 @@ export const AudioPlayer = ({
           </div>
 
           {gameState !== "playing" && (resultTitle || resultArtist || songLink) && (
-            <div className="w-full rounded-xl md:rounded-2xl px-2 py-2 md:px-4 md:py-3 text-center text-xs md:text-sm space-y-1 md:space-y-2 shadow-md border bg-card/70 border-border text-foreground">
+            <div className="w-full rounded-2xl px-4 py-3 text-center text-sm space-y-2 shadow-md border bg-card/70 border-border text-foreground">
               {resultTitle && (
-                <p className="font-semibold text-sm md:text-base leading-tight">
+                <p className="font-semibold text-base leading-tight">
                   {resultTitle}
                 </p>
               )}
               {resultArtist && (
-                <p className="text-[10px] md:text-sm text-muted-foreground">{resultArtist}</p>
+                <p className="text-muted-foreground">{resultArtist}</p>
               )}
               {songLink && (
                 <a
                   href={songLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] md:text-xs font-semibold text-primary hover:underline"
+                  className="text-xs font-semibold text-primary hover:underline"
                 >
                   Play on YouTube
                 </a>
@@ -427,12 +427,12 @@ export const AudioPlayer = ({
             </div>
           )}
         </div>
-        <div className="border-t border-border bg-muted/30 px-2 py-1 md:px-6 md:py-4">
-          <div className="flex flex-col items-center gap-0.5 md:gap-2 text-[10px] md:text-sm text-foreground">
-            <span className="text-[9px] md:text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
+        <div className="border-t border-border bg-muted/30 px-6 py-4">
+          <div className="flex flex-col items-center gap-2 text-sm text-foreground">
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Song {Math.min(songNumber, totalSongs)} of {totalSongs}
             </span>
-            <div className="flex gap-0.5 md:gap-1 justify-center">
+            <div className="flex gap-1 justify-center">
               {songStatuses.map((entry) => {
                 const clickable =
                   entry.status !== "pending" || entry.isCurrent;
@@ -444,7 +444,7 @@ export const AudioPlayer = ({
                     onClick={() =>
                       clickable ? onNavigateToSong?.(entry.position) : undefined
                     }
-                    className={`relative inline-flex flex-col items-center justify-center text-xl md:text-2xl transition p-0.5 md:p-1 min-w-[36px] min-h-[36px] md:min-w-[44px] md:min-h-[44px] ${
+                    className={`relative inline-flex flex-col items-center justify-center text-2xl transition p-1 min-w-[44px] min-h-[44px] ${
                       clickable ? "cursor-pointer hover:scale-105" : "cursor-default"
                     }`}
                     title={statusToLabel(entry.status, entry.isCurrent)}
