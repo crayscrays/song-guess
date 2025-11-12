@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef, useMemo } from "react";
 import { AudioPlayer } from "@/utils/audioPlayer";
 import { YouTubePlayer } from "@/utils/youtubePlayer";
 import { hashSongId } from "@/lib/utils";
+import { toast } from "@/hooks/use-toast";
 
 export type GameState = "playing" | "correct" | "failed";
 
@@ -113,10 +114,7 @@ const loadLatestPlaylist = (): DailyPlaylist | null => {
       const fileDate = path.match(/(\d{4}-\d{2}-\d{2})\.json$/)?.[1];
       return { ...payload, __date: fileDate };
     })
-    .filter(
-      (playlist): playlist is DailyPlaylist & { __date?: string } =>
-        !!playlist
-    )
+    .filter((playlist) => !!playlist)
     .sort((a, b) => {
       const dateA = a.date ?? a.__date ?? "";
       const dateB = b.date ?? b.__date ?? "";
@@ -698,6 +696,53 @@ export const useGameState = () => {
     startRound(clampedIndex, songsWithOriginalId, newTheme, { persistOrder: true, dateKey });
   }, [results, startRound]);
 
+  // Preload videos when songs are loaded
+  // Preloads current song immediately, then preloads others in sequence
+  useEffect(() => {
+    if (dailySongs.length === 0 || !youtubePlayerRef.current) {
+      return;
+    }
+
+    const preloadVideos = async () => {
+      // First, preload the current song immediately
+      if (currentSong?.youtubeId) {
+        try {
+          await youtubePlayerRef.current.preloadVideo(currentSong.youtubeId);
+          console.log(`Preloaded current song: ${currentSong.title}`);
+        } catch (error) {
+          console.warn('Failed to preload current song:', error);
+        }
+      }
+
+      // Then preload other songs sequentially
+      // YouTube API only allows one video cued at a time, so we do them one by one
+      for (let i = 0; i < dailySongs.length; i++) {
+        const song = dailySongs[i];
+        // Skip if it's the current song (already preloaded)
+        if (song.youtubeId && song.id !== currentSong?.id) {
+          // Delay between preloads to avoid overwhelming the API
+          await new Promise(resolve => setTimeout(resolve, 500));
+          try {
+            await youtubePlayerRef.current.preloadVideo(song.youtubeId);
+            console.log(`Preloaded song ${i + 1}/${dailySongs.length}: ${song.title}`);
+          } catch (error) {
+            console.warn(`Failed to preload song ${i + 1}:`, error);
+          }
+        }
+      }
+      console.log('All songs preloaded');
+    };
+
+    // Start preloading after a short delay to let the player initialize
+    const timeoutId = setTimeout(() => {
+      preloadVideos();
+    }, 1500);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [dailySongs, currentSong]);
+
   useEffect(() => {
     audioPlayerRef.current = new AudioPlayer();
     youtubePlayerRef.current = new YouTubePlayer("youtube-player");
@@ -767,25 +812,125 @@ export const useGameState = () => {
   );
 
   const handlePlayAudio = useCallback(async () => {
-    if (!currentSong || !clipDuration) return;
+    console.log("handlePlayAudio: Called", {
+      hasCurrentSong: !!currentSong,
+      clipDuration,
+      gameState,
+      isPlaying,
+      youtubeId: currentSong?.youtubeId,
+      hasYoutubePlayer: !!youtubePlayerRef.current,
+    });
 
-    if (gameState !== "playing") return;
-    if (isPlaying) return;
+    if (!currentSong || !clipDuration) {
+      console.warn("handlePlayAudio: Missing currentSong or clipDuration");
+      return;
+    }
+
+    if (gameState !== "playing") {
+      console.warn("handlePlayAudio: Game state is not 'playing':", gameState);
+      return;
+    }
+    if (isPlaying) {
+      console.warn("handlePlayAudio: Already playing");
+      return;
+    }
 
     setIsPlaying(true);
     try {
       if (currentSong.youtubeId && youtubePlayerRef.current) {
-        await youtubePlayerRef.current.loadVideo(currentSong.youtubeId);
+        console.log("handlePlayAudio: Loading video:", currentSong.youtubeId);
+        // Ensure video is loaded and ready
+        try {
+          await youtubePlayerRef.current.loadVideo(currentSong.youtubeId);
+          console.log("handlePlayAudio: Video loaded successfully");
+        } catch (loadError: any) {
+          console.error("handlePlayAudio: Error loading video:", loadError);
+          
+          // Handle embedding error (150) - open YouTube directly
+          if (loadError.code === 150 || loadError.code === 101) {
+            console.warn("handlePlayAudio: Video doesn't allow embedding, opening YouTube directly");
+            const youtubeUrl = currentSong.youtubeUrl || `https://www.youtube.com/watch?v=${currentSong.youtubeId}`;
+            const startTime = currentSong.startTimeSeconds ?? 0;
+            const urlWithTime = startTime > 0 ? `${youtubeUrl}&t=${startTime}` : youtubeUrl;
+            
+            // Open YouTube in new tab/window
+            window.open(urlWithTime, '_blank', 'noopener,noreferrer');
+            
+            // Show a toast message to the user
+            toast({
+              title: "Video doesn't allow embedding",
+              description: "Opening YouTube in a new tab. Listen to the clip there and come back to guess!",
+            });
+            
+            setIsPlaying(false);
+            return;
+          }
+          
+          setIsPlaying(false);
+          return;
+        }
+        
         const startTime =
           currentSong.startTimeSeconds ??
           Math.floor(Math.random() * 60) + 30;
-        await youtubePlayerRef.current.playSegment(startTime, clipDuration);
+        
+        console.log("handlePlayAudio: Playing segment", { startTime, clipDuration });
+        // Play segment - this will handle setting isPlaying to false after duration
+        // playSegment now checks player state and retries if needed
+        try {
+          await youtubePlayerRef.current.playSegment(startTime, clipDuration);
+          console.log("handlePlayAudio: Segment played successfully");
+        } catch (playError: any) {
+          console.error("handlePlayAudio: Error playing segment:", playError);
+          
+          // Handle embedding error during playback
+          if (playError.code === 150 || playError.code === 101) {
+            console.warn("handlePlayAudio: Video doesn't allow embedding during playback");
+            const youtubeUrl = currentSong.youtubeUrl || `https://www.youtube.com/watch?v=${currentSong.youtubeId}`;
+            const urlWithTime = startTime > 0 ? `${youtubeUrl}&t=${startTime}` : youtubeUrl;
+            window.open(urlWithTime, '_blank', 'noopener,noreferrer');
+            toast({
+              title: "Video doesn't allow embedding",
+              description: "Opening YouTube in a new tab. Listen to the clip there and come back to guess!",
+            });
+            setIsPlaying(false);
+            return;
+          }
+          
+          // On mobile, sometimes playback fails silently, try once more
+          console.log("handlePlayAudio: Retrying playback...");
+          try {
+            await new Promise(resolve => setTimeout(resolve, 500));
+            await youtubePlayerRef.current.playSegment(startTime, clipDuration);
+            console.log("handlePlayAudio: Retry succeeded");
+          } catch (retryError: any) {
+            console.error("handlePlayAudio: Retry also failed:", retryError);
+            if (retryError.code === 150 || retryError.code === 101) {
+              const youtubeUrl = currentSong.youtubeUrl || `https://www.youtube.com/watch?v=${currentSong.youtubeId}`;
+              const urlWithTime = startTime > 0 ? `${youtubeUrl}&t=${startTime}` : youtubeUrl;
+              window.open(urlWithTime, '_blank', 'noopener,noreferrer');
+              toast({
+                title: "Video doesn't allow embedding",
+                description: "Opening YouTube in a new tab. Listen to the clip there and come back to guess!",
+                variant: "default",
+                duration: 5000,
+              });
+            }
+          }
+        }
+        
+        // Set isPlaying to false after the segment finishes
+        setIsPlaying(false);
       } else if (audioPlayerRef.current) {
+        console.log("handlePlayAudio: Using fallback audio player");
         await audioPlayerRef.current.playTone(clipDuration);
+        setIsPlaying(false);
+      } else {
+        console.error("handlePlayAudio: No player available");
+        setIsPlaying(false);
       }
     } catch (error) {
       console.error("handlePlayAudio: Error playing audio:", error);
-    } finally {
       setIsPlaying(false);
     }
   }, [clipDuration, currentSong, gameState, isPlaying]);

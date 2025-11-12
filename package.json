@@ -9,7 +9,9 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate:daily-playlist": "node scripts/generateDailyPlaylist.js"
+    "generate:daily-playlist": "node scripts/generateDailyPlaylist.js",
+    "generate:chinese-playlist": "node scripts/generateChinesePlaylist.js",
+    "update:playlist-urls": "node scripts/updatePlaylistUrls.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

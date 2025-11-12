@@ -80,6 +80,9 @@ All colors MUST be HSL.
     height: -webkit-fill-available;
     height: calc(var(--vh, 1vh) * 100);
     overflow: hidden;
+    overscroll-behavior: none;
+    position: fixed;
+    width: 100%;
   }
 
   body {
@@ -91,16 +94,23 @@ All colors MUST be HSL.
     position: fixed;
     width: 100%;
     overscroll-behavior: none;
-    touch-action: pan-y;
+    touch-action: none;
   }
 
   #root {
     height: 100%;
     height: -webkit-fill-available;
     height: calc(var(--vh, 1vh) * 100);
-    overflow-y: auto;
-    overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: none;
+  }
+  
+  /* Prevent any scrolling */
+  * {
+    overscroll-behavior: none;
   }
 }
 

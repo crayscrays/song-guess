@@ -268,7 +268,7 @@ export const AudioPlayer = ({
   return (
     <div className="w-full max-w-2xl mx-auto mb-8">
       <div className="bg-card border border-border rounded-2xl overflow-hidden shadow-lg">
-        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-4 py-4 text-foreground">
+        <div className="bg-[#121216]/95 backdrop-blur-sm border-b border-border/60 px-4 py-3 text-foreground">
           <div className="text-center">
             <p className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Today&apos;s Theme
@@ -279,7 +279,7 @@ export const AudioPlayer = ({
           </div>
         </div>
         <div
-          className={`flex flex-col items-center gap-6 px-6 py-6 min-h-[280px] ${
+          className={`flex flex-col items-center gap-4 px-6 py-4 min-h-[220px] ${
             resultSummary?.variant === "fail"
               ? "bg-rose-950/20"
               : resultSummary?.variant === "mythic"
@@ -289,10 +289,10 @@ export const AudioPlayer = ({
                   : ""
           }`}
         >
-          <div className="flex w-full flex-1 flex-col items-center gap-3 justify-center">
+          <div className="flex w-full flex-1 flex-col items-center gap-2 justify-center">
             {gameState === "playing" ? (
               <>
-                <div className="relative w-28 h-28 flex items-center justify-center">
+                <div className="relative w-24 h-24 flex items-center justify-center">
                   {showVisualizer ? (
                     <div
                       className="audio-visualizer"
@@ -315,15 +315,15 @@ export const AudioPlayer = ({
                       onClick={handlePlayClick}
                       disabled={playDisabled}
                       size="lg"
-                      className="relative w-24 h-24 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
+                      className="relative w-20 h-20 rounded-full border border-fuchsia-200/55 bg-[#160c23] hover:bg-[#1e1230] transition-all shadow-[0_14px_40px_rgba(192,132,252,0.28)] disabled:opacity-50"
                     >
                       <span className="absolute -inset-4 rounded-full bg-gradient-to-br from-fuchsia-300/25 via-purple-300/18 to-indigo-300/18 blur-[34px] opacity-40 animate-[pulse_4s_ease-in-out_infinite]" aria-hidden="true" />
                       <span className="absolute inset-0 rounded-full bg-gradient-radial from-white/12 via-transparent to-transparent opacity-45" aria-hidden="true" />
-                      <Play className="w-24 h-24 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
+                      <Play className="w-20 h-20 text-white fill-white drop-shadow-[0_6px_16px_rgba(255,255,255,0.35)]" />
                     </Button>
                   )}
                 </div>
-                <p className="mt-5 text-sm font-semibold text-foreground text-center">
+                <p className="mt-3 text-sm font-semibold text-foreground text-center">
                   Attempt {Math.min(attempt, maxAttempts)} of {maxAttempts}
                 </p>
                 <div className="text-center text-xs text-muted-foreground/80 flex items-center gap-2 justify-center min-h-[1.25rem] mt-0">
@@ -341,10 +341,10 @@ export const AudioPlayer = ({
               <>
                 {resultSummary && (
                   <>
-                    <p className="text-4xl font-extrabold text-center leading-snug">
+                    <p className="text-3xl font-extrabold text-center leading-tight">
                       <span className="inline-flex items-center gap-4">
                         {resultSummary.titleEmoji && (
-                          <span className="text-5xl drop-shadow-[0_0_10px_rgba(217,70,239,0.35)]">
+                          <span className="text-4xl drop-shadow-[0_0_10px_rgba(217,70,239,0.35)]">
                             {resultSummary.titleEmoji}
                           </span>
                         )}
@@ -366,13 +366,13 @@ export const AudioPlayer = ({
                           {resultSummary.variant === "fail"
                             ? (
                               <>
-                                <span className="text-rose-500 text-2xl leading-none">
+                                <span className="text-rose-500 text-xl leading-none">
                                   ❌
                                 </span>
-                                <span className="text-4xl font-extrabold leading-none text-rose-400">
+                                <span className="text-3xl font-extrabold leading-none text-rose-400">
                                   {resultSummary.titleText}
                                 </span>
-                                <span className="text-rose-500 text-2xl leading-none">
+                                <span className="text-rose-500 text-xl leading-none">
                                   ❌
                                 </span>
                               </>
@@ -405,7 +405,7 @@ export const AudioPlayer = ({
           </div>
 
           {gameState !== "playing" && (resultTitle || resultArtist || songLink) && (
-            <div className="w-full rounded-2xl px-4 py-3 text-center text-sm space-y-2 shadow-md border bg-card/70 border-border text-foreground">
+            <div className="w-full rounded-2xl px-4 py-2 text-center text-sm space-y-1 shadow-md border bg-card/70 border-border text-foreground">
               {resultTitle && (
                 <p className="font-semibold text-base leading-tight">
                   {resultTitle}
@@ -427,7 +427,7 @@ export const AudioPlayer = ({
             </div>
           )}
         </div>
-        <div className="border-t border-border bg-muted/30 px-6 py-4">
+        <div className="border-t border-border bg-muted/30 px-6 py-3">
           <div className="flex flex-col items-center gap-2 text-sm text-foreground">
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] opacity-70">
               Song {Math.min(songNumber, totalSongs)} of {totalSongs}

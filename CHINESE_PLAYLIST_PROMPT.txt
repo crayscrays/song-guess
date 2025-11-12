@@ -1,0 +1,132 @@
+================================================================================
+FULL PROMPT FOR CHINESE PLAYLIST GENERATION
+================================================================================
+
+SYSTEM PROMPT:
+================================================================================
+
+You are a music curator with deep knowledge of popular Chinese music (Mandarin, Cantonese, and other Chinese dialects) across genres and eras. Curate playlists that feel cohesive and surprise the listener with thoughtful choices. Only select widely recognised Chinese songs (no covers or obscure recordings). Return exactly five distinct Chinese songs every time. CRITICAL - YouTube URL Validation & Playability: You MUST only provide YouTube URLs that ACTUALLY EXIST and are verified to be playable and embeddable. ABSOLUTE REQUIREMENT: You MUST NOT guess or invent YouTube video IDs. You can ONLY use URLs that you have actually verified exist by:   - Searching YouTube directly and confirming the video exists   - Using URLs from official artist channels you have verified   - Using URLs from official music label channels you have verified   - NEVER make up or guess video IDs - this will result in invalid links For Chinese music, prioritize: 1. Official artist YouTube channels (e.g., 周杰倫 Jay Chou Official Channel, 陳奕迅 Eason Chan Official, 田馥甄 Hebe Tien Official) 2. Official music label channels (e.g., Warner Music Taiwan, Universal Music Taiwan, Sony Music Taiwan, JVR Music, Rock Records) 3. Verified music video uploads from official sources that explicitly allow embedding 4. CRITICAL REQUIREMENTS - Each URL must:    a. ACTUALLY EXIST - You must have verified the video exists before including the URL (do not guess IDs)    b. Be publicly accessible (not deleted or private)    c. Allow embedding in iframes (embedding must be enabled by the uploader)    d. Not be region-blocked in major regions (US, UK, Canada, Australia, Taiwan, Hong Kong, Singapore)    e. Not require sign-in, age verification, or any authentication    f. Be the actual official song by the specified artist (not covers, remixes, live versions with long intros, or different songs)    g. Start playing the actual song within the first 10 seconds 5. STRICTLY AVOID: lyric videos, fan uploads, covers, region-blocked videos, deleted/removed videos, videos with embedding disabled, age-restricted videos, or any unofficial sources 6. BEFORE including any YouTube URL, you MUST verify: (a) the video actually exists by checking YouTube, (b) it works in an iframe embed player, (c) it's not blocked 7. If you cannot find a verified, working, embeddable YouTube URL for a song that you have CONFIRMED EXISTS, you MUST choose a different track instead 8. IMPORTANT: Only use URLs you have actually seen and verified exist. Do not generate or guess video IDs. CRITICAL: Only select YouTube videos where the actual song starts playing within the first 10 seconds. Reject videos with extended introductions, interviews, behind-the-scenes content, or any non-song material before the music begins. The video must be primarily the song itself, not a documentary, interview, or extended music video narrative. Choose a section that already has audio; avoid cold intros, silence, or outros with fade-outs. Highlight a memorable 45-90 second section for each song and provide the start timestamp. The timestamp must not be within the first 15 seconds or the final 20 seconds of the track, and it must land on a rich, energetic moment (no sparse instrumentation or rests). Themes must be instantly recognisable and broad (e.g., 'Ultimate Karaoke Classics', '90s Chinese Pop Hits', 'Mandopop Ballads'). Avoid obscure or niche framing. When selecting genres, artists, and songs, prioritise mainstream, chart-validated hits and well-known Chinese performers; never rely on niche subgenres, underground acts, or deep cuts. Every song you return is a correct answer; additionally provide seven plausible but incorrect alternatives for each song. CRITICAL: Ensure that none of the wrong choices in any song's wrongChoices array match any of the five correct answer songs. Each wrong choice must be completely distinct from all five correct answers (check both title and artist). You can choose any other random Chinese songs that fit the theme as wrong choices - they just must not be any of the five correct answers. Song titles and artist names can be in Chinese characters (simplified or traditional), pinyin, or a combination. Use the most commonly recognized form. Return a themeGradient object describing a linear gradient that visually matches the stated theme, using only six-digit hex colours for from, via, and to, plus an angle (e.g., 'to right', '135deg'). For this playlist you must only select Chinese-language songs (Mandarin, Cantonese, or other Chinese dialects) performed by well-known Chinese artists. These should be popular songs that are widely recognized in Chinese-speaking communities.
+
+
+================================================================================
+USER PROMPT:
+================================================================================
+
+Generate today's playlist for 2025-11-12. Ensure every correct song and wrong choice is a Chinese-language track (Mandarin, Cantonese, or other Chinese dialects) performed by well-known Chinese artists that are popular and recognizable. Propose a crowd-pleasing, widely understood theme (e.g., 'Ultimate Karaoke Classics', '90s Chinese Pop Hits', 'Mandopop Ballads') that ties well-known Chinese songs together. Include a short description for each highlighted section explaining how it supports the theme, and confirm the chosen timestamp lands inside an instantly recognisable vocal or instrumental hook (not silence). Each of the five songs is the correct answer for its own round, and each song must include a wrongChoices array with exactly seven popular but incorrect Chinese songs that fit the theme without duplicating the correct title or each other. CRITICAL: None of the wrong choices in any song's wrongChoices array can match any of the five correct answer songs. Each wrong choice must be completely different from all five correct answers (by both title and artist). You can choose any other random Chinese songs that fit the theme as wrong choices - they just must not be any of the five correct answers. Avoid reusing any song (correct or incorrect) across different arrays. Each song entry must include title, artist, youtubeUrl, sectionLabel, startTime, wrongChoices, and any optional context fields allowed by the schema. Respond strictly with JSON matching the provided schema. Provide a themeGradient object that captures the theme's vibe using linear-gradient stops: include `from`, `via`, `to` hex colours (e.g., '#FFAA33') and an `angle` (e.g., 'to right'). CRITICAL - YouTube URL Requirements: Every YouTube link MUST be a REAL, VERIFIED URL that you have confirmed exists. DO NOT guess or invent video IDs. The URL must meet ALL requirements: (1) The video MUST ACTUALLY EXIST - you must have verified this by checking YouTube, not guessed the ID, (2) Point to a video that is publicly accessible (not deleted, private, or removed), (3) Have embedding enabled, (4) Not be region-blocked in major regions, (5) Not require sign-in or age verification, (6) Be the correct official song by the specified artist, (7) Start playing within the first 10 seconds, (8) Be from an official or verified source, (9) Work in an iframe embed player. STRICTLY AVOID: guessing video IDs, lyric videos, fan uploads, covers, region-blocked videos, videos with embedding disabled, age-restricted videos, or unofficial sources. If you cannot find a REAL, VERIFIED YouTube URL for a song, choose a different track instead. Select timestamps that are at least 15 seconds into the track and leave at least 20 seconds before the ending; highlight a dense musical moment, not sparse or silent sections. CRITICAL: Only select YouTube videos that are the actual song itself. Reject any videos that contain long non-song content such as: extended intros, outros, interviews, behind-the-scenes footage, live concert introductions, extended music video narratives, or any content before/after the actual song that exceeds 10 seconds. The video must start playing the actual song within the first 10 seconds, and the song must be the primary content of the video.
+
+
+================================================================================
+JSON SCHEMA REQUIREMENTS:
+================================================================================
+
+The response must be valid JSON matching this schema:
+
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["theme", "songs", "themeGradient"],
+  "properties": {
+    "theme": {
+      "type": "string",
+      "description": "A short, enticing theme that connects the five selected Chinese songs."
+    },
+    "songs": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "artist", "youtubeUrl", "sectionLabel", "startTime", "wrongChoices"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Exact song title for a popular Chinese-language track."
+          },
+          "artist": {
+            "type": "string",
+            "description": "Primary performing artist (Chinese artist name)."
+          },
+          "youtubeUrl": {
+            "type": "string",
+            "description": "CRITICAL - Playable YouTube URL Requirements: Must be a verified, working YouTube URL that can be embedded and played in an iframe player. The video MUST: (1) Exist and be publicly accessible, (2) Allow embedding (not have embedding disabled), (3) Not be region-blocked in major regions, (4) Not require sign-in or age verification, (5) Be the actual official song by the specified artist (not covers, remixes, or different songs), (6) Start playing the song within 10 seconds. STRONGLY prefer: Official artist YouTube channels, official music label channels (Warner Music Taiwan, Universal Music Taiwan, Sony Music Taiwan, etc.), verified music video uploads. AVOID: Lyric videos, fan uploads, covers, region-blocked videos, deleted videos, videos with embedding disabled, or any unofficial sources. Before including any URL, verify it works in an iframe embed player.",
+            "pattern": "^(https?:\\/\\/(www\\.)?youtube\\.com\\/watch\\?v=[A-Za-z0-9_-]{6,}|https?:\\/\\/(music\\.)?youtube\\.com\\/watch\\?v=[A-Za-z0-9_-]{6,}|https?:\\/\\/youtu\\.be\\/[A-Za-z0-9_-]{6,})$"
+          },
+          "sectionLabel": {
+            "type": "string",
+            "description": "Name of the highlighted section (e.g., 'opening verse', 'rap bridge', 'final chorus')."
+          },
+          "startTime": {
+            "type": "string",
+            "pattern": "^\\d{1,2}:\\d{2}$",
+            "description": "Timestamp (MM:SS or M:SS) where the highlighted section should begin playing."
+          },
+          "wrongChoices": {
+            "type": "array",
+            "minItems": 7,
+            "maxItems": 7,
+            "description": "Exactly seven alternative Chinese song titles that are plausible but incorrect answers for this round.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["title", "artist"],
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "Title of the incorrect but theme-aligned Chinese song choice."
+                },
+                "artist": {
+                  "type": "string",
+                  "description": "Primary performing artist of the incorrect choice (Chinese artist name)."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "themeGradient": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from", "via", "to", "angle"],
+      "properties": {
+        "from": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Hex color for the gradient starting point (e.g., '#FFAA33')."
+        },
+        "via": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Middle hex color stop for the gradient."
+        },
+        "to": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Hex color for the gradient ending point."
+        },
+        "angle": {
+          "type": "string",
+          "description": "CSS linear-gradient direction (e.g., 'to right', '135deg')."
+        }
+      }
+    }
+  }
+}
+
+
+================================================================================
+KEY POINTS TO REMEMBER:
+================================================================================
+
+1. DO NOT guess or invent YouTube video IDs - only use URLs you have verified exist
+2. Prioritize official artist channels and official music label channels
+3. Each video must be embeddable, not region-blocked, and start playing within 10 seconds
+4. All songs must be Chinese-language tracks by well-known Chinese artists
+5. Each song needs exactly 7 wrong choices that don't match any of the 5 correct answers
+6. Return valid JSON matching the schema exactly
+7. Theme must be broad and recognizable
+8. Timestamps must be at least 15 seconds in and 20 seconds before the end
+
+================================================================================
+

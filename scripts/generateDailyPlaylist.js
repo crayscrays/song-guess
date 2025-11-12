@@ -114,6 +114,7 @@ function formatSecondsToTimestamp(totalSeconds) {
   return `${minutes}:${seconds.toString().padStart(2, "0")}`;
 }
 
+
 async function loadExistingThemes(directory) {
   let entries;
   try {
@@ -153,6 +154,7 @@ function buildUserPrompt({ today, bannedThemes, variantInstruction }) {
     "Propose a crowd-pleasing, widely understood theme (e.g., 'Back to the 90s', 'Top EDM Anthems', 'Ultimate Karaoke Classics') that ties globally famous songs together.",
     "Include a short description for each highlighted section explaining how it supports the theme, and confirm the chosen timestamp lands inside an instantly recognisable vocal or instrumental hook (not silence).",
     "Each of the five songs is the correct answer for its own round, and each song must include a wrongChoices array with exactly seven globally popular but incorrect songs that fit the theme without duplicating the correct title or each other.",
+    "CRITICAL: None of the wrong choices in any song's wrongChoices array can match any of the five correct answer songs. Each wrong choice must be completely different from all five correct answers (by both title and artist). You can choose any other random songs that fit the theme as wrong choices - they just must not be any of the five correct answers.",
     "Avoid reusing any song (correct or incorrect) across different arrays.",
     "Each song entry must include title, artist, youtubeUrl, sectionLabel, startTime, wrongChoices, and any optional context fields allowed by the schema.",
     "Respond strictly with JSON matching the provided schema.",
@@ -179,6 +181,9 @@ function buildUserPrompt({ today, bannedThemes, variantInstruction }) {
   );
   promptParts.push(
     "Select timestamps that are at least 15 seconds into the track and leave at least 20 seconds before the ending; highlight a dense musical moment, not sparse or silent sections."
+  );
+  promptParts.push(
+    "CRITICAL: Only select YouTube videos that are the actual song itself. Reject any videos that contain long non-song content such as: extended intros, outros, interviews, behind-the-scenes footage, live concert introductions, extended music video narratives, or any content before/after the actual song that exceeds 10 seconds. The video must start playing the actual song within the first 10 seconds, and the song must be the primary content of the video."
   );
 
   return promptParts.join(" ");
@@ -305,11 +310,13 @@ async function main() {
     "Prefer official music videos or reputable uploads for YouTube links.",
     "If you cannot find a high-quality YouTube link for a song, choose a different track.",
     "Never pick videos that block iframe playback (no VEVO regional blocks, no restricted live streams). Ensure every YouTube link is embed-friendly in standard iframes without requiring sign-in.",
+    "CRITICAL: Only select YouTube videos where the actual song starts playing within the first 10 seconds. Reject videos with extended introductions, interviews, behind-the-scenes content, or any non-song material before the music begins. The video must be primarily the song itself, not a documentary, interview, or extended music video narrative.",
     "Choose a section that already has audio; avoid cold intros, silence, or outros with fade-outs.",
     "Highlight a memorable 45-90 second section for each song and provide the start timestamp. The timestamp must not be within the first 15 seconds or the final 20 seconds of the track, and it must land on a rich, energetic moment (no sparse instrumentation or rests).",
     "Themes must be instantly recognisable and broad (e.g., 'Back to the 90s', 'Top EDM Anthems', 'Sunday Morning Chill'). Avoid obscure or niche framing.",
     "When selecting genres, artists, and songs, prioritise mainstream, chart-validated hits and globally famous performers; never rely on niche subgenres, underground acts, or deep cuts.",
     "Every song you return is a correct answer; additionally provide seven plausible but incorrect alternatives for each song.",
+    "CRITICAL: Ensure that none of the wrong choices in any song's wrongChoices array match any of the five correct answer songs. Each wrong choice must be completely distinct from all five correct answers (check both title and artist). You can choose any other random songs that fit the theme as wrong choices - they just must not be any of the five correct answers.",
     "Ensure all JSON fields are filled in using standard Latin characters.",
     "Return a themeGradient object describing a linear gradient that visually matches the stated theme, using only six-digit hex colours for from, via, and to, plus an angle (e.g., 'to right', '135deg').",
   ].join(" ");

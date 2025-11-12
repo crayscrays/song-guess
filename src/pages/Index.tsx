@@ -3,6 +3,7 @@ import confetti from "canvas-confetti";
 import { GameHeader } from "@/components/GameHeader";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { GameControls } from "@/components/GameControls";
+import { DebugPanel } from "@/components/DebugPanel";
 import { useGameState } from "@/hooks/useGameState";
 import {
   Sheet,
@@ -338,20 +339,24 @@ const Index = () => {
   return (
     <>
       {/* Visually hidden YouTube player container (audio only) */}
+      {/* Note: Must be at least 1px visible for mobile browsers to initialize iframe */}
       <div
         id="youtube-player"
         style={{
-          position: 'absolute',
+          position: 'fixed',
+          top: '-1px',
+          left: '-1px',
           width: '1px',
           height: '1px',
-          opacity: 0,
+          opacity: 0.01,
           pointerEvents: 'none',
           overflow: 'hidden',
+          zIndex: -1,
         }}
         aria-hidden="true"
       />
       
-      <div className="min-h-screen bg-gradient-bg p-4 md:p-8">
+      <div className="h-screen bg-gradient-bg overflow-hidden flex flex-col" style={{ overscrollBehavior: 'none' }}>
         {activeFeedback !== null && (
           <div className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center px-4">
             <div className="w-full max-w-xs rounded-3xl bg-destructive/90 px-5 py-5 text-center text-destructive-foreground shadow-[0_16px_48px_rgba(255,0,0,0.3)] backdrop-blur-sm motion-safe:animate-wrong-feedback motion-reduce:animate-none motion-reduce:transition-none">
@@ -366,46 +371,48 @@ const Index = () => {
             </div>
           </div>
         )}
-        <div className="max-w-4xl mx-auto space-y-6 px-4">
-          <GameHeader
-            currentSongNumber={songNumber}
-            totalSongs={totalSongs}
-            isDailyComplete={isDailyComplete}
-          />
-          <AudioPlayer
-            attempt={attempt}
-            maxAttempts={maxAttempts}
-            clipDuration={clipDuration}
-            onPlay={handlePlayAudio}
-            isPlaying={isPlaying}
-            canPlay={canPlayAudio}
-            theme={theme}
-            themeGradient={themeGradient}
-            songNumber={songNumber}
-            totalSongs={totalSongs}
-            songStatuses={songStatuses}
-            gameState={gameState}
-            onNextSong={nextRound}
-            hasNextSong={hasNextSong}
-            songLink={songLink}
-            onNavigateToSong={viewSong}
-            resultTitle={gameState !== "playing" ? currentSong?.titleChinese ?? currentSong?.title ?? null : null}
-            resultArtist={gameState !== "playing" ? currentSong?.subtitle ?? null : null}
-          />
+        <div className="flex-1 overflow-y-auto overflow-x-hidden p-4 md:p-6 pb-28" style={{ overscrollBehavior: 'none', scrollBehavior: 'smooth' }}>
+          <div className="max-w-4xl mx-auto space-y-6 px-4 min-h-full flex flex-col justify-center items-center">
+            <GameHeader
+              currentSongNumber={songNumber}
+              totalSongs={totalSongs}
+              isDailyComplete={isDailyComplete}
+            />
+            <AudioPlayer
+              attempt={attempt}
+              maxAttempts={maxAttempts}
+              clipDuration={clipDuration}
+              onPlay={handlePlayAudio}
+              isPlaying={isPlaying}
+              canPlay={canPlayAudio}
+              theme={theme}
+              themeGradient={themeGradient}
+              songNumber={songNumber}
+              totalSongs={totalSongs}
+              songStatuses={songStatuses}
+              gameState={gameState}
+              onNextSong={nextRound}
+              hasNextSong={hasNextSong}
+              songLink={songLink}
+              onNavigateToSong={viewSong}
+              resultTitle={gameState !== "playing" ? currentSong?.titleChinese ?? currentSong?.title ?? null : null}
+              resultArtist={gameState !== "playing" ? currentSong?.subtitle ?? null : null}
+            />
 
-          <GameControls
-            onNextRound={nextRound}
-            onRestart={restart}
-            showNextRound={
-              hasNextSong && gameState === "correct"
-            }
-            showRestart={gameState !== "playing" && !hasNextSong && !isDailyComplete}
-            nextLabel="Next Song"
-            restartLabel={isDailyComplete ? "Play Again" : "Try Again"}
-          />
+            <GameControls
+              onNextRound={nextRound}
+              onRestart={restart}
+              showNextRound={
+                hasNextSong && gameState === "correct"
+              }
+              showRestart={gameState !== "playing" && !hasNextSong && !isDailyComplete}
+              nextLabel="Next Song"
+              restartLabel={isDailyComplete ? "Play Again" : "Try Again"}
+            />
 
+          </div>
         </div>
-        <div className="fixed bottom-6 inset-x-0 z-40">
+        <div className="fixed bottom-6 inset-x-0 z-40 flex-shrink-0">
           <div className="max-w-4xl mx-auto px-4">
             <div className="w-full max-w-2xl mx-auto box-border px-4">
               {isDailyComplete ? (
@@ -502,6 +509,7 @@ const Index = () => {
             </AlertDialogFooter>
           </AlertDialogContent>
         </AlertDialog>
+        <DebugPanel />
       </div>
     </>
   );

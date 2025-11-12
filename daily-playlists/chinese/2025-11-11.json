@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-12",
+  "generatedAt": "2025-11-12T11:48:05.889Z",
+  "model": "gpt-4.1-mini",
+  "variant": "chinese",
+  "theme": "Mandopop Love Anthems",
+  "songs": [
+    {
+      "title": "告白气球",
+      "artist": "周杰倫",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6XfIS1eR5z8",
+      "sectionLabel": "chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "你怎么连话都说不清楚",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "不为谁而作的歌",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "勇气",
+          "artist": "梁静茹"
+        },
+        {
+          "title": "好久不见",
+          "artist": "陈奕迅"
+        }
+      ]
+    },
+    {
+      "title": "你怎么连话都说不清楚",
+      "artist": "林俊杰",
+      "youtubeUrl": "https://www.youtube.com/watch?v=J5Q8dK7wR4c",
+      "sectionLabel": "pre-chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "勇气",
+          "artist": "梁静茹"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        },
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "不为谁而作的歌",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "好久不见",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "告白气球",
+          "artist": "周杰倫"
+        }
+      ]
+    },
+    {
+      "title": "小幸运",
+      "artist": "田馥甄",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5v2Y4vD1yqk",
+      "sectionLabel": "chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "勇气",
+          "artist": "梁静茹"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "好久不见",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "告白气球",
+          "artist": "周杰倫"
+        },
+        {
+          "title": "你怎么连话都说不清楚",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "不为谁而作的歌",
+          "artist": "林俊杰"
+        }
+      ]
+    },
+    {
+      "title": "勇气",
+      "artist": "梁静茹",
+      "youtubeUrl": "https://www.youtube.com/watch?v=G9f6p1f0Q-A",
+      "sectionLabel": "chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "不为谁而作的歌",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "好久不见",
+          "artist": "陈奕迅"
+        },
+        {
+          "title": "告白气球",
+          "artist": "周杰倫"
+        },
+        {
+          "title": "你怎么连话都说不清楚",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        }
+      ]
+    },
+    {
+      "title": "好久不见",
+      "artist": "陈奕迅",
+      "youtubeUrl": "https://www.youtube.com/watch?v=G0fXzZzS0J4",
+      "sectionLabel": "chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "突然好想你",
+          "artist": "五月天"
+        },
+        {
+          "title": "告白气球",
+          "artist": "周杰倫"
+        },
+        {
+          "title": "你怎么连话都说不清楚",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "小幸运",
+          "artist": "田馥甄"
+        },
+        {
+          "title": "勇气",
+          "artist": "梁静茹"
+        },
+        {
+          "title": "不为谁而作的歌",
+          "artist": "林俊杰"
+        },
+        {
+          "title": "匆匆那年",
+          "artist": "王菲"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6B6B",
+    "via": "#FFD93D",
+    "to": "#6BCB77",
+    "angle": "135deg"
+  }
+}

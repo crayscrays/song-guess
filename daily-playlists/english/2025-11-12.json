@@ -1,44 +1,81 @@
 {
   "date": "2025-11-12",
-  "generatedAt": "2025-11-12T03:59:51.246Z",
+  "generatedAt": "2025-11-12T15:40:48.582Z",
   "model": "gpt-4.1-mini",
   "variant": "english",
-  "theme": "Feel-Good Pop Hits of the 2000s",
+  "theme": "Iconic Pop Anthems of the 2000s",
   "songs": [
     {
-      "title": "Hey Ya!",
-      "artist": "OutKast",
-      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
       "sectionLabel": "Chorus",
-      "startTime": "0:40",
+      "startTime": "0:45",
       "wrongChoices": [
         {
-          "title": "Toxic",
-          "artist": "Britney Spears"
+          "title": "Complicated",
+          "artist": "Avril Lavigne"
         },
         {
-          "title": "Since U Been Gone",
+          "title": "I'm With You",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Sk8er Boi",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Behind These Hazel Eyes",
           "artist": "Kelly Clarkson"
         },
         {
-          "title": "Crazy In Love",
-          "artist": "Beyoncé"
+          "title": "Breakaway",
+          "artist": "Kelly Clarkson"
         },
         {
           "title": "Hollaback Girl",
           "artist": "Gwen Stefani"
         },
         {
-          "title": "Umbrella",
-          "artist": "Rihanna"
+          "title": "Crazy In Love",
+          "artist": "Beyoncé"
+        }
+      ]
+    },
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Chorus",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Ms. Jackson",
+          "artist": "OutKast"
         },
         {
-          "title": "I Gotta Feeling",
-          "artist": "The Black Eyed Peas"
+          "title": "Gold Digger",
+          "artist": "Kanye West"
         },
         {
-          "title": "Mr. Brightside",
-          "artist": "The Killers"
+          "title": "Lose Yourself",
+          "artist": "Eminem"
+        },
+        {
+          "title": "Hot In Herre",
+          "artist": "Nelly"
+        },
+        {
+          "title": "In Da Club",
+          "artist": "50 Cent"
+        },
+        {
+          "title": "Crazy",
+          "artist": "Gnarls Barkley"
+        },
+        {
+          "title": "Drop It Like It's Hot",
+          "artist": "Snoop Dogg"
         }
       ]
     },
@@ -47,88 +84,14 @@
       "artist": "Britney Spears",
       "youtubeUrl": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
       "sectionLabel": "Chorus",
-      "startTime": "1:00",
+      "startTime": "0:47",
       "wrongChoices": [
         {
-          "title": "Hey Ya!",
-          "artist": "OutKast"
-        },
-        {
-          "title": "Since U Been Gone",
-          "artist": "Kelly Clarkson"
-        },
-        {
-          "title": "Crazy In Love",
-          "artist": "Beyoncé"
-        },
-        {
-          "title": "Hollaback Girl",
-          "artist": "Gwen Stefani"
-        },
-        {
-          "title": "Umbrella",
-          "artist": "Rihanna"
-        },
-        {
-          "title": "I Gotta Feeling",
-          "artist": "The Black Eyed Peas"
-        },
-        {
-          "title": "Mr. Brightside",
-          "artist": "The Killers"
-        }
-      ]
-    },
-    {
-      "title": "Since U Been Gone",
-      "artist": "Kelly Clarkson",
-      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
-      "sectionLabel": "Chorus",
-      "startTime": "1:00",
-      "wrongChoices": [
-        {
-          "title": "Hey Ya!",
-          "artist": "OutKast"
-        },
-        {
-          "title": "Toxic",
+          "title": "Oops!... I Did It Again",
           "artist": "Britney Spears"
         },
         {
-          "title": "Crazy In Love",
-          "artist": "Beyoncé"
-        },
-        {
-          "title": "Hollaback Girl",
-          "artist": "Gwen Stefani"
-        },
-        {
-          "title": "Umbrella",
-          "artist": "Rihanna"
-        },
-        {
-          "title": "I Gotta Feeling",
-          "artist": "The Black Eyed Peas"
-        },
-        {
-          "title": "Mr. Brightside",
-          "artist": "The Killers"
-        }
-      ]
-    },
-    {
-      "title": "Crazy In Love",
-      "artist": "Beyoncé feat. Jay-Z",
-      "youtubeUrl": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
-      "sectionLabel": "Chorus",
-      "startTime": "0:50",
-      "wrongChoices": [
-        {
-          "title": "Hey Ya!",
-          "artist": "OutKast"
-        },
-        {
-          "title": "Toxic",
+          "title": "...Baby One More Time",
           "artist": "Britney Spears"
         },
         {
@@ -136,65 +99,102 @@
           "artist": "Kelly Clarkson"
         },
         {
-          "title": "Hollaback Girl",
-          "artist": "Gwen Stefani"
+          "title": "Dirrty",
+          "artist": "Christina Aguilera"
         },
         {
-          "title": "Umbrella",
-          "artist": "Rihanna"
+          "title": "Genie in a Bottle",
+          "artist": "Christina Aguilera"
         },
         {
-          "title": "I Gotta Feeling",
-          "artist": "The Black Eyed Peas"
+          "title": "Beautiful",
+          "artist": "Christina Aguilera"
         },
         {
-          "title": "Mr. Brightside",
-          "artist": "The Killers"
+          "title": "Hips Don't Lie",
+          "artist": "Shakira"
         }
       ]
     },
     {
-      "title": "I Gotta Feeling",
-      "artist": "The Black Eyed Peas",
-      "youtubeUrl": "https://www.youtube.com/watch?v=uSD4vsh1zDA",
+      "title": "Umbrella",
+      "artist": "Rihanna feat. Jay-Z",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
       "sectionLabel": "Chorus",
-      "startTime": "1:00",
+      "startTime": "0:55",
       "wrongChoices": [
         {
-          "title": "Hey Ya!",
-          "artist": "OutKast"
-        },
-        {
-          "title": "Toxic",
-          "artist": "Britney Spears"
-        },
-        {
-          "title": "Since U Been Gone",
-          "artist": "Kelly Clarkson"
-        },
-        {
-          "title": "Crazy In Love",
-          "artist": "Beyoncé"
-        },
-        {
-          "title": "Hollaback Girl",
-          "artist": "Gwen Stefani"
-        },
-        {
-          "title": "Umbrella",
+          "title": "Don't Stop the Music",
           "artist": "Rihanna"
         },
         {
-          "title": "Mr. Brightside",
+          "title": "Disturbia",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "SOS",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Gold Digger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "Irreplaceable",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Fallin'",
+          "artist": "Alicia Keys"
+        },
+        {
+          "title": "Bleeding Love",
+          "artist": "Leona Lewis"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "Chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Somebody Told Me",
           "artist": "The Killers"
+        },
+        {
+          "title": "When You Were Young",
+          "artist": "The Killers"
+        },
+        {
+          "title": "I Write Sins Not Tragedies",
+          "artist": "Panic! At The Disco"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "Are You Gonna Be My Girl",
+          "artist": "Jet"
+        },
+        {
+          "title": "Use Somebody",
+          "artist": "Kings of Leon"
         }
       ]
     }
   ],
   "themeGradient": {
-    "from": "#FF5F6D",
-    "via": "#FFC371",
-    "to": "#FF9A8B",
+    "from": "#FF4E50",
+    "via": "#F9D423",
+    "to": "#1E3C72",
     "angle": "135deg"
   }
 }

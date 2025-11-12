@@ -18,10 +18,10 @@ export const GameHeader = ({
 
   return (
     <header className="w-full max-w-2xl mx-auto">
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-2">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground">Song Guess</h1>
-          <p className="text-sm text-muted-foreground">{dateStr}</p>
+          <h1 className="text-xl md:text-2xl font-bold text-foreground">Song Guess</h1>
+          <p className="text-xs md:text-sm text-muted-foreground">{dateStr}</p>
         </div>
       </div>
     </header>
