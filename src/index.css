@@ -79,11 +79,14 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     height: 100%;
     overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
 
   #root {
     height: 100%;
     overflow: hidden;
+    width: 100%;
   }
 }
 

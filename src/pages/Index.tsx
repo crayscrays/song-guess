@@ -351,7 +351,7 @@ const Index = () => {
         aria-hidden="true"
       />
       
-      <div className="h-screen max-h-screen overflow-hidden bg-gradient-bg p-2 md:p-8 flex flex-col">
+      <div className="h-screen max-h-screen overflow-hidden bg-gradient-bg flex flex-col">
         {activeFeedback !== null && (
           <div className="pointer-events-none fixed inset-0 z-50 flex items-center justify-center px-4">
             <div className="w-full max-w-xs rounded-3xl bg-destructive/90 px-5 py-5 text-center text-destructive-foreground shadow-[0_16px_48px_rgba(255,0,0,0.3)] backdrop-blur-sm motion-safe:animate-wrong-feedback motion-reduce:animate-none motion-reduce:transition-none">
@@ -366,15 +366,16 @@ const Index = () => {
             </div>
           </div>
         )}
-        <div className="max-w-4xl mx-auto flex-1 flex flex-col min-h-0 max-h-full px-2 md:px-4 overflow-hidden">
-          <GameHeader
-            currentSongNumber={songNumber}
-            totalSongs={totalSongs}
-            isDailyComplete={isDailyComplete}
-          />
-          <div className="flex-1 min-h-0 flex flex-col overflow-y-auto">
-            <div className="space-y-1 md:space-y-4 pb-2">
-            <AudioPlayer
+        <div className="flex-1 min-h-0 flex flex-col overflow-hidden pt-2 md:pt-8 px-2 md:px-8">
+          <div className="max-w-4xl mx-auto w-full flex-1 flex flex-col min-h-0 overflow-hidden">
+            <GameHeader
+              currentSongNumber={songNumber}
+              totalSongs={totalSongs}
+              isDailyComplete={isDailyComplete}
+            />
+            <div className="flex-1 min-h-0 overflow-y-auto pb-20 md:pb-0">
+              <div className="space-y-1 md:space-y-4 pb-2">
+              <AudioPlayer
               attempt={attempt}
               maxAttempts={maxAttempts}
               clipDuration={clipDuration}
@@ -405,11 +406,11 @@ const Index = () => {
             nextLabel="Next Song"
             restartLabel={isDailyComplete ? "Play Again" : "Try Again"}
           />
+              </div>
             </div>
           </div>
-
         </div>
-        <div className="flex-shrink-0 pb-2 md:pb-6 z-40 bg-gradient-bg">
+        <div className="flex-shrink-0 pt-2 pb-2 md:pb-6 z-40 bg-gradient-bg border-t border-border/20 safe-area-inset-bottom">
           <div className="max-w-4xl mx-auto px-2 md:px-4">
             <div className="w-full max-w-2xl mx-auto box-border px-2 md:px-4">
               {isDailyComplete ? (
