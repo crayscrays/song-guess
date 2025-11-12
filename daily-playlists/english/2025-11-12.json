@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-12",
+  "generatedAt": "2025-11-12T03:59:51.246Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Pop Hits of the 2000s",
+  "songs": [
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Crazy In Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+      "sectionLabel": "Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Crazy In Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+      "sectionLabel": "Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Crazy In Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "Crazy In Love",
+      "artist": "Beyoncé feat. Jay-Z",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
+      "sectionLabel": "Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "I Gotta Feeling",
+      "artist": "The Black Eyed Peas",
+      "youtubeUrl": "https://www.youtube.com/watch?v=uSD4vsh1zDA",
+      "sectionLabel": "Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Crazy In Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FF9A8B",
+    "angle": "135deg"
+  }
+}
