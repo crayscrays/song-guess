@@ -27,9 +27,9 @@ export const GameControls = ({
       <Button
         onClick={onRestart}
         variant="outline"
-        className="flex-1 h-12 gap-2 max-w-xs"
+        className="flex-1 h-8 md:h-12 gap-1 md:gap-2 max-w-xs text-xs md:text-sm"
       >
-        <RotateCcw className="w-4 h-4" />
+        <RotateCcw className="w-3 h-3 md:w-4 md:h-4" />
         {restartText}
       </Button>
     </div>
