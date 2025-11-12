@@ -75,8 +75,32 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  html {
+    height: 100%;
+    height: -webkit-fill-available;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
+  }
+
   body {
     @apply bg-background text-foreground;
+    height: 100%;
+    height: -webkit-fill-available;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    overscroll-behavior: none;
+    touch-action: pan-y;
+  }
+
+  #root {
+    height: 100%;
+    height: -webkit-fill-available;
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
