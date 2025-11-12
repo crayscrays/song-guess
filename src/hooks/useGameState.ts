@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef, useMemo } from "react";
 import { Song, jayChouSongs } from "@/data/songs";
 import { AudioPlayer } from "@/utils/audioPlayer";
 import { YouTubePlayer } from "@/utils/youtubePlayer";
+import { hashSongId, createHashToSongIdMap } from "@/lib/utils";
 
 export type GameState = "playing" | "correct" | "failed";
 
@@ -78,6 +79,11 @@ interface StoredProgress {
   currentOrder?: number;
 }
 
+// Internal interface to track original IDs alongside hashed ones
+interface GameSongWithOriginalId extends GameSong {
+  originalId: string;
+}
+
 const playlistModules = import.meta.glob<DailyPlaylist>(
   "../../daily-playlists/english/*.json",
   {
@@ -108,11 +114,10 @@ const shuffleWithSeed = <T,>(array: T[], seed: number): T[] => {
   return result;
 };
 
-const getFallbackSongsForToday = (): GameSong[] => {
-  const today = new Date();
-  const dateKey = today.toISOString().slice(0, 10);
+const getFallbackSongsForToday = (dateKey: string): GameSongWithOriginalId[] => {
   const seed = hashFromSeed(dateKey);
-  const shuffled = shuffleWithSeed(fallbackGameSongs, seed);
+  const fallbackSongs = createFallbackGameSongs(dateKey);
+  const shuffled = shuffleWithSeed(fallbackSongs, seed);
   return shuffled.slice(0, DAILY_SONG_COUNT);
 };
 
@@ -192,16 +197,21 @@ const extractYouTubeId = (url: string | undefined | null): string | null => {
 
 const convertPlaylistSongToGameSong = (
   song: DailyPlaylistSongMeta,
-  index: number
-): GameSong | null => {
+  index: number,
+  dateKey: string
+): GameSongWithOriginalId | null => {
   const youtubeId = extractYouTubeId(song.youtubeUrl);
   if (!youtubeId) return null;
 
   const title = song.title?.trim();
   if (!title) return null;
 
+  const originalId = `playlist-${index + 1}`;
+  const hashedId = hashSongId(originalId, dateKey);
+
   return {
-    id: `playlist-${index + 1}`,
+    id: hashedId,
+    originalId,
     title,
     subtitle: song.artist?.trim(),
     youtubeId,
@@ -218,42 +228,55 @@ const convertPlaylistSongToGameSong = (
   };
 };
 
-const fallbackGameSongs: GameSong[] = jayChouSongs.map((song) => ({
-  id: `jay-${song.id}`,
-  title: song.title,
-  titleChinese: song.titleChinese,
-  subtitle: song.titleChinese,
-  youtubeId: song.youtubeId ?? null,
-  youtubeUrl: song.youtubeId
-    ? `https://www.youtube.com/watch?v=${song.youtubeId}`
-    : null,
-  startTimeSeconds:
-    typeof song.startTime === "number" && !Number.isNaN(song.startTime)
-      ? song.startTime
-      : null,
-  sectionLabel: undefined,
-}));
+const createFallbackGameSongs = (dateKey: string): GameSongWithOriginalId[] => {
+  return jayChouSongs.map((song) => {
+    const originalId = `jay-${song.id}`;
+    const hashedId = hashSongId(originalId, dateKey);
+    return {
+      id: hashedId,
+      originalId,
+      title: song.title,
+      titleChinese: song.titleChinese,
+      subtitle: song.titleChinese,
+      youtubeId: song.youtubeId ?? null,
+      youtubeUrl: song.youtubeId
+        ? `https://www.youtube.com/watch?v=${song.youtubeId}`
+        : null,
+      startTimeSeconds:
+        typeof song.startTime === "number" && !Number.isNaN(song.startTime)
+          ? song.startTime
+          : null,
+      sectionLabel: undefined,
+    };
+  });
+};
 
 const buildChoicesForSong = (
-  song: GameSong,
-  songsPool: GameSong[]
-): GameSong[] => {
+  song: GameSongWithOriginalId,
+  songsPool: GameSongWithOriginalId[],
+  dateKey: string
+): GameSongWithOriginalId[] => {
   const wrongChoices =
     song.wrongChoices && song.wrongChoices.length > 0
       ? song.wrongChoices
       : undefined;
 
   if (wrongChoices) {
-    const mappedWrong = wrongChoices.map((choice, index) => ({
-      id: `wrong-${song.id}-${index}`,
-      title: choice.title,
-      subtitle: choice.artist,
-      youtubeId: null,
-      youtubeUrl: null,
-      startTimeSeconds: null,
-      sectionLabel: undefined,
-      wrongChoices: [],
-    }));
+    const mappedWrong = wrongChoices.map((choice, index) => {
+      const originalWrongId = `wrong-${song.originalId}-${index}`;
+      const hashedWrongId = hashSongId(originalWrongId, dateKey);
+      return {
+        id: hashedWrongId,
+        originalId: originalWrongId,
+        title: choice.title,
+        subtitle: choice.artist,
+        youtubeId: null,
+        youtubeUrl: null,
+        startTimeSeconds: null,
+        sectionLabel: undefined,
+        wrongChoices: [],
+      };
+    });
 
     const selection = [song, ...mappedWrong].slice(0, 8);
     return selection.sort(() => Math.random() - 0.5);
@@ -308,6 +331,10 @@ export const useGameState = () => {
   });
   const lastCompletedRef = useRef<{ order: number; timestamp: number } | null>(null);
   const [progressDateKey, setProgressDateKey] = useState<string | null>(null);
+  // Map to convert hashed IDs back to original IDs for results storage
+  const hashToOriginalIdRef = useRef<Map<string, string>>(new Map());
+  // Internal storage of songs with original IDs
+  const dailySongsWithOriginalIdRef = useRef<GameSongWithOriginalId[]>([]);
   const persistProgress = useCallback(() => {
     if (!progressDateKey || typeof window === "undefined") {
       return;
@@ -341,11 +368,13 @@ export const useGameState = () => {
       const durationSeconds = Number((durationMs / 1000).toFixed(2));
 
       const displayTitle = currentSong.titleChinese ?? currentSong.title;
+      // Use original ID for results storage, not the hashed one
+      const originalSongId = hashToOriginalIdRef.current.get(currentSong.id) ?? currentSong.id;
 
       const result: GameResult = {
         theme,
         order: currentSongIndex + 1,
-        songId: currentSong.id,
+        songId: originalSongId,
         songTitle: displayTitle,
         status,
         timeSeconds: durationSeconds,
@@ -396,11 +425,12 @@ export const useGameState = () => {
   const startRound = useCallback(
     (
       index: number,
-      pool: GameSong[],
+      pool: GameSongWithOriginalId[],
       explicitTheme?: string,
-      options?: { persistOrder?: boolean }
+      options?: { persistOrder?: boolean; dateKey?: string }
     ) => {
       const shouldPersistOrder = options?.persistOrder ?? true;
+      const dateKey = options?.dateKey ?? progressDateKey ?? new Date().toISOString().slice(0, 10);
       const song = pool[index] ?? null;
       if (!song) {
         roundStartTimeRef.current = null;
@@ -419,6 +449,7 @@ export const useGameState = () => {
 
       const now =
         typeof performance !== "undefined" ? performance.now() : Date.now();
+      // Use hashed ID for progress lookup
       const storedAttempt = progressRef.current.attempts[song.id];
       const attemptValue =
         storedAttempt && storedAttempt >= 1
@@ -436,9 +467,36 @@ export const useGameState = () => {
           (!themeForRound || entry.theme === themeForRound)
       );
 
+      // Convert to GameSong (without originalId) for component consumption
+      const songForState: GameSong = {
+        id: song.id,
+        title: song.title,
+        titleChinese: song.titleChinese,
+        subtitle: song.subtitle,
+        youtubeId: song.youtubeId,
+        youtubeUrl: song.youtubeUrl,
+        startTimeSeconds: song.startTimeSeconds,
+        sectionLabel: song.sectionLabel,
+        wrongChoices: song.wrongChoices,
+      };
+
+      const choicesForRound = buildChoicesForSong(song, pool, dateKey);
+      // Convert choices to GameSong format (without originalId)
+      const choicesForState: GameSong[] = choicesForRound.map(choice => ({
+        id: choice.id,
+        title: choice.title,
+        titleChinese: choice.titleChinese,
+        subtitle: choice.subtitle,
+        youtubeId: choice.youtubeId,
+        youtubeUrl: choice.youtubeUrl,
+        startTimeSeconds: choice.startTimeSeconds,
+        sectionLabel: choice.sectionLabel,
+        wrongChoices: choice.wrongChoices,
+      }));
+
       setCurrentSongIndex(index);
-      setCurrentSong(song);
-      setChoices(buildChoicesForSong(song, pool));
+      setCurrentSong(songForState);
+      setChoices(choicesForState);
       setAttempt(attemptValue);
       setDisabledChoiceIds(disabledSet);
       setLastFeedback(null);
@@ -463,7 +521,7 @@ export const useGameState = () => {
         persistProgress();
       }
     },
-    [persistProgress, results, theme]
+    [persistProgress, results, theme, progressDateKey]
   );
 
   const loadDailySongs = useCallback(() => {
@@ -523,18 +581,115 @@ export const useGameState = () => {
       };
     }
 
-    let songs: GameSong[] = [];
+    let songsWithOriginalId: GameSongWithOriginalId[] = [];
 
     if (playlist?.songs && playlist.songs.length > 0) {
-      songs = playlist.songs
-        .map((song, index) => convertPlaylistSongToGameSong(song, index))
-        .filter((song): song is GameSong => song !== null)
+      songsWithOriginalId = playlist.songs
+        .map((song, index) => convertPlaylistSongToGameSong(song, index, dateKey))
+        .filter((song): song is GameSongWithOriginalId => song !== null)
         .slice(0, DAILY_SONG_COUNT);
     }
 
-    if (songs.length === 0) {
-      songs = getFallbackSongsForToday();
+    if (songsWithOriginalId.length === 0) {
+      songsWithOriginalId = getFallbackSongsForToday(dateKey);
     }
+
+    // Build reverse map for converting hashed IDs back to original IDs
+    hashToOriginalIdRef.current.clear();
+    songsWithOriginalId.forEach(song => {
+      hashToOriginalIdRef.current.set(song.id, song.originalId);
+    });
+
+    // Also hash wrong choice IDs and add to map
+    songsWithOriginalId.forEach(song => {
+      if (song.wrongChoices && song.wrongChoices.length > 0) {
+        song.wrongChoices.forEach((_, index) => {
+          const originalWrongId = `wrong-${song.originalId}-${index}`;
+          const hashedWrongId = hashSongId(originalWrongId, dateKey);
+          hashToOriginalIdRef.current.set(hashedWrongId, originalWrongId);
+        });
+      }
+    });
+
+    // Migrate progress from old (unhashed) IDs to new (hashed) IDs if needed
+    const oldProgress = { ...progressRef.current };
+    const migratedAttempts: Record<string, number> = {};
+    const migratedDisabledChoices: Record<string, string[]> = {};
+
+    songsWithOriginalId.forEach(song => {
+      const oldId = song.originalId;
+      const newId = song.id;
+      
+      // Migrate attempts
+      if (oldProgress.attempts[oldId] !== undefined) {
+        migratedAttempts[newId] = oldProgress.attempts[oldId];
+      }
+      
+      // Migrate disabled choices
+      if (oldProgress.disabledChoices[oldId]) {
+        const oldDisabled = oldProgress.disabledChoices[oldId];
+        // Try to find corresponding hashed IDs for disabled choices
+        const newDisabled: string[] = [];
+        oldDisabled.forEach(oldDisabledId => {
+          // Check if it's a wrong choice ID
+          const wrongChoiceIndex = songsWithOriginalId.findIndex(s => {
+            if (s.wrongChoices) {
+              return s.wrongChoices.some((_, idx) => {
+                const wrongId = `wrong-${s.originalId}-${idx}`;
+                return wrongId === oldDisabledId;
+              });
+            }
+            return false;
+          });
+          if (wrongChoiceIndex !== -1) {
+            const songWithWrong = songsWithOriginalId[wrongChoiceIndex];
+            const wrongIdx = songWithWrong.wrongChoices?.findIndex((_, idx) => {
+              const wrongId = `wrong-${songWithWrong.originalId}-${idx}`;
+              return wrongId === oldDisabledId;
+            });
+            if (wrongIdx !== undefined && wrongIdx !== -1 && songWithWrong.wrongChoices) {
+              const hashedWrongId = hashSongId(`wrong-${songWithWrong.originalId}-${wrongIdx}`, dateKey);
+              newDisabled.push(hashedWrongId);
+            }
+          } else {
+            // It might be another song ID
+            const otherSong = songsWithOriginalId.find(s => s.originalId === oldDisabledId);
+            if (otherSong) {
+              newDisabled.push(otherSong.id);
+            }
+          }
+        });
+        if (newDisabled.length > 0) {
+          migratedDisabledChoices[newId] = newDisabled;
+        }
+      }
+    });
+
+    // Update progress with migrated data
+    if (Object.keys(migratedAttempts).length > 0 || Object.keys(migratedDisabledChoices).length > 0) {
+      progressRef.current = {
+        attempts: { ...oldProgress.attempts, ...migratedAttempts },
+        disabledChoices: { ...oldProgress.disabledChoices, ...migratedDisabledChoices },
+        currentOrder: oldProgress.currentOrder,
+      };
+      persistProgress();
+    }
+
+    // Store songs with original IDs in ref
+    dailySongsWithOriginalIdRef.current = songsWithOriginalId;
+
+    // Convert to GameSong format (without originalId) for component state
+    const songs: GameSong[] = songsWithOriginalId.map(song => ({
+      id: song.id,
+      title: song.title,
+      titleChinese: song.titleChinese,
+      subtitle: song.subtitle,
+      youtubeId: song.youtubeId,
+      youtubeUrl: song.youtubeUrl,
+      startTimeSeconds: song.startTimeSeconds,
+      sectionLabel: song.sectionLabel,
+      wrongChoices: song.wrongChoices,
+    }));
 
     const newTheme = playlist?.theme ?? formatThemeLabel(today);
     setTheme(newTheme);
@@ -579,7 +734,7 @@ export const useGameState = () => {
 
     setIsDailyComplete(allComplete);
 
-    startRound(clampedIndex, songs, newTheme, { persistOrder: true });
+    startRound(clampedIndex, songsWithOriginalId, newTheme, { persistOrder: true, dateKey });
   }, [results, startRound]);
 
   useEffect(() => {
@@ -683,16 +838,22 @@ export const useGameState = () => {
     const nextIndex = currentSongIndex + 1;
     setIsDailyComplete(false);
     lastCompletedRef.current = null;
-    startRound(nextIndex, dailySongs, undefined, { persistOrder: true });
-  }, [currentSongIndex, dailySongs, hasNextSong, startRound]);
+    startRound(nextIndex, dailySongsWithOriginalIdRef.current, undefined, { 
+      persistOrder: true, 
+      dateKey: progressDateKey ?? undefined 
+    });
+  }, [currentSongIndex, hasNextSong, startRound, progressDateKey]);
 
   const viewSong = useCallback(
     (order: number) => {
       if (order < 1 || order > dailySongs.length) return;
       lastCompletedRef.current = null;
-      startRound(order - 1, dailySongs, undefined, { persistOrder: false });
+      startRound(order - 1, dailySongsWithOriginalIdRef.current, undefined, { 
+        persistOrder: false,
+        dateKey: progressDateKey ?? undefined
+      });
     },
-    [dailySongs, startRound]
+    [dailySongs.length, startRound, progressDateKey]
   );
 
   const restart = useCallback(() => {

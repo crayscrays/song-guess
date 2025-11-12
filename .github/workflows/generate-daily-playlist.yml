@@ -10,11 +10,13 @@ jobs:
   generate-playlist:
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -36,6 +38,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add daily-playlists/
-          git diff --staged --quiet || git commit -m "chore: generate daily playlist for $(date +%Y-%m-%d)"
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: generate daily playlist for $(date +%Y-%m-%d)"
+            git push
+          fi
 
