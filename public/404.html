@@ -23,19 +23,26 @@
       // then the pathSegmentsToKeep would be 1, and the redirect would be to
       // https://crayscrays.github.io/song-guess/?/one/two
       var pathSegmentsToKeep = 1;
+      
+      // Base path for GitHub Pages
+      var basePath = '/song-guess';
 
       var l = window.location;
+      var pathname = l.pathname;
+      
+      // Remove base path if present
+      if (pathname.startsWith(basePath)) {
+        pathname = pathname.slice(basePath.length);
+      }
+      
       l.replace(
         l.protocol +
           "//" +
           l.hostname +
           (l.port ? ":" + l.port : "") +
-          l.pathname
-            .split("/")
-            .slice(0, 1 + pathSegmentsToKeep)
-            .join("/") +
+          basePath +
           "/?/" +
-          l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
+          pathname.slice(1).replace(/&/g, "~and~") +
           (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
           l.hash
       );
