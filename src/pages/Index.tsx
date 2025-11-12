@@ -66,6 +66,17 @@ const Index = () => {
     ? currentSong.titleChinese ?? currentSong.title
     : "";
 
+  // Update document title with today's date
+  useEffect(() => {
+    const today = new Date();
+    const dateStr = today.toLocaleDateString('en-US', { 
+      month: 'short', 
+      day: 'numeric',
+      year: 'numeric'
+    });
+    document.title = `Song Guess - ${dateStr}`;
+  }, []);
+
   useEffect(() => {
     if (gameState !== "playing" && isSheetOpen) {
       setIsSheetOpen(false);
