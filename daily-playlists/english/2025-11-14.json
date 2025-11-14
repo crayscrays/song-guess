@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-14",
+  "generatedAt": "2025-11-14T01:39:50.406Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Timeless Feel-Good Rock Anthems",
+  "songs": [
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic Chorus Hook",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    },
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus 'Whoa-oh' Hook",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+      "sectionLabel": "Guitar Riff & Vocal Hook",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    },
+    {
+      "title": "Eye of the Tiger",
+      "artist": "Survivor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=btPJPFnesV4",
+      "sectionLabel": "Chorus Power Hook",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    },
+    {
+      "title": "Summer of '69",
+      "artist": "Bryan Adams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=eFjjO_lhf9c",
+      "sectionLabel": "Chorus Nostalgic Hook",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF512F",
+    "via": "#DD2476",
+    "to": "#FF512F",
+    "angle": "135deg"
+  }
+}
