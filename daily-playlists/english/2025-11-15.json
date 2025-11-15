@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-15",
+  "generatedAt": "2025-11-15T01:28:18.667Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "All-Time Global Party Starters",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Pre-Chorus",
+      "startTime": "0:38",
+      "wrongChoices": [
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia ft. Sean Paul"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. Pharrell Williams"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Can't Feel My Face",
+      "artist": "The Weeknd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KEI4qSrkPAs",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:55",
+      "wrongChoices": [
+        {
+          "title": "Starboy",
+          "artist": "The Weeknd ft. Daft Punk"
+        },
+        {
+          "title": "Love Me Like You Do",
+          "artist": "Ellie Goulding"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Fireflies",
+          "artist": "Owl City"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "All About That Bass",
+          "artist": "Meghan Trainor"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    },
+    {
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=5NV6Rdv1a3I",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. Pharrell Williams"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Dance Monkey",
+          "artist": "Tones and I"
+        },
+        {
+          "title": "Wake Me Up",
+          "artist": "Avicii"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFB347",
+    "to": "#FFD54F",
+    "angle": "to right"
+  }
+}
