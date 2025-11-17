@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-17",
+  "generatedAt": "2025-11-17T01:40:44.564Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Dancefloor Classics",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Levitating",
+          "artist": "Dua Lipa"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Titanium",
+      "artist": "David Guetta ft. Sia",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JRfuAukYTKg",
+      "sectionLabel": "Powerful Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Clarity",
+          "artist": "Zedd ft. Foxes"
+        },
+        {
+          "title": "Wake Me Up",
+          "artist": "Avicii"
+        },
+        {
+          "title": "Don't You Worry Child",
+          "artist": "Swedish House Mafia"
+        },
+        {
+          "title": "We Found Love",
+          "artist": "Rihanna ft. Calvin Harris"
+        },
+        {
+          "title": "Spectrum",
+          "artist": "Zedd ft. Matthew Koma"
+        },
+        {
+          "title": "Feel So Close",
+          "artist": "Calvin Harris"
+        },
+        {
+          "title": "This Is What You Came For",
+          "artist": "Calvin Harris ft. Rihanna"
+        }
+      ]
+    },
+    {
+      "title": "Can't Hold Us",
+      "artist": "Macklemore & Ryan Lewis ft. Ray Dalton",
+      "youtubeUrl": "https://www.youtube.com/watch?v=2zNSgSzhBfM",
+      "sectionLabel": "Energetic Chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Thrift Shop",
+          "artist": "Macklemore & Ryan Lewis ft. Wanz"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Sexy and I Know It",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Bang Bang",
+          "artist": "Jessie J, Ariana Grande & Nicki Minaj"
+        },
+        {
+          "title": "Starships",
+          "artist": "Nicki Minaj"
+        }
+      ]
+    },
+    {
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "youtubeUrl": "https://www.youtube.com/watch?v=QGJuMBdaqIw",
+      "sectionLabel": "Inspiring Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Stronger (What Doesn't Kill You)",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Good Feeling",
+          "artist": "Flo Rida"
+        }
+      ]
+    },
+    {
+      "title": "Don't Start Now",
+      "artist": "Dua Lipa",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Nz-dPOj0eLs",
+      "sectionLabel": "Funky Bassline Chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "New Rules",
+          "artist": "Dua Lipa"
+        },
+        {
+          "title": "Blinding Lights",
+          "artist": "The Weeknd"
+        },
+        {
+          "title": "Levitating",
+          "artist": "Dua Lipa"
+        },
+        {
+          "title": "Say So",
+          "artist": "Doja Cat"
+        },
+        {
+          "title": "Physical",
+          "artist": "Dua Lipa"
+        },
+        {
+          "title": "Dance Monkey",
+          "artist": "Tones and I"
+        },
+        {
+          "title": "Break My Heart",
+          "artist": "Dua Lipa"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF416C",
+    "via": "#FF4B2B",
+    "to": "#FF6F61",
+    "angle": "135deg"
+  }
+}
