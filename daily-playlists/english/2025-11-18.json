@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-18",
+  "generatedAt": "2025-11-18T01:38:54.053Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus with iconic chorus hook",
+      "startTime": "0:46",
+      "wrongChoices": [
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Don't Stop Me Now",
+          "artist": "Queen"
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic section",
+      "startTime": "2:17",
+      "wrongChoices": [
+        {
+          "title": "Wonderwall",
+          "artist": "Oasis"
+        },
+        {
+          "title": "Torn",
+          "artist": "Natalie Imbruglia"
+        },
+        {
+          "title": "Zombie",
+          "artist": "The Cranberries"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Under the Bridge",
+          "artist": "Red Hot Chili Peppers"
+        },
+        {
+          "title": "Iris",
+          "artist": "Goo Goo Dolls"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "Summer Nights",
+          "artist": "John Travolta & Olivia Newton-John"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        }
+      ]
+    },
+    {
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZBR2G-iI3-I",
+      "sectionLabel": "Powerful chorus",
+      "startTime": "1:12",
+      "wrongChoices": [
+        {
+          "title": "Respect",
+          "artist": "Aretha Franklin"
+        },
+        {
+          "title": "Dancing on My Own",
+          "artist": "Robyn"
+        },
+        {
+          "title": "Man! I Feel Like a Woman!",
+          "artist": "Shania Twain"
+        },
+        {
+          "title": "Like a Virgin",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Material Girl",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Superstition",
+          "artist": "Stevie Wonder"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4TzH7fnybG8",
+      "sectionLabel": "Chorus sing-along",
+      "startTime": "0:43",
+      "wrongChoices": [
+        {
+          "title": "Build Me Up Buttercup",
+          "artist": "The Foundations"
+        },
+        {
+          "title": "Brown Eyed Girl",
+          "artist": "Van Morrison"
+        },
+        {
+          "title": "Come On Eileen",
+          "artist": "Dexys Midnight Runners"
+        },
+        {
+          "title": "I'm a Believer",
+          "artist": "The Monkees"
+        },
+        {
+          "title": "You Make My Dreams",
+          "artist": "Daryl Hall & John Oates"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "Love Shack",
+          "artist": "The B-52's"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FFB347",
+    "angle": "135deg"
+  }
+}
