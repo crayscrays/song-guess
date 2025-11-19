@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-19",
+  "generatedAt": "2025-11-19T01:39:23.989Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Anthems for Every Celebration",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Don't Stop Me Now",
+          "artist": "Queen"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Second Chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and The Waves"
+        },
+        {
+          "title": "Good Life",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "I'm a Believer",
+          "artist": "The Monkees"
+        },
+        {
+          "title": "I Wanna Dance with Somebody",
+          "artist": "Whitney Houston"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Infectious Chorus",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk The Moon"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Dynamite",
+          "artist": "Taio Cruz"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyoncé ft. Jay-Z"
+        }
+      ]
+    },
+    {
+      "title": "Walking on Sunshine",
+      "artist": "Katrina and The Waves",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iPUmE-tne5U",
+      "sectionLabel": "Bright Hook",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Valerie",
+          "artist": "Mark Ronson ft. Amy Winehouse"
+        },
+        {
+          "title": "I'm Still Standing",
+          "artist": "Elton John"
+        },
+        {
+          "title": "September",
+          "artist": "Earth, Wind & Fire"
+        },
+        {
+          "title": "I'm Coming Out",
+          "artist": "Diana Ross"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "You Make My Dreams",
+          "artist": "Daryl Hall & John Oates"
+        },
+        {
+          "title": "Footloose",
+          "artist": "Kenny Loggins"
+        }
+      ]
+    },
+    {
+      "title": "Shut Up and Dance",
+      "artist": "Walk The Moon",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "sectionLabel": "Catchy Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Sugar, We're Goin Down",
+          "artist": "Fall Out Boy"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Just Dance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "I Love It",
+          "artist": "Icona Pop ft. Charli XCX"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FFEFBA",
+    "angle": "135deg"
+  }
+}
