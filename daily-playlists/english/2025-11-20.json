@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-20",
+  "generatedAt": "2025-11-20T01:37:40.996Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Summer Anthems",
+  "songs": [
+    {
+      "title": "Walking on Sunshine",
+      "artist": "Katrina and The Waves",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iPUmE-tne5U",
+      "sectionLabel": "Chorus",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk The Moon"
+        },
+        {
+          "title": "Cake by the Ocean",
+          "artist": "DNCE"
+        }
+      ]
+    },
+    {
+      "title": "Summer",
+      "artist": "Calvin Harris",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ebXbLfLACGM",
+      "sectionLabel": "Drop and Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Cheerleader",
+          "artist": "OMI"
+        }
+      ]
+    },
+    {
+      "title": "Hot in Herre",
+      "artist": "Nelly",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GeZZr_p6vB8",
+      "sectionLabel": "Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Yeah!",
+          "artist": "Usher ft. Lil Jon & Ludacris"
+        },
+        {
+          "title": "Get Busy",
+          "artist": "Sean Paul"
+        },
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Ignition (Remix)",
+          "artist": "R. Kelly"
+        },
+        {
+          "title": "Low",
+          "artist": "Flo Rida ft. T-Pain"
+        },
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyoncé ft. Jay-Z"
+        },
+        {
+          "title": "Temperature",
+          "artist": "Sean Paul"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Chorus",
+      "startTime": "0:55",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Dynamite",
+          "artist": "Taio Cruz"
+        },
+        {
+          "title": "Good Feeling",
+          "artist": "Flo Rida"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        }
+      ]
+    },
+    {
+      "title": "Walking on Broken Glass",
+      "artist": "Annie Lennox",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7a3s4LX3Y6Y",
+      "sectionLabel": "Chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "I'm Still Standing",
+          "artist": "Elton John"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Love Shack",
+          "artist": "The B-52's"
+        },
+        {
+          "title": "Video Killed the Radio Star",
+          "artist": "The Buggles"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "You Spin Me Round (Like a Record)",
+          "artist": "Dead or Alive"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and The Waves"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FFD54F",
+    "via": "#FF7043",
+    "to": "#F44336",
+    "angle": "135deg"
+  }
+}
