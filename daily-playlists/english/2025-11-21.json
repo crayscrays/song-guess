@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-21",
+  "generatedAt": "2025-11-21T01:38:39.751Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Iconic Pop Rock Anthems",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        }
+      ]
+    },
+    {
+      "title": "With or Without You",
+      "artist": "U2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=XmSdTa9kaiQ",
+      "sectionLabel": "Emotional vocal build-up",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "In the Air Tonight",
+          "artist": "Phil Collins"
+        },
+        {
+          "title": "Nothing Else Matters",
+          "artist": "Metallica"
+        },
+        {
+          "title": "Waiting for a Girl Like You",
+          "artist": "Foreigner"
+        },
+        {
+          "title": "Time After Time",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Open Arms",
+          "artist": "Journey"
+        },
+        {
+          "title": "I Still Haven't Found What I'm Looking For",
+          "artist": "U2"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic piano riff and chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "Hold the Line",
+          "artist": "Toto"
+        },
+        {
+          "title": "The Final Countdown",
+          "artist": "Europe"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+      "sectionLabel": "Iconic guitar intro and first verse",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Paradise City",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Rock You Like a Hurricane",
+          "artist": "Scorpions"
+        },
+        {
+          "title": "More Than a Feeling",
+          "artist": "Boston"
+        },
+        {
+          "title": "Running Up That Hill",
+          "artist": "Kate Bush"
+        },
+        {
+          "title": "You Shook Me All Night Long",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Sharp Dressed Man",
+          "artist": "ZZ Top"
+        },
+        {
+          "title": "Born to Be Wild",
+          "artist": "Steppenwolf"
+        }
+      ]
+    },
+    {
+      "title": "Eye of the Tiger",
+      "artist": "Survivor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=btPJPFnesV4",
+      "sectionLabel": "Main riff and chorus energizer",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Danger Zone",
+          "artist": "Kenny Loggins"
+        },
+        {
+          "title": "Holding Out for a Hero",
+          "artist": "Bonnie Tyler"
+        },
+        {
+          "title": "I Want to Know What Love Is",
+          "artist": "Foreigner"
+        },
+        {
+          "title": "Heat of the Moment",
+          "artist": "Asia"
+        },
+        {
+          "title": "We Built This City",
+          "artist": "Starship"
+        },
+        {
+          "title": "I Love Rock 'n Roll",
+          "artist": "Joan Jett & The Blackhearts"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFB88C",
+    "to": "#FFD194",
+    "angle": "135deg"
+  }
+}
