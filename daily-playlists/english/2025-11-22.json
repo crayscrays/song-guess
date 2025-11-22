@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-22",
+  "generatedAt": "2025-11-22T01:26:58.668Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Rock Anthems for a High-Energy Day",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus with iconic 'Whoa-oh' hook",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Pour Some Sugar on Me",
+          "artist": "Def Leppard"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "Verse and build-up to the catchy chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Somebody Told Me",
+          "artist": "The Killers"
+        },
+        {
+          "title": "Chelsea Dagger",
+          "artist": "The Fratellis"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "I Bet You Look Good on the Dancefloor",
+          "artist": "Arctic Monkeys"
+        },
+        {
+          "title": "Are You Gonna Be My Girl",
+          "artist": "Jet"
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "Last Nite",
+          "artist": "The Strokes"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Me Now",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=HgzGwKwLmgM",
+      "sectionLabel": "Energetic chorus with soaring vocals",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen"
+        },
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "I Want to Break Free",
+          "artist": "Queen"
+        },
+        {
+          "title": "Footloose",
+          "artist": "Kenny Loggins"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Girl",
+      "artist": "Billy Joel",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hCuMWrfXG4E",
+      "sectionLabel": "Catchy chorus with upbeat piano",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Piano Man",
+          "artist": "Billy Joel"
+        },
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "Walking in Memphis",
+          "artist": "Marc Cohn"
+        },
+        {
+          "title": "Ironic",
+          "artist": "Alanis Morissette"
+        },
+        {
+          "title": "Kiss on My List",
+          "artist": "Hall & Oates"
+        },
+        {
+          "title": "You May Be Right",
+          "artist": "Billy Joel"
+        },
+        {
+          "title": "Come On Eileen",
+          "artist": "Dexys Midnight Runners"
+        }
+      ]
+    },
+    {
+      "title": "Are You Gonna Be My Girl",
+      "artist": "Jet",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6d6v5jo2k1g",
+      "sectionLabel": "Main riff and chorus hook",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Last Nite",
+          "artist": "The Strokes"
+        },
+        {
+          "title": "Seven Nation Army",
+          "artist": "The White Stripes"
+        },
+        {
+          "title": "I Believe in a Thing Called Love",
+          "artist": "The Darkness"
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "My Generation",
+          "artist": "Limp Bizkit"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Are You Gonna Be My Girl",
+          "artist": "Jet"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5733",
+    "via": "#FFC300",
+    "to": "#DAF7A6",
+    "angle": "135deg"
+  }
+}
