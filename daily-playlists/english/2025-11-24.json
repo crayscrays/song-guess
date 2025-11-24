@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-24",
+  "generatedAt": "2025-11-24T01:46:04.444Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Timeless Pop Hits That Everyone Knows",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful Verse",
+      "startTime": "0:32",
+      "wrongChoices": [
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Set Fire to the Rain",
+          "artist": "Adele"
+        },
+        {
+          "title": "Love Story",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "If I Were a Boy",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Halo",
+          "artist": "Beyoncé"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Love Yourself",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia ft. Sean Paul"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Uplifting Chorus",
+      "startTime": "0:42",
+      "wrongChoices": [
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful Verse",
+      "startTime": "0:32",
+      "wrongChoices": [
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Set Fire to the Rain",
+          "artist": "Adele"
+        },
+        {
+          "title": "Love Story",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "If I Were a Boy",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Halo",
+          "artist": "Beyoncé"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FF5F6D",
+    "angle": "135deg"
+  }
+}
