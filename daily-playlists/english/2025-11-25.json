@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-25",
+  "generatedAt": "2025-11-25T01:40:24.384Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys"
+        }
+      ]
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "operatic section",
+      "startTime": "2:30",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles"
+        },
+        {
+          "title": "Like a Prayer",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Purple Rain",
+          "artist": "Prince"
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Thriller",
+          "artist": "Michael Jackson"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4j2S2Yf25_8",
+      "sectionLabel": "chorus",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "I Will Survive",
+          "artist": "Gloria Gaynor"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "Crazy Little Thing Called Love",
+          "artist": "Queen"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        }
+      ]
+    },
+    {
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZBR2G-iI3-I",
+      "sectionLabel": "second chorus",
+      "startTime": "1:25",
+      "wrongChoices": [
+        {
+          "title": "Respect",
+          "artist": "Aretha Franklin"
+        },
+        {
+          "title": "My Heart Will Go On",
+          "artist": "Celine Dion"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Beat It",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "Like a Virgin",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        }
+      ]
+    },
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "chorus",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Beat It",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Thriller",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5733",
+    "via": "#FFC300",
+    "to": "#DAF7A6",
+    "angle": "135deg"
+  }
+}
