@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-26",
+  "generatedAt": "2025-11-26T01:39:57.613Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Epic Movie Soundtrack Hits",
+  "songs": [
+    {
+      "title": "My Heart Will Go On",
+      "artist": "Celine Dion",
+      "youtubeUrl": "https://www.youtube.com/watch?v=WNIPqafd4As",
+      "sectionLabel": "Chorus vocal climax",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "I Will Always Love You",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "Unchained Melody",
+          "artist": "The Righteous Brothers"
+        },
+        {
+          "title": "Time of My Life",
+          "artist": "Bill Medley & Jennifer Warnes"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Don't You (Forget About Me)",
+          "artist": "Simple Minds"
+        },
+        {
+          "title": "Ghostbusters",
+          "artist": "Ray Parker Jr."
+        },
+        {
+          "title": "Take My Breath Away",
+          "artist": "Berlin"
+        }
+      ]
+    },
+    {
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "youtubeUrl": "https://www.youtube.com/watch?v=_Yhyp-_hX2s",
+      "sectionLabel": "First verse rap intensity",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "In the End",
+          "artist": "Linkin Park"
+        },
+        {
+          "title": "Numb",
+          "artist": "Linkin Park"
+        },
+        {
+          "title": "Stronger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "Can't Hold Us",
+          "artist": "Macklemore & Ryan Lewis"
+        },
+        {
+          "title": "Remember the Name",
+          "artist": "Fort Minor"
+        },
+        {
+          "title": "Till I Collapse",
+          "artist": "Eminem"
+        },
+        {
+          "title": "Hotline Bling",
+          "artist": "Drake"
+        }
+      ]
+    },
+    {
+      "title": "Eye of the Tiger",
+      "artist": "Survivor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=btPJPFnesV4",
+      "sectionLabel": "Iconic guitar riff and first verse",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        },
+        {
+          "title": "Living on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "Beat It",
+          "artist": "Michael Jackson"
+        }
+      ]
+    },
+    {
+      "title": "The Power of Love",
+      "artist": "Huey Lewis & The News",
+      "youtubeUrl": "https://www.youtube.com/watch?v=KCkgYhtz64U",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Footloose",
+          "artist": "Kenny Loggins"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "Hold the Line",
+          "artist": "Toto"
+        },
+        {
+          "title": "Dancing in the Dark",
+          "artist": "Bruce Springsteen"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Chorus upbeat groove",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Feel So Close",
+          "artist": "Calvin Harris"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#1E3C72",
+    "via": "#2A5298",
+    "to": "#1E3C72",
+    "angle": "to right"
+  }
+}
