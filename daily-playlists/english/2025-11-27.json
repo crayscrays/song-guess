@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-27",
+  "generatedAt": "2025-11-27T01:38:40.092Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Anthems of Empowerment and Confidence",
+  "songs": [
+    {
+      "title": "Roar",
+      "artist": "Katy Perry",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CevxZvSJLk8",
+      "sectionLabel": "Chorus - Empowering Hook",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Stronger (What Doesn't Kill You)",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Fight Song",
+          "artist": "Rachel Platten"
+        },
+        {
+          "title": "Brave",
+          "artist": "Sara Bareilles"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Born This Way",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Confident",
+          "artist": "Demi Lovato"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Chorus - Uplifting Groove",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Good Life",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "On Top of the World",
+          "artist": "Imagine Dragons"
+        }
+      ]
+    },
+    {
+      "title": "Stronger (What Doesn't Kill You)",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Xn676-fLq7I",
+      "sectionLabel": "Pre-Chorus Building Strength",
+      "startTime": "1:02",
+      "wrongChoices": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Run the World (Girls)",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Fight Song",
+          "artist": "Rachel Platten"
+        },
+        {
+          "title": "Brave",
+          "artist": "Sara Bareilles"
+        },
+        {
+          "title": "Confident",
+          "artist": "Demi Lovato"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Fight Song",
+      "artist": "Rachel Platten",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xo1VInw-SKc",
+      "sectionLabel": "Chorus - Anthemic Resolve",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Stronger (What Doesn't Kill You)",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia"
+        },
+        {
+          "title": "Born This Way",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Brave",
+          "artist": "Sara Bareilles"
+        },
+        {
+          "title": "Confident",
+          "artist": "Demi Lovato"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Born This Way",
+      "artist": "Lady Gaga",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wV1FrqwZyKw",
+      "sectionLabel": "Chorus - Self-Acceptance Anthem",
+      "startTime": "0:53",
+      "wrongChoices": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia"
+        },
+        {
+          "title": "Run the World (Girls)",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Brave",
+          "artist": "Sara Bareilles"
+        },
+        {
+          "title": "Confident",
+          "artist": "Demi Lovato"
+        },
+        {
+          "title": "Fight Song",
+          "artist": "Rachel Platten"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFB88C",
+    "to": "#FFD194",
+    "angle": "135deg"
+  }
+}
