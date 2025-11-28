@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-28",
+  "generatedAt": "2025-11-28T01:38:05.093Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate 2000s Pop Hits",
+  "songs": [
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Complicated",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "I'm Like a Bird",
+          "artist": "Nelly Furtado"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Sk8er Boi",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Girlfriend",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Since You've Been Gone",
+          "artist": "Rascal Flatts"
+        }
+      ]
+    },
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Chorus",
+      "startTime": "0:38",
+      "wrongChoices": [
+        {
+          "title": "Crazy",
+          "artist": "Gnarls Barkley"
+        },
+        {
+          "title": "Drop It Like It's Hot",
+          "artist": "Snoop Dogg"
+        },
+        {
+          "title": "Hot in Herre",
+          "artist": "Nelly"
+        },
+        {
+          "title": "Ms. Jackson",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Get Ur Freak On",
+          "artist": "Missy Elliott"
+        },
+        {
+          "title": "Gold Digger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "Hips Don't Lie",
+          "artist": "Shakira"
+        }
+      ]
+    },
+    {
+      "title": "Umbrella",
+      "artist": "Rihanna ft. Jay-Z",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
+      "sectionLabel": "Chorus",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Disturbia",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Bleeding Love",
+          "artist": "Leona Lewis"
+        },
+        {
+          "title": "Irreplaceable",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Just Dance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Rehab",
+          "artist": "Amy Winehouse"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "First Chorus",
+      "startTime": "0:52",
+      "wrongChoices": [
+        {
+          "title": "Somebody Told Me",
+          "artist": "The Killers"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "Are You Gonna Be My Girl",
+          "artist": "Jet"
+        },
+        {
+          "title": "I Bet You Look Good on the Dancefloor",
+          "artist": "Arctic Monkeys"
+        },
+        {
+          "title": "Last Nite",
+          "artist": "The Strokes"
+        },
+        {
+          "title": "Chelsea Dagger",
+          "artist": "The Fratellis"
+        }
+      ]
+    },
+    {
+      "title": "Since I Left You",
+      "artist": "The Avalanches",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1w5MA9qXQ6Y",
+      "sectionLabel": "Vocal Sample Hook",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Paper Planes",
+          "artist": "M.I.A."
+        },
+        {
+          "title": "Feel Good Inc.",
+          "artist": "Gorillaz"
+        },
+        {
+          "title": "Clint Eastwood",
+          "artist": "Gorillaz"
+        },
+        {
+          "title": "1901",
+          "artist": "Phoenix"
+        },
+        {
+          "title": "Electric Feel",
+          "artist": "MGMT"
+        },
+        {
+          "title": "Kids",
+          "artist": "MGMT"
+        },
+        {
+          "title": "Seven Nation Army",
+          "artist": "The White Stripes"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FF5F6D",
+    "angle": "to right"
+  }
+}
