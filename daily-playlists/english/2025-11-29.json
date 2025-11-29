@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-29",
+  "generatedAt": "2025-11-29T01:37:43.214Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Pop Anthems of the 2010s",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Can’t Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful Chorus",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Set Fire to the Rain",
+          "artist": "Adele"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Grenade",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Halo",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Chandelier",
+          "artist": "Sia"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Love Yourself",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Main Vocal Hook",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Fireflies",
+          "artist": "Owl City"
+        },
+        {
+          "title": "Just Dance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Catchy Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "DJ Got Us Fallin’ in Love",
+          "artist": "Usher ft. Pitbull"
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Love Me Like You Do",
+          "artist": "Ellie Goulding"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6B6B",
+    "via": "#FFD93D",
+    "to": "#6BCB77",
+    "angle": "135deg"
+  }
+}
