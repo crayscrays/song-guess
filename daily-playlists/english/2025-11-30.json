@@ -1,0 +1,200 @@
+{
+  "date": "2025-11-30",
+  "generatedAt": "2025-11-30T01:50:01.297Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Summer Vibes",
+  "songs": [
+    {
+      "title": "Walking on Sunshine",
+      "artist": "Katrina & The Waves",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iPUmE-tne5U",
+      "sectionLabel": "Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Hot in Herre",
+          "artist": "Nelly"
+        },
+        {
+          "title": "Cake by the Ocean",
+          "artist": "DNCE"
+        },
+        {
+          "title": "Sun Is Shining",
+          "artist": "Axwell Λ Ingrosso"
+        },
+        {
+          "title": "California Gurls",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Good Vibrations",
+          "artist": "Marky Mark and The Funky Bunch"
+        },
+        {
+          "title": "Island in the Sun",
+          "artist": "Weezer"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Intro/Hook",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Feel So Close",
+          "artist": "Calvin Harris"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Shut Up and Dance",
+      "artist": "Walk The Moon",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "sectionLabel": "Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Dynamite",
+          "artist": "Taio Cruz"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Pre-Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Wake Me Up",
+          "artist": "Avicii"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    },
+    {
+      "title": "Treasure",
+      "artist": "Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nPvuNsRccVw",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. Pharrell Williams & T.I."
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Rock Your Body",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "SexyBack",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Suit & Tie",
+          "artist": "Justin Timberlake ft. Jay-Z"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF8C00",
+    "via": "#FFD700",
+    "to": "#FF4500",
+    "angle": "135deg"
+  }
+}
