@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-01",
+  "generatedAt": "2025-12-01T01:57:31.054Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Pop Hits of the 2010s",
+  "songs": [
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful Verse",
+      "startTime": "0:38",
+      "wrongChoices": [
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Set Fire to the Rain",
+          "artist": "Adele"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Grenade",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+      "sectionLabel": "Dance Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Problem",
+          "artist": "Ariana Grande ft. Iggy Azalea"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        },
+        {
+          "title": "We Found Love",
+          "artist": "Rihanna ft. Calvin Harris"
+        },
+        {
+          "title": "What Makes You Beautiful",
+          "artist": "One Direction"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Catchy Chorus",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "Black Eyed Peas"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Just Dance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Love Story",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Funky Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFB347",
+    "to": "#FFD700",
+    "angle": "to right"
+  }
+}
