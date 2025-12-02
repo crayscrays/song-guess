@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-02",
+  "generatedAt": "2025-12-02T01:42:07.097Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic middle section",
+      "startTime": "2:30",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Wonderwall",
+          "artist": "Oasis"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        }
+      ]
+    },
+    {
+      "title": "I Want It That Way",
+      "artist": "Backstreet Boys",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4fndeDfaWCg",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Genie in a Bottle",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Bye Bye Bye",
+          "artist": "*NSYNC"
+        },
+        {
+          "title": "Tearin' Up My Heart",
+          "artist": "*NSYNC"
+        },
+        {
+          "title": "MMMBop",
+          "artist": "Hanson"
+        },
+        {
+          "title": "Everybody (Backstreet's Back)",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Say My Name",
+          "artist": "Destiny's Child"
+        },
+        {
+          "title": "Baby One More Time",
+          "artist": "Britney Spears"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NsLyI1_R01M",
+      "sectionLabel": "Chorus sing-along",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Build Me Up Buttercup",
+          "artist": "The Foundations"
+        },
+        {
+          "title": "Brown Eyed Girl",
+          "artist": "Van Morrison"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "Hey Jude",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "American Pie",
+          "artist": "Don McLean"
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles"
+        },
+        {
+          "title": "Piano Man",
+          "artist": "Billy Joel"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic chorus",
+      "startTime": "3:30",
+      "wrongChoices": [
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "Summer Nights",
+          "artist": "John Travolta & Olivia Newton-John"
+        },
+        {
+          "title": "Living on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Another One Bites the Dust",
+          "artist": "Queen"
+        },
+        {
+          "title": "We Are the Champions",
+          "artist": "Queen"
+        }
+      ]
+    },
+    {
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xFrGuyw1V8s",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:22",
+      "wrongChoices": [
+        {
+          "title": "Stayin' Alive",
+          "artist": "Bee Gees"
+        },
+        {
+          "title": "Superstition",
+          "artist": "Stevie Wonder"
+        },
+        {
+          "title": "I Will Survive",
+          "artist": "Gloria Gaynor"
+        },
+        {
+          "title": "YMCA",
+          "artist": "Village People"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Footloose",
+          "artist": "Kenny Loggins"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFB88C",
+    "to": "#FFE6C7",
+    "angle": "135deg"
+  }
+}
