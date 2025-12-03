@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-03",
+  "generatedAt": "2025-12-03T01:42:03.363Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Timeless Rock Anthems",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        }
+      ]
+    },
+    {
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+      "sectionLabel": "Main riff and first chorus",
+      "startTime": "0:25",
+      "wrongChoices": [
+        {
+          "title": "Come As You Are",
+          "artist": "Nirvana"
+        },
+        {
+          "title": "Black Hole Sun",
+          "artist": "Soundgarden"
+        },
+        {
+          "title": "Enter Sandman",
+          "artist": "Metallica"
+        },
+        {
+          "title": "Under the Bridge",
+          "artist": "Red Hot Chili Peppers"
+        },
+        {
+          "title": "Paranoid",
+          "artist": "Black Sabbath"
+        },
+        {
+          "title": "Killing in the Name",
+          "artist": "Rage Against the Machine"
+        },
+        {
+          "title": "Alive",
+          "artist": "Pearl Jam"
+        }
+      ]
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic section",
+      "startTime": "3:00",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles"
+        },
+        {
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin"
+        },
+        {
+          "title": "Dream On",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Free Bird",
+          "artist": "Lynyrd Skynyrd"
+        },
+        {
+          "title": "More Than a Feeling",
+          "artist": "Boston"
+        },
+        {
+          "title": "Don't Fear The Reaper",
+          "artist": "Blue Öyster Cult"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+      "sectionLabel": "Iconic guitar riff and opening verse",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Back In Black",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        },
+        {
+          "title": "Crazy Train",
+          "artist": "Ozzy Osbourne"
+        },
+        {
+          "title": "The Final Countdown",
+          "artist": "Europe"
+        },
+        {
+          "title": "Livin' On The Edge",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Paint It Black",
+          "artist": "The Rolling Stones"
+        },
+        {
+          "title": "Sharp Dressed Man",
+          "artist": "ZZ Top"
+        }
+      ]
+    },
+    {
+      "title": "Start Me Up",
+      "artist": "The Rolling Stones",
+      "youtubeUrl": "https://www.youtube.com/watch?v=SGyOaCXr8Lw",
+      "sectionLabel": "Opening riff and verse",
+      "startTime": "0:18",
+      "wrongChoices": [
+        {
+          "title": "Born to Be Wild",
+          "artist": "Steppenwolf"
+        },
+        {
+          "title": "You Shook Me All Night Long",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Rock You Like a Hurricane",
+          "artist": "Scorpions"
+        },
+        {
+          "title": "TNT",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "I Love Rock 'n' Roll",
+          "artist": "Joan Jett & The Blackhearts"
+        },
+        {
+          "title": "Walk This Way",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Runnin' with the Devil",
+          "artist": "Van Halen"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#1F1C18",
+    "via": "#6B4C3B",
+    "to": "#D9A441",
+    "angle": "135deg"
+  }
+}
