@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-04",
+  "generatedAt": "2025-12-04T01:42:52.053Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Pop Anthems of the 2010s and Beyond",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Pre-Chorus Hook",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Clap-Along Chorus",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Dance Groove",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+      "sectionLabel": "Chorus Energy",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF616F",
+    "via": "#FFD56B",
+    "to": "#6AFFB0",
+    "angle": "135deg"
+  }
+}
