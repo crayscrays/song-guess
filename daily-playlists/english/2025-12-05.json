@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-05",
+  "generatedAt": "2025-12-05T01:43:01.374Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Icons of the 2000s",
+  "songs": [
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Chorus",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        },
+        {
+          "title": "In the End",
+          "artist": "Linkin Park"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Crazy",
+          "artist": "Gnarls Barkley"
+        },
+        {
+          "title": "Seven Nation Army",
+          "artist": "The White Stripes"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Clocks",
+      "artist": "Coldplay",
+      "youtubeUrl": "https://www.youtube.com/watch?v=d020hcWA_Wg",
+      "sectionLabel": "Piano riff and chorus",
+      "startTime": "0:29",
+      "wrongChoices": [
+        {
+          "title": "Viva La Vida",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "Boulevard of Broken Dreams",
+          "artist": "Green Day"
+        },
+        {
+          "title": "Yellow",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "How You Remind Me",
+          "artist": "Nickelback"
+        },
+        {
+          "title": "All the Small Things",
+          "artist": "Blink-182"
+        },
+        {
+          "title": "Beautiful Day",
+          "artist": "U2"
+        },
+        {
+          "title": "Drops of Jupiter",
+          "artist": "Train"
+        }
+      ]
+    },
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+      "sectionLabel": "Powerful chorus",
+      "startTime": "0:32",
+      "wrongChoices": [
+        {
+          "title": "Complicated",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Girlfriend",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Sk8er Boi",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Family Portrait",
+          "artist": "Pink"
+        },
+        {
+          "title": "Unwritten",
+          "artist": "Natasha Bedingfield"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Drop It Like It's Hot",
+          "artist": "Snoop Dogg"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "Opening chorus",
+      "startTime": "0:21",
+      "wrongChoices": [
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Are You Gonna Be My Girl",
+          "artist": "Jet"
+        },
+        {
+          "title": "I Bet You Look Good on the Dancefloor",
+          "artist": "Arctic Monkeys"
+        },
+        {
+          "title": "Last Nite",
+          "artist": "The Strokes"
+        },
+        {
+          "title": "Somebody Told Me",
+          "artist": "The Killers"
+        },
+        {
+          "title": "Chelsea Dagger",
+          "artist": "The Fratellis"
+        }
+      ]
+    },
+    {
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+      "sectionLabel": "Chorus hook",
+      "startTime": "0:31",
+      "wrongChoices": [
+        {
+          "title": "Oops!... I Did It Again",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Genie in a Bottle",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Can't Get You Out of My Head",
+          "artist": "Kylie Minogue"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Lady Marmalade",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Say My Name",
+          "artist": "Destiny's Child"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F61",
+    "via": "#FFD54F",
+    "to": "#4FC3F7",
+    "angle": "135deg"
+  }
+}
