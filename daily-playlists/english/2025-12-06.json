@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-06",
+  "generatedAt": "2025-12-06T01:37:15.143Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Essential 2000s Pop Hits",
+  "songs": [
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+      "sectionLabel": "Chorus Explosion",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Complicated",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Bring Me to Life",
+          "artist": "Evanescence"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "I'm With You",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Beautiful",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Sk8er Boi",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Unwritten",
+          "artist": "Natasha Bedingfield"
+        }
+      ]
+    },
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Infectious Groove",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Crazy",
+          "artist": "Gnarls Barkley"
+        },
+        {
+          "title": "Ms. Jackson",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Drop It Like It's Hot",
+          "artist": "Snoop Dogg"
+        },
+        {
+          "title": "Gold Digger",
+          "artist": "Kanye West"
+        },
+        {
+          "title": "Get Ur Freak On",
+          "artist": "Missy Elliott"
+        },
+        {
+          "title": "Hot in Herre",
+          "artist": "Nelly"
+        },
+        {
+          "title": "The Middle",
+          "artist": "Jimmy Eat World"
+        }
+      ]
+    },
+    {
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+      "sectionLabel": "Iconic Hook",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Gimme More",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Hips Don't Lie",
+          "artist": "Shakira"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Dirrty",
+          "artist": "Christina Aguilera"
+        },
+        {
+          "title": "Just Dance",
+          "artist": "Lady Gaga"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "Opening Verse",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "Somebody Told Me",
+          "artist": "The Killers"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "I Bet You Look Good on the Dancefloor",
+          "artist": "Arctic Monkeys"
+        },
+        {
+          "title": "Seven Nation Army",
+          "artist": "The White Stripes"
+        },
+        {
+          "title": "Take Me Out",
+          "artist": "Franz Ferdinand"
+        },
+        {
+          "title": "Use Somebody",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Last Nite",
+          "artist": "The Strokes"
+        }
+      ]
+    },
+    {
+      "title": "Umbrella",
+      "artist": "Rihanna feat. Jay-Z",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Disturbia",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Irreplaceable",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "SOS",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Run This Town",
+          "artist": "Jay-Z"
+        },
+        {
+          "title": "If I Ain't Got You",
+          "artist": "Alicia Keys"
+        },
+        {
+          "title": "Like a G6",
+          "artist": "Far East Movement"
+        },
+        {
+          "title": "Rehab",
+          "artist": "Amy Winehouse"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6F91",
+    "via": "#FF9671",
+    "to": "#FFC75F",
+    "angle": "135deg"
+  }
+}
