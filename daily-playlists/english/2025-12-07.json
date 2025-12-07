@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-07",
+  "generatedAt": "2025-12-07T01:50:30.986Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Pop Hits That Lift You Up",
+  "songs": [
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Chorus uplifting groove",
+      "startTime": "0:47",
+      "wrongChoices": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        }
+      ]
+    },
+    {
+      "title": "Walking on Sunshine",
+      "artist": "Katrina and The Waves",
+      "youtubeUrl": "https://www.youtube.com/watch?v=iPUmE-tne5U",
+      "sectionLabel": "Bright, joyful chorus",
+      "startTime": "0:26",
+      "wrongChoices": [
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Good Life",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "I'm a Believer",
+          "artist": "Smash Mouth"
+        },
+        {
+          "title": "Love Shack",
+          "artist": "The B-52's"
+        },
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk the Moon"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Funky chorus hook",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. Pharrell"
+        },
+        {
+          "title": "I Got a Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Energetic chorus dance section",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk the Moon"
+        },
+        {
+          "title": "Dynamite",
+          "artist": "Taio Cruz"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Shut Up and Dance",
+      "artist": "Walk the Moon",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "sectionLabel": "Catchy chorus dance moment",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Love Me Like You Do",
+          "artist": "Ellie Goulding"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Good Life",
+          "artist": "OneRepublic"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FFD54F",
+    "via": "#FF8A65",
+    "to": "#F44336",
+    "angle": "135deg"
+  }
+}
