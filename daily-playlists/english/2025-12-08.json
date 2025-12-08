@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-08",
+  "generatedAt": "2025-12-08T01:43:16.680Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Pop Icons: Unforgettable Hits",
+  "songs": [
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful chorus",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Grenade",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Fireflies",
+          "artist": "Owl City"
+        }
+      ]
+    },
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+      "sectionLabel": "Synth-heavy chorus",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Call on Me",
+          "artist": "Eric Prydz"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Catchy chorus",
+      "startTime": "1:18",
+      "wrongChoices": [
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele"
+        },
+        {
+          "title": "Shape of You",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Infectious chorus",
+      "startTime": "1:30",
+      "wrongChoices": [
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Grenade",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FFAE42",
+    "angle": "135deg"
+  }
+}
