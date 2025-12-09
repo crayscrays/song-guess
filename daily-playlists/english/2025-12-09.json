@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-09",
+  "generatedAt": "2025-12-09T01:42:16.815Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic middle section",
+      "startTime": "2:30",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Wonderwall",
+          "artist": "Oasis"
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        }
+      ]
+    },
+    {
+      "title": "Like a Prayer",
+      "artist": "Madonna",
+      "youtubeUrl": "https://www.youtube.com/watch?v=79fzeNUqQbQ",
+      "sectionLabel": "Chorus with gospel choir",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Material Girl",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Torn",
+          "artist": "Natalie Imbruglia"
+        },
+        {
+          "title": "Man! I Feel Like A Woman!",
+          "artist": "Shania Twain"
+        },
+        {
+          "title": "I Will Survive",
+          "artist": "Gloria Gaynor"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4G8QFcRcq1w",
+      "sectionLabel": "Chorus sing-along",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Build Me Up Buttercup",
+          "artist": "The Foundations"
+        },
+        {
+          "title": "Brown Eyed Girl",
+          "artist": "Van Morrison"
+        },
+        {
+          "title": "Hey Jude",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "I Wanna Dance with Somebody",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and The Waves"
+        },
+        {
+          "title": "You Make My Dreams",
+          "artist": "Hall & Oates"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic chorus",
+      "startTime": "3:10",
+      "wrongChoices": [
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Africa",
+          "artist": "Toto"
+        },
+        {
+          "title": "We Are the Champions",
+          "artist": "Queen"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Come On Eileen",
+          "artist": "Dexys Midnight Runners"
+        }
+      ]
+    },
+    {
+      "title": "Summer of '69",
+      "artist": "Bryan Adams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=eFjjO_lhf9c",
+      "sectionLabel": "Energetic chorus",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Jessie's Girl",
+          "artist": "Rick Springfield"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "I Want to Know What Love Is",
+          "artist": "Foreigner"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Take It on the Run",
+          "artist": "REO Speedwagon"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Pour Some Sugar on Me",
+          "artist": "Def Leppard"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FFD700",
+    "via": "#FF6347",
+    "to": "#8B0000",
+    "angle": "135deg"
+  }
+}
