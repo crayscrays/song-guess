@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-10",
+  "generatedAt": "2025-12-10T01:44:53.208Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Timeless Rock Anthems",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus hook",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Highway to Hell",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Another One Bites the Dust",
+          "artist": "Queen"
+        },
+        {
+          "title": "Pour Some Sugar On Me",
+          "artist": "Def Leppard"
+        },
+        {
+          "title": "You Shook Me All Night Long",
+          "artist": "AC/DC"
+        }
+      ]
+    },
+    {
+      "title": "Smells Like Teen Spirit",
+      "artist": "Nirvana",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+      "sectionLabel": "Opening riff and vocal entry",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "Come As You Are",
+          "artist": "Nirvana"
+        },
+        {
+          "title": "Black Hole Sun",
+          "artist": "Soundgarden"
+        },
+        {
+          "title": "Under the Bridge",
+          "artist": "Red Hot Chili Peppers"
+        },
+        {
+          "title": "Creep",
+          "artist": "Radiohead"
+        },
+        {
+          "title": "Basket Case",
+          "artist": "Green Day"
+        },
+        {
+          "title": "Everlong",
+          "artist": "Foo Fighters"
+        },
+        {
+          "title": "Jeremy",
+          "artist": "Pearl Jam"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Home Alabama",
+      "artist": "Lynyrd Skynyrd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ye5BuYf8q4o",
+      "sectionLabel": "Iconic guitar riff and first chorus",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Free Bird",
+          "artist": "Lynyrd Skynyrd"
+        },
+        {
+          "title": "Born to Be Wild",
+          "artist": "Steppenwolf"
+        },
+        {
+          "title": "Fortunate Son",
+          "artist": "Creedence Clearwater Revival"
+        },
+        {
+          "title": "The Joker",
+          "artist": "Steve Miller Band"
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles"
+        },
+        {
+          "title": "Carry On Wayward Son",
+          "artist": "Kansas"
+        },
+        {
+          "title": "More Than a Feeling",
+          "artist": "Boston"
+        }
+      ]
+    },
+    {
+      "title": "Back In Black",
+      "artist": "AC/DC",
+      "youtubeUrl": "https://www.youtube.com/watch?v=pAgnJDJN4VA",
+      "sectionLabel": "Main riff and vocal start",
+      "startTime": "0:18",
+      "wrongChoices": [
+        {
+          "title": "Thunderstruck",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Paranoid",
+          "artist": "Black Sabbath"
+        },
+        {
+          "title": "Livin' on the Edge",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "Iron Man",
+          "artist": "Black Sabbath"
+        },
+        {
+          "title": "Crazy Train",
+          "artist": "Ozzy Osbourne"
+        },
+        {
+          "title": "Breaking the Law",
+          "artist": "Judas Priest"
+        },
+        {
+          "title": "Welcome to the Jungle",
+          "artist": "Guns N' Roses"
+        }
+      ]
+    },
+    {
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "sectionLabel": "Operatic middle section",
+      "startTime": "2:30",
+      "wrongChoices": [
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Another Brick in the Wall",
+          "artist": "Pink Floyd"
+        },
+        {
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin"
+        },
+        {
+          "title": "Free Fallin'",
+          "artist": "Tom Petty"
+        },
+        {
+          "title": "Don't Stop Me Now",
+          "artist": "Queen"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Paint It Black",
+          "artist": "The Rolling Stones"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#1F1F1F",
+    "via": "#5B5B5B",
+    "to": "#C0C0C0",
+    "angle": "135deg"
+  }
+}
