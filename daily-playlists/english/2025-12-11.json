@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-11",
+  "generatedAt": "2025-12-11T01:45:19.640Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Summer Anthems",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:46",
+      "wrongChoices": [
+        {
+          "title": "Shape of You",
+          "artist": "Ed Sheeran"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can’t Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk The Moon"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+      "sectionLabel": "Clapping Chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina & The Waves"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Raise Your Glass",
+          "artist": "Pink"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Can’t Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Feel-Good Verse",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Fireflies",
+          "artist": "Owl City"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Shut Up and Dance",
+      "artist": "Walk The Moon",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "sectionLabel": "Catchy Chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "I’m Yours",
+          "artist": "Jason Mraz"
+        },
+        {
+          "title": "Hey, Soul Sister",
+          "artist": "Train"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Get Lucky",
+      "artist": "Daft Punk ft. Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=h5EofwRzit0",
+      "sectionLabel": "Funky Groove",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia ft. Sean Paul"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF8C00",
+    "via": "#FFD700",
+    "to": "#FF4500",
+    "angle": "to right"
+  }
+}
