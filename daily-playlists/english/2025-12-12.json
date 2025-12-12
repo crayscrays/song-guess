@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-12",
+  "generatedAt": "2025-12-12T01:44:51.026Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Pop Power Ballads",
+  "songs": [
+    {
+      "title": "Someone Like You",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
+      "sectionLabel": "Chorus",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Bleeding Love",
+          "artist": "Leona Lewis"
+        },
+        {
+          "title": "Un-Break My Heart",
+          "artist": "Toni Braxton"
+        },
+        {
+          "title": "My Heart Will Go On",
+          "artist": "Celine Dion"
+        },
+        {
+          "title": "Because You Loved Me",
+          "artist": "Celine Dion"
+        },
+        {
+          "title": "Total Eclipse of the Heart",
+          "artist": "Bonnie Tyler"
+        },
+        {
+          "title": "I Will Always Love You",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "All By Myself",
+          "artist": "Celine Dion"
+        }
+      ]
+    },
+    {
+      "title": "Fix You",
+      "artist": "Coldplay",
+      "youtubeUrl": "https://www.youtube.com/watch?v=k4V3Mo61fJM",
+      "sectionLabel": "Build-up to Chorus",
+      "startTime": "2:10",
+      "wrongChoices": [
+        {
+          "title": "Chasing Cars",
+          "artist": "Snow Patrol"
+        },
+        {
+          "title": "The Scientist",
+          "artist": "Coldplay"
+        },
+        {
+          "title": "How to Save a Life",
+          "artist": "The Fray"
+        },
+        {
+          "title": "Iris",
+          "artist": "Goo Goo Dolls"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Everybody Hurts",
+          "artist": "R.E.M."
+        },
+        {
+          "title": "Yellow",
+          "artist": "Coldplay"
+        }
+      ]
+    },
+    {
+      "title": "Halo",
+      "artist": "Beyoncé",
+      "youtubeUrl": "https://www.youtube.com/watch?v=bnVUHWCynig",
+      "sectionLabel": "Chorus",
+      "startTime": "1:20",
+      "wrongChoices": [
+        {
+          "title": "Bleeding Love",
+          "artist": "Leona Lewis"
+        },
+        {
+          "title": "If I Ain't Got You",
+          "artist": "Alicia Keys"
+        },
+        {
+          "title": "Because of You",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Unfaithful",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Irreplaceable",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "No One",
+          "artist": "Alicia Keys"
+        },
+        {
+          "title": "Listen",
+          "artist": "Beyoncé"
+        }
+      ]
+    },
+    {
+      "title": "With or Without You",
+      "artist": "U2",
+      "youtubeUrl": "https://www.youtube.com/watch?v=XmSdTa9kaiQ",
+      "sectionLabel": "Chorus",
+      "startTime": "1:45",
+      "wrongChoices": [
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "I Still Haven't Found What I'm Looking For",
+          "artist": "U2"
+        },
+        {
+          "title": "In the Air Tonight",
+          "artist": "Phil Collins"
+        },
+        {
+          "title": "Time After Time",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Don't Speak",
+          "artist": "No Doubt"
+        },
+        {
+          "title": "Open Your Heart",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Open Arms",
+          "artist": "Journey"
+        }
+      ]
+    },
+    {
+      "title": "Iris",
+      "artist": "Goo Goo Dolls",
+      "youtubeUrl": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+      "sectionLabel": "Chorus",
+      "startTime": "2:00",
+      "wrongChoices": [
+        {
+          "title": "Slide",
+          "artist": "Goo Goo Dolls"
+        },
+        {
+          "title": "Torn",
+          "artist": "Natalie Imbruglia"
+        },
+        {
+          "title": "Wonderwall",
+          "artist": "Oasis"
+        },
+        {
+          "title": "Black",
+          "artist": "Pearl Jam"
+        },
+        {
+          "title": "Drive",
+          "artist": "Incubus"
+        },
+        {
+          "title": "Mr. Jones",
+          "artist": "Counting Crows"
+        },
+        {
+          "title": "Lightning Crashes",
+          "artist": "Live"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#6A11CB",
+    "via": "#2575FC",
+    "to": "#6A11CB",
+    "angle": "135deg"
+  }
+}
