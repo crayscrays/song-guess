@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-14",
+  "generatedAt": "2025-12-14T01:51:03.505Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Party Hits",
+  "songs": [
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Shut Up and Dance",
+      "artist": "Walk The Moon",
+      "youtubeUrl": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "sectionLabel": "Pre-Chorus Energy",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Domino",
+          "artist": "Jessie J"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "On Top of the World",
+          "artist": "Imagine Dragons"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Chorus Joy",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Raise Your Glass",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Can't Hold Us",
+          "artist": "Macklemore & Ryan Lewis"
+        },
+        {
+          "title": "Fireball",
+          "artist": "Pitbull ft. John Ryan"
+        },
+        {
+          "title": "Best Song Ever",
+          "artist": "One Direction"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Intro Groove",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Cake by the Ocean",
+          "artist": "DNCE"
+        },
+        {
+          "title": "Feel So Close",
+          "artist": "Calvin Harris"
+        },
+        {
+          "title": "Let's Get It Started",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Bang Bang",
+          "artist": "Jessie J, Ariana Grande & Nicki Minaj"
+        }
+      ]
+    },
+    {
+      "title": "Firework",
+      "artist": "Katy Perry",
+      "youtubeUrl": "https://www.youtube.com/watch?v=QGJuMBdaqIw",
+      "sectionLabel": "Chorus Explosion",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Stronger (What Doesn't Kill You)",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia"
+        },
+        {
+          "title": "Brave",
+          "artist": "Sara Bareilles"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Born This Way",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Fight Song",
+          "artist": "Rachel Platten"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FFAF7B",
+    "angle": "135deg"
+  }
+}
