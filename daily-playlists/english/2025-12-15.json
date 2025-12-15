@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-15",
+  "generatedAt": "2025-12-15T01:49:01.453Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Iconic 2000s Pop Hits",
+  "songs": [
+    {
+      "title": "Since U Been Gone",
+      "artist": "Kelly Clarkson",
+      "youtubeUrl": "https://www.youtube.com/watch?v=R7UrFYvl5TE",
+      "sectionLabel": "Chorus hook",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Complicated",
+          "artist": "Avril Lavigne"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Toxic",
+          "artist": "Britney Spears"
+        },
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Sk8er Boi",
+          "artist": "Avril Lavigne"
+        }
+      ]
+    },
+    {
+      "title": "Hey Ya!",
+      "artist": "OutKast",
+      "youtubeUrl": "https://www.youtube.com/watch?v=PWgvGjAhvIw",
+      "sectionLabel": "Chorus \"Hey ya!\" hook",
+      "startTime": "0:48",
+      "wrongChoices": [
+        {
+          "title": "Bye Bye Bye",
+          "artist": "NSYNC"
+        },
+        {
+          "title": "In Da Club",
+          "artist": "50 Cent"
+        },
+        {
+          "title": "Hot in Herre",
+          "artist": "Nelly"
+        },
+        {
+          "title": "Get the Party Started",
+          "artist": "P!nk"
+        },
+        {
+          "title": "Drop It Like It's Hot",
+          "artist": "Snoop Dogg"
+        },
+        {
+          "title": "Beautiful Day",
+          "artist": "U2"
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers"
+        }
+      ]
+    },
+    {
+      "title": "Toxic",
+      "artist": "Britney Spears",
+      "youtubeUrl": "https://www.youtube.com/watch?v=LOZuxwVk7TU",
+      "sectionLabel": "Chorus with signature string hook",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Umbrella",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Hips Don't Lie",
+          "artist": "Shakira"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Crazy",
+          "artist": "Gnarls Barkley"
+        },
+        {
+          "title": "Rehab",
+          "artist": "Amy Winehouse"
+        },
+        {
+          "title": "Bleeding Love",
+          "artist": "Leona Lewis"
+        }
+      ]
+    },
+    {
+      "title": "Mr. Brightside",
+      "artist": "The Killers",
+      "youtubeUrl": "https://www.youtube.com/watch?v=gGdGFtwCNBE",
+      "sectionLabel": "Opening chorus",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "In the End",
+          "artist": "Linkin Park"
+        },
+        {
+          "title": "Boulevard of Broken Dreams",
+          "artist": "Green Day"
+        },
+        {
+          "title": "Seven Nation Army",
+          "artist": "The White Stripes"
+        },
+        {
+          "title": "Sex on Fire",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "Use Somebody",
+          "artist": "Kings of Leon"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "Black Eyed Peas"
+        },
+        {
+          "title": "Clocks",
+          "artist": "Coldplay"
+        }
+      ]
+    },
+    {
+      "title": "Umbrella",
+      "artist": "Rihanna",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CvBfHwUxHIk",
+      "sectionLabel": "Chorus hook",
+      "startTime": "0:50",
+      "wrongChoices": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Since U Been Gone",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Hey Ya!",
+          "artist": "OutKast"
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "SexyBack",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyoncé"
+        },
+        {
+          "title": "Hot N Cold",
+          "artist": "Katy Perry"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#F44336",
+    "via": "#FF9800",
+    "to": "#FFC107",
+    "angle": "135deg"
+  }
+}
