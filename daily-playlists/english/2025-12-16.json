@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-16",
+  "generatedAt": "2025-12-16T01:45:58.536Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Ultimate Karaoke Classics",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "chorus",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond"
+        },
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen"
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys"
+        },
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        }
+      ]
+    },
+    {
+      "title": "I Will Survive",
+      "artist": "Gloria Gaynor",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ZBR2G-iI3-I",
+      "sectionLabel": "first chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "Respect",
+          "artist": "Aretha Franklin"
+        },
+        {
+          "title": "Material Girl",
+          "artist": "Madonna"
+        },
+        {
+          "title": "Man! I Feel Like a Woman!",
+          "artist": "Shania Twain"
+        },
+        {
+          "title": "Like a Prayer",
+          "artist": "Madonna"
+        },
+        {
+          "title": "We Are Family",
+          "artist": "Sister Sledge"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "chorus",
+      "startTime": "3:05",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams"
+        },
+        {
+          "title": "Living on a Prayer",
+          "artist": "Bon Jovi"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Caroline",
+      "artist": "Neil Diamond",
+      "youtubeUrl": "https://www.youtube.com/watch?v=3y3q6v3vDNU",
+      "sectionLabel": "hook",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Brown Eyed Girl",
+          "artist": "Van Morrison"
+        },
+        {
+          "title": "Build Me Up Buttercup",
+          "artist": "The Foundations"
+        },
+        {
+          "title": "Proud Mary",
+          "artist": "Tina Turner"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves"
+        },
+        {
+          "title": "I Want You Back",
+          "artist": "The Jackson 5"
+        },
+        {
+          "title": "Hey Jude",
+          "artist": "The Beatles"
+        },
+        {
+          "title": "Come On Eileen",
+          "artist": "Dexys Midnight Runners"
+        }
+      ]
+    },
+    {
+      "title": "Dancing Queen",
+      "artist": "ABBA",
+      "youtubeUrl": "https://www.youtube.com/watch?v=xFrGuyw1V8s",
+      "sectionLabel": "chorus",
+      "startTime": "1:00",
+      "wrongChoices": [
+        {
+          "title": "Mamma Mia",
+          "artist": "ABBA"
+        },
+        {
+          "title": "Take On Me",
+          "artist": "a-ha"
+        },
+        {
+          "title": "Girls Just Want to Have Fun",
+          "artist": "Cyndi Lauper"
+        },
+        {
+          "title": "Footloose",
+          "artist": "Kenny Loggins"
+        },
+        {
+          "title": "I Wanna Dance with Somebody",
+          "artist": "Whitney Houston"
+        },
+        {
+          "title": "Thriller",
+          "artist": "Michael Jackson"
+        },
+        {
+          "title": "Wake Me Up Before You Go-Go",
+          "artist": "Wham!"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF5F6D",
+    "via": "#FFC371",
+    "to": "#FF5F6D",
+    "angle": "135deg"
+  }
+}
