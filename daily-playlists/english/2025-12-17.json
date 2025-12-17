@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-17",
+  "generatedAt": "2025-12-17T01:41:36.312Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Timeless Rock Anthems",
+  "songs": [
+    {
+      "title": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "youtubeUrl": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "sectionLabel": "Chorus sing-along",
+      "startTime": "1:05",
+      "wrongChoices": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor"
+        },
+        {
+          "title": "You Give Love a Bad Name",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Here I Go Again",
+          "artist": "Whitesnake"
+        },
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen"
+        },
+        {
+          "title": "Jump",
+          "artist": "Van Halen"
+        }
+      ]
+    },
+    {
+      "title": "Don't Stop Believin'",
+      "artist": "Journey",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1k8craCGpgs",
+      "sectionLabel": "Iconic piano intro and first chorus",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Sweet Home Alabama",
+          "artist": "Lynyrd Skynyrd"
+        },
+        {
+          "title": "Paradise City",
+          "artist": "Guns N' Roses"
+        },
+        {
+          "title": "Born to Run",
+          "artist": "Bruce Springsteen"
+        },
+        {
+          "title": "Crazy Train",
+          "artist": "Ozzy Osbourne"
+        },
+        {
+          "title": "Pour Some Sugar On Me",
+          "artist": "Def Leppard"
+        },
+        {
+          "title": "Free Fallin'",
+          "artist": "Tom Petty"
+        }
+      ]
+    },
+    {
+      "title": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "youtubeUrl": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+      "sectionLabel": "Iconic guitar riff and chorus",
+      "startTime": "0:20",
+      "wrongChoices": [
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi"
+        },
+        {
+          "title": "Enter Sandman",
+          "artist": "Metallica"
+        },
+        {
+          "title": "You Shook Me All Night Long",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Back In Black",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Every Breath You Take",
+          "artist": "The Police"
+        },
+        {
+          "title": "With or Without You",
+          "artist": "U2"
+        },
+        {
+          "title": "Black Dog",
+          "artist": "Led Zeppelin"
+        }
+      ]
+    },
+    {
+      "title": "We Will Rock You",
+      "artist": "Queen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-tJYN-eG1zk",
+      "sectionLabel": "Stamp and clap rhythm with vocal chant",
+      "startTime": "0:17",
+      "wrongChoices": [
+        {
+          "title": "Another One Bites The Dust",
+          "artist": "Queen"
+        },
+        {
+          "title": "Start Me Up",
+          "artist": "The Rolling Stones"
+        },
+        {
+          "title": "Paint It Black",
+          "artist": "The Rolling Stones"
+        },
+        {
+          "title": "Smoke on the Water",
+          "artist": "Deep Purple"
+        },
+        {
+          "title": "Born to Be Wild",
+          "artist": "Steppenwolf"
+        },
+        {
+          "title": "Rock You Like a Hurricane",
+          "artist": "Scorpions"
+        },
+        {
+          "title": "Highway to Hell",
+          "artist": "AC/DC"
+        }
+      ]
+    },
+    {
+      "title": "Born to Run",
+      "artist": "Bruce Springsteen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=IxuThNgl3YA",
+      "sectionLabel": "Epic saxophone and chorus build-up",
+      "startTime": "4:00",
+      "wrongChoices": [
+        {
+          "title": "Thunderstruck",
+          "artist": "AC/DC"
+        },
+        {
+          "title": "Dream On",
+          "artist": "Aerosmith"
+        },
+        {
+          "title": "More Than a Feeling",
+          "artist": "Boston"
+        },
+        {
+          "title": "Sharp Dressed Man",
+          "artist": "ZZ Top"
+        },
+        {
+          "title": "The Boys Are Back in Town",
+          "artist": "Thin Lizzy"
+        },
+        {
+          "title": "Jumpin' Jack Flash",
+          "artist": "The Rolling Stones"
+        },
+        {
+          "title": "I Love Rock 'n' Roll",
+          "artist": "Joan Jett & The Blackhearts"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#1E3C72",
+    "via": "#2A5298",
+    "to": "#1E3C72",
+    "angle": "to right"
+  }
+}
