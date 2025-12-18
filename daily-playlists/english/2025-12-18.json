@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-18",
+  "generatedAt": "2025-12-18T01:41:44.373Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Summer Anthems",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus groove",
+      "startTime": "0:46",
+      "wrongChoices": [
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Second verse and hook",
+      "startTime": "0:30",
+      "wrongChoices": [
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Rather Be",
+          "artist": "Clean Bandit ft. Jess Glynne"
+        },
+        {
+          "title": "Safe and Sound",
+          "artist": "Capital Cities"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        }
+      ]
+    },
+    {
+      "title": "Can't Stop the Feeling!",
+      "artist": "Justin Timberlake",
+      "youtubeUrl": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "sectionLabel": "Post-chorus dance groove",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Shut Up and Dance",
+          "artist": "Walk The Moon"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. Pharrell Williams & T.I."
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Dynamite",
+          "artist": "Taio Cruz"
+        }
+      ]
+    },
+    {
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+      "sectionLabel": "Pre-chorus",
+      "startTime": "1:08",
+      "wrongChoices": [
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Problem",
+          "artist": "Ariana Grande ft. Iggy Azalea"
+        },
+        {
+          "title": "Bang Bang",
+          "artist": "Jessie J, Ariana Grande & Nicki Minaj"
+        },
+        {
+          "title": "Hollaback Girl",
+          "artist": "Gwen Stefani"
+        },
+        {
+          "title": "Stronger (What Doesn't Kill You)",
+          "artist": "Kelly Clarkson"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Chorus hook",
+      "startTime": "0:48",
+      "wrongChoices": [
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Rather Be",
+          "artist": "Clean Bandit ft. Jess Glynne"
+        },
+        {
+          "title": "Timber",
+          "artist": "Pitbull ft. Kesha"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF6B6B",
+    "via": "#FFD93D",
+    "to": "#6BCB77",
+    "angle": "135deg"
+  }
+}
