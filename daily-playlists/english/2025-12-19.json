@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-19",
+  "generatedAt": "2025-12-19T01:44:56.418Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Feel-Good Pop Hits from the 2010s",
+  "songs": [
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Chorus Groove",
+      "startTime": "0:45",
+      "wrongChoices": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can’t Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Catchy Chorus",
+      "startTime": "0:32",
+      "wrongChoices": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Teenage Dream",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Break Free",
+          "artist": "Ariana Grande"
+        },
+        {
+          "title": "Domino",
+          "artist": "Jessie J"
+        },
+        {
+          "title": "Price Tag",
+          "artist": "Jessie J"
+        },
+        {
+          "title": "Only Girl (In The World)",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Infectious Verse",
+      "startTime": "0:33",
+      "wrongChoices": [
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Good Time",
+          "artist": "Owl City & Carly Rae Jepsen"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Domino",
+          "artist": "Jessie J"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Don't Stop the Music",
+          "artist": "Rihanna"
+        }
+      ]
+    },
+    {
+      "title": "Shake It Off",
+      "artist": "Taylor Swift",
+      "youtubeUrl": "https://www.youtube.com/watch?v=nfWlot6h_JM",
+      "sectionLabel": "Energetic Hook",
+      "startTime": "0:40",
+      "wrongChoices": [
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Starships",
+          "artist": "Nicki Minaj"
+        },
+        {
+          "title": "What Makes You Beautiful",
+          "artist": "One Direction"
+        },
+        {
+          "title": "DJ Got Us Fallin' in Love",
+          "artist": "Usher ft. Pitbull"
+        },
+        {
+          "title": "Scream & Shout",
+          "artist": "will.i.am ft. Britney Spears"
+        },
+        {
+          "title": "Only Girl (In The World)",
+          "artist": "Rihanna"
+        }
+      ]
+    },
+    {
+      "title": "Sugar",
+      "artist": "Maroon 5",
+      "youtubeUrl": "https://www.youtube.com/watch?v=09R8_2nJtjg",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:51",
+      "wrongChoices": [
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        },
+        {
+          "title": "Good Feeling",
+          "artist": "Flo Rida"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Domino",
+          "artist": "Jessie J"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF7E5F",
+    "via": "#FEB47B",
+    "to": "#FF7E5F",
+    "angle": "to right"
+  }
+}
