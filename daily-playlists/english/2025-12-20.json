@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-20",
+  "generatedAt": "2025-12-20T01:39:44.339Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Essential 2010s Pop Hits",
+  "songs": [
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful chorus",
+      "startTime": "0:48",
+      "wrongChoices": [
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "Tik Tok",
+          "artist": "Kesha"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Funky groove breakdown",
+      "startTime": "1:10",
+      "wrongChoices": [
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        }
+      ]
+    },
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Catchy chorus hook",
+      "startTime": "0:37",
+      "wrongChoices": [
+        {
+          "title": "Sorry",
+          "artist": "Justin Bieber"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Fireflies",
+          "artist": "Owl City"
+        },
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5"
+        }
+      ]
+    },
+    {
+      "title": "Call Me Maybe",
+      "artist": "Carly Rae Jepsen",
+      "youtubeUrl": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "sectionLabel": "Chorus hook",
+      "startTime": "0:44",
+      "wrongChoices": [
+        {
+          "title": "Party Rock Anthem",
+          "artist": "LMFAO"
+        },
+        {
+          "title": "We Found Love",
+          "artist": "Rihanna"
+        },
+        {
+          "title": "Bad Romance",
+          "artist": "Lady Gaga"
+        },
+        {
+          "title": "Just the Way You Are",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele"
+        },
+        {
+          "title": "Grenade",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Uplifting chorus",
+      "startTime": "1:15",
+      "wrongChoices": [
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Glad You Came",
+          "artist": "The Wanted"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk"
+        },
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FFD700",
+    "via": "#FF8C00",
+    "to": "#FF4500",
+    "angle": "to right"
+  }
+}
