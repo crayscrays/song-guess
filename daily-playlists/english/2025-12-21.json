@@ -1,0 +1,200 @@
+{
+  "date": "2025-12-21",
+  "generatedAt": "2025-12-21T01:51:06.103Z",
+  "model": "gpt-4.1-mini",
+  "variant": "english",
+  "theme": "Global Pop Powerhouses",
+  "songs": [
+    {
+      "title": "Shape of You",
+      "artist": "Ed Sheeran",
+      "youtubeUrl": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "sectionLabel": "Chorus Hook",
+      "startTime": "0:42",
+      "wrongChoices": [
+        {
+          "title": "Blinding Lights",
+          "artist": "The Weeknd"
+        },
+        {
+          "title": "Uptown Funk",
+          "artist": "Mark Ronson ft. Bruno Mars"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        }
+      ]
+    },
+    {
+      "title": "Rolling in the Deep",
+      "artist": "Adele",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "sectionLabel": "Powerful Chorus",
+      "startTime": "0:47",
+      "wrongChoices": [
+        {
+          "title": "Counting Stars",
+          "artist": "OneRepublic"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Bad Guy",
+          "artist": "Billie Eilish"
+        },
+        {
+          "title": "Sugar",
+          "artist": "Maroon 5"
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5 ft. Christina Aguilera"
+        },
+        {
+          "title": "Shallow",
+          "artist": "Lady Gaga & Bradley Cooper"
+        },
+        {
+          "title": "Someone Like You",
+          "artist": "Adele"
+        }
+      ]
+    },
+    {
+      "title": "Uptown Funk",
+      "artist": "Mark Ronson ft. Bruno Mars",
+      "youtubeUrl": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "sectionLabel": "Funky Groove Chorus",
+      "startTime": "0:35",
+      "wrongChoices": [
+        {
+          "title": "24K Magic",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams"
+        },
+        {
+          "title": "Can't Stop the Feeling!",
+          "artist": "Justin Timberlake"
+        },
+        {
+          "title": "Treasure",
+          "artist": "Bruno Mars"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk ft. Pharrell Williams"
+        },
+        {
+          "title": "Blurred Lines",
+          "artist": "Robin Thicke ft. T.I. & Pharrell"
+        },
+        {
+          "title": "Locked Out of Heaven",
+          "artist": "Bruno Mars"
+        }
+      ]
+    },
+    {
+      "title": "Happy",
+      "artist": "Pharrell Williams",
+      "youtubeUrl": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+      "sectionLabel": "Chorus Uplift",
+      "startTime": "0:23",
+      "wrongChoices": [
+        {
+          "title": "Call Me Maybe",
+          "artist": "Carly Rae Jepsen"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift"
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry"
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas"
+        },
+        {
+          "title": "Party in the U.S.A.",
+          "artist": "Miley Cyrus"
+        },
+        {
+          "title": "Domino",
+          "artist": "Jessie J"
+        },
+        {
+          "title": "Roar",
+          "artist": "Katy Perry"
+        }
+      ]
+    },
+    {
+      "title": "Blinding Lights",
+      "artist": "The Weeknd",
+      "youtubeUrl": "https://www.youtube.com/watch?v=4NRXx6U8ABQ",
+      "sectionLabel": "Synth Hook Chorus",
+      "startTime": "0:28",
+      "wrongChoices": [
+        {
+          "title": "Starboy",
+          "artist": "The Weeknd ft. Daft Punk"
+        },
+        {
+          "title": "Can't Feel My Face",
+          "artist": "The Weeknd"
+        },
+        {
+          "title": "Closer",
+          "artist": "The Chainsmokers ft. Halsey"
+        },
+        {
+          "title": "Cheap Thrills",
+          "artist": "Sia"
+        },
+        {
+          "title": "Dance Monkey",
+          "artist": "Tones and I"
+        },
+        {
+          "title": "Sunflower",
+          "artist": "Post Malone & Swae Lee"
+        },
+        {
+          "title": "Shape of You",
+          "artist": "Ed Sheeran"
+        }
+      ]
+    }
+  ],
+  "themeGradient": {
+    "from": "#FF416C",
+    "via": "#FF4B2B",
+    "to": "#FF416C",
+    "angle": "135deg"
+  }
+}
